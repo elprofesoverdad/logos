@@ -1,0 +1,78 @@
+site_name: Mundo Mejor Uk LEGOS
+strict: false
+
+theme:
+  home: none
+  palette:
+    scheme: default
+  name: material
+  language: es
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+
+plugins:
+  # - mermaid2:
+  #     arguments:
+  #       theme: forest
+  #       flowchart:
+  #         curve: basis
+  #- mkdocs-video:
+   #   is_video: true
+   #   video_muted: true
+   #   video_controls: true
+  - search:
+      lang:
+        - es
+        - en
+
+markdown_extensions:
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 60
+      baselevel: 1
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.tilde
+
+copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung.
+
+extra:
+  generator: false

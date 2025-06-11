@@ -1,0 +1,3 @@
+# El martillo de thor
+
+El martillo de thor es una técnica para escalar los negocios y vencer grandes retos en equipo, cada hook puede ser representado siempre como una asociacion binaria, entonces tenemos dos actores yo y el otro empresario, el otro es el martillo de thor, para romper paredes cada vez mas gruesas, debo recargar con energía el martillo ello implica velar por el beneficio y los intereses de el otro, luego utilizo el martillo de thor (los beneficios de una alianza fuerte con el otro) para romper todos los obstaculos en ese nivel, posteriormente debo "subir de nivel el martillo" (subir de nivel los beneficios y compromisos del hook) para romper inconvenientes de nuevo nivel.
