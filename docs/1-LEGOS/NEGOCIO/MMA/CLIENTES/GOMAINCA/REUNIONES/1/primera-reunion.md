@@ -1,7 +1,7 @@
 
 <figure markdown="span">
   ![DotEcomerce Solucion Ecomerce para venezuela](/logos/assets/gomainca.jpeg){ width="700" }
-  <figcaption>Un botón para dominar todo el Comercio Global.</figcaption>
+  <figcaption>GOMAINCA ... Prevalecerá, "flexibles, pero fuertes como la goma..."</figcaption>
 </figure>
 
 # Propuesta Estratégica - Táctica: Transformación Digital para GOMAINCA
