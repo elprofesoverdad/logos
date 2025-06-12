@@ -1,5 +1,5 @@
 <figure markdown="span">
-  ![DotEcomerce Solucion Ecomerce para venezuela](/assets/smart-seo-router.jpg){ width="700" }
+  ![DotEcomerce Solucion Ecomerce para venezuela](/logos/assets/smart-seo-router.jpg){ width="700" }
   <figcaption>Conduce Inteligentemente y con Seo tu audiencia a tu Web .</figcaption>
 </figure>
 
