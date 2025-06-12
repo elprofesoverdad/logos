@@ -1,6 +1,11 @@
 site_name: Mundo Mejor Uk LEGOS
 strict: false
 
+
+watch:
+  - docs
+  - docs/assets
+
 theme:
   home: none
   palette:
@@ -35,7 +40,7 @@ plugins:
         - en
 
 markdown_extensions:
-
+  - tables
   - attr_list            # Permite atributos como { width="500" }
   - md_in_html           # Permite Markdown dentro de bloques HTML como <figure>
   - pymdownx.blocks.caption # Permite la sintaxis '/// caption' para los pies de foto
@@ -76,7 +81,7 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.tilde
 
-copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung.
+copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung. +584125623825 gerente@mundomejor.uk 
 
 extra:
   generator: false
