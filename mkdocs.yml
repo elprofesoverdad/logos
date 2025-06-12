@@ -36,6 +36,10 @@ plugins:
 
 markdown_extensions:
 
+  - attr_list            # Permite atributos como { width="500" }
+  - md_in_html           # Permite Markdown dentro de bloques HTML como <figure>
+  - pymdownx.blocks.caption # Permite la sintaxis '/// caption' para los pies de foto
+
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
