@@ -174,7 +174,7 @@ La imagen digital debe reflejar la seriedad y calidad de los productos de GOMAIN
 La piedra angular de la estrategia es la puesta en marcha de DotEcomerce para la gestión de productos y ventas.
 
 * **Carga de Productos en DotEcomerce:** Subir la totalidad de los productos de GOMAINCA a la plataforma DotEcomerce, organizados según las clasificaciones definidas.
-* **Características de DotEcomerce:** Para comprender las funcionalidades avanzadas de la plataforma, refiérase a sus características en: [Enlace a Características de DotEcomerce](Enlace a Características de DotEcomerce){:target="_blank" .md-button .md-button--primary .md-button--ghost }
+* **Características de DotEcomerce:** Para comprender las funcionalidades avanzadas de la plataforma, refiérase a sus características en: [Enlace a Características de DotEcomerce](https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/hoja%20de%20datos/){:target="_blank" .md-button .md-button--primary .md-button--ghost }
 
 * **Capacitación del Personal de Ventas:** Entrenar al personal de GOMAINCA en el **manejo integral de la tienda digital** como herramienta de ventas, aprovechando sus capacidades de CRM y gestión de productos.
 
