@@ -133,6 +133,11 @@ La página principal de GOMAINCA no debe ser un mero escaparate, sino un **punto
 
 * **Diseño de Página Principal (Smart SEO Router):** Desarrollar una página web **sencilla, adaptable a todos los dispositivos (tablets, teléfonos, PC)**, que sirva como web principal y direccionador de redes sociales. Esta página estará enfocada en la venta y funcionará como punto de entrada a la tienda digital. Su objetivo es que el cliente, a través de un catálogo bien diseñado y explicado, comprenda cómo GOMAINCA puede satisfacer su necesidad, llegando al contacto de ventas con una idea más completa de productos y servicios.
 * **Funcionalidad Smart SEO Router:** Esta página (`Smart SEO Router`) permitirá una dirección de enlaces inteligentes, siendo a su vez la web principal de la empresa. Los clientes pueden llegar a un título o subtítulo específico, pero descubrirán la vasta cantidad de contenido adicional disponible.
+
+!!! quote "Conoce más detalles de Smart Seo Router, haciendo click, en el enlace..."
+    [SMART SEO ROUTER, un direccionador de audiencia a tu sitio web, con cónsola de control](https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/Smart%20SEO%20Router/Smart%20SEO%20Router/){:target="_blank" .md-button .md-button--primary .md-button--ghost }
+
+
 * **Duplicación para Mercado Internacional:** La web debe tener un **clon en inglés** con **SEO optimizado para el mercado internacional**.
 
 ### 2.4. Optimización de Visibilidad y Tráfico (SEO Auténtico)
@@ -146,6 +151,11 @@ Para asegurar que GOMAINCA sea encontrada por clientes potenciales con intenció
 
 ### **Visualización de Conferencia sobre SEO:**
 
+<figure markdown="span">
+  ![DotEcomerce Solucion Ecomerce para venezuela](/logos/assets/daniel-hung-mundo-mejor-uk.png){ width="600" }
+  <figcaption>Daniel Hung Conferencia sobre SEO y Núcleos Doppelgangers™ en la Expo-GPM 2025 Las Trinitarias Suites."</figcaption>
+</figure>
+
 !!! quote "Ponencia sobre SEO en Expo-GPM Barquisimeto 2025"
     [Ver Diapositivas de Ponencia sobre SEO (Google Presentaciones)](https://drive.google.com/file/d/1FYdkTVBNb5yTLCJHoKbMNGBuiXRZt93S/view?usp=sharing){:target="_blank" .md-button .md-button--primary .md-button--ghost }
 
@@ -157,7 +167,7 @@ Para asegurar que GOMAINCA sea encontrada por clientes potenciales con intenció
 
 La imagen digital debe reflejar la seriedad y calidad de los productos de GOMAINCA.
 
-* **Estilo Moderno y Profesional:** Adoptar un estilo moderno que refleje seriedad y alta calidad de producto. Se recomienda analizar el estilo utilizado en SUGEVEN y sus estrategias de comercialización como referencia: [https://mundomejor.uk/proveedores/sugeven/](https://mundomejor.uk/proveedores/sugeven/){:target="_blank" .md-button .md-button--primary .md-button--ghost }
+* **Estilo Moderno y Profesional:** Adoptar un estilo moderno que refleje seriedad y alta calidad de producto. Se recomienda analizar el estilo utilizado en SUGEVEN, otro de nuestros clientes en la Zona Industrial, y sus estrategias de comercialización como referencia: [https://mundomejor.uk/proveedores/sugeven/](https://mundomejor.uk/proveedores/sugeven/){:target="_blank" .md-button .md-button--primary .md-button--ghost }
 
 ### 2.6. Implementación de la Tienda Digital (DotEcomerce)
 
@@ -264,7 +274,7 @@ La implementación de la estrategia propuesta requiere una inversión inicial de
 | Creación de Núcleos "Doppelgangers"                         | Desarrollo de contenido y optimización de productos asociados a eventos o tendencias relevantes, potenciando la relevancia en búsquedas.                                                                         | **$0 en esta oferta, remoto**            |
 | **IV. Contenido y Comercialización**                        |                                                                                                                                                                                                                                                        |                                         |
 | Carga Inicial de Productos (DotEcomerce)                    | Proceso inicial de carga y organización de los **4000 productos comercializables** en la plataforma DotEcomerce, categorizados y con atributos definidos.                                                       | **Personal de GOMAINCA**                |
-| Creación de Propuesta de Valor de Productos Insignia | Redacción de contenido atractivo y diferenciador para los productos clave, destacando beneficios y procesos innovadores. $20 x 5 productos, $15 x 10 productos, , $10 x 20 productos, $5 x 200, 3$ x 1000  productos.|                                                                                                                                                                                                                                                        |                                         |
+| Creación de Propuesta de Valor de Productos Insignia | Redacción de contenido atractivo y diferenciador para los productos clave, destacando beneficios y procesos innovadores. $20 x 5 productos, $15 x 10 productos, $10 x 20 productos, $5 x 200 productos, 3$ x 1000  productos.|                                                                                                                                                                                                                                                        |                                         |
 | Gestión de Proyecto y Coordinación                          | Liderazgo y supervisión de todas las fases del proyecto, asegurando coherencia y cumplimiento de los objetivos.                                                                                                | **$0**                                  |
 | **Subtotal (Fase Inicial)**                                 | Dominio $35 + Config CDN $60 + Instalación-Configuración-Capacitación DotEcomerce $360 + Smart SEO Router $45 =                                               | **$500**                                |
 
