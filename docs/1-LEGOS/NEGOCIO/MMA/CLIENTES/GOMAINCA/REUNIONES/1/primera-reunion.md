@@ -157,7 +157,7 @@ Para asegurar que GOMAINCA sea encontrada por clientes potenciales con intenció
 </figure>
 
 !!! quote "Ponencia sobre SEO en Expo-GPM Barquisimeto 2025"
-    [Ver Diapositivas de Ponencia sobre SEO (Google Presentaciones)](https://drive.google.com/file/d/1FYdkTVBNb5yTLCJHoKbMNGBuiXRZt93S/view?usp=sharing){:target="_blank" .md-button .md-button--primary .md-button--ghost }
+    [Ver Diapositivas de Ponencia sobre SEO (Google Presentaciones)](https://docs.google.com/presentation/d/1UINAmZGcetd0gd3MX8_Tpst2jsvfQmWX/edit?usp=sharing&ouid=109548325801313370056&rtpof=true&sd=true){:target="_blank" .md-button .md-button--primary .md-button--ghost }
 
 <br>
 
