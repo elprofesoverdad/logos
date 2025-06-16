@@ -1,10 +1,114 @@
+---
+title: Propuesta Técnico-Comercial | DotEcomerce (Título para la navegación y H1)
+extra_head: |
+    <title>Propuesta Técnico-Comercial: Infraestructura Digital y Estrategia de Crecimiento | DotEcomerce</title>
+    <meta name="description" content="Propuesta integral para empresas y programadores: DotEcomerce, Dream University, Smart SEO Router y sitios web corporativos con SEO avanzado, autohospedaje Linux y soporte experto. Optimiza tu presencia digital y escala tu negocio con tecnología de punta.">
+
+    <meta name="keywords" content="ecommerce, plataforma digital, autohospedaje, SEO, programador, Dream University, Smart SEO Router, tienda online, sitios web, consultoría, DotEcomerce, marketing digital, infraestructura, white label, Venezuela, Barquisimeto, optimización, escalabilidad, tecnología, negocios, desarrollo web, hosting, SSL, protección DDoS, correo corporativo, capacitación, soporte técnico">
+
+    <meta name="author" content="Daniel Hung">
+
+    <link rel="canonical" href="https://elprofesoverdad.github.io/propuesta-dot-ecomerce/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Propuesta Técnico-Comercial: Infraestructura Digital y Estrategia de Crecimiento" />
+    <meta property="og:description" content="DotEcomerce, Dream University y Smart SEO Router: la solución integral para programadores y empresas que buscan control, escalabilidad y SEO avanzado en su ecosistema digital." />
+    <meta property="og:url" content="https://elprofesoverdad.github.io/propuesta-dot-ecomerce/" />
+    <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/trabajo-grafico-marketing-optimizado.png" />
+    <meta property="og:image:alt" content="DotEcomerce, Dream University y Smart SEO Router - Solución digital optimizada para programadores y empresas" />
+    <meta property="og:site_name" content="DotEcomerce - Daniel Hung" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Propuesta Técnico-Comercial: Infraestructura Digital y Estrategia de Crecimiento" />
+    <meta name="twitter:description" content="Solución integral DotEcomerce, Dream University y Smart SEO Router para programadores y empresas que desean escalar y optimizar su presencia digital." />
+    <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/trabajo-grafico-marketing-optimizado.png" />
+    <meta name="twitter:site" content="@mundomejoruk" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "DotEcomerce | Infraestructura Digital y Estrategia de Crecimiento",
+      "image": [
+        "https://elprofesoverdad.github.io/logos/assets/trabajo-grafico-marketing-optimizado.png"
+      ],
+      "description": "Solución integral para programadores y empresas: DotEcomerce, Dream University, Smart SEO Router y sitios web corporativos con SEO avanzado, autohospedaje Linux y soporte experto.",
+      "brand": {
+        "@type": "Brand",
+        "name": "DotEcomerce"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://elprofesoverdad.github.io/propuesta-dot-ecomerce/",
+        "priceCurrency": "USD",
+        "price": "500",
+        "availability": "https://schema.org/InStock"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://mundomejor.uk#danielhung",
+          "name": "Daniel Hung"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "32"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://mundomejor.uk#danielhung",
+      "name": "Daniel Hung",
+      "jobTitle": "CEO & Consultor Estratégico Industrial",
+      "url": "https://mundomejor.uk/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/daniel-hung-572697320/",
+        "https://www.instagram.com/mundomejoruk/",
+        "https://www.facebook.com/people/Mundo-Mejor-Asesores-UK/100066730320930/",
+        "https://www.youtube.com/channel/UCPpkYlNUXp6xnYFMyhrYiaw"
+      ],
+      "description": "Especialista en transformación digital para el sector industrial y comercial con 30+ años optimizando cadenas de suministro y estrategias de mercado global",
+      "image": "https://mundomejor.uk/danielhung/assets/img/logo-mundo-mejor-asesores.png",
+      "owns": [
+        {
+          "@type": "WebSite",
+          "name": "DotEcomerce",
+          "url": "https://elprofesoverdad.github.io/propuesta-dot-ecomerce/"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://mundomejor.uk#empresa"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Consultor Senior",
+        "skills": "Reingeniería de procesos, Logística inteligente, Automatización industrial, Estrategias Omnicanal"
+      }
+    }
+    </script>
+---
+
+
+
+
 <figure markdown="span">
   ![Propuesta - Nogal estudio gráfico trujillo venezuela](/logos/assets/trabajo-grafico-marketing-optimizado.png){ width="800" }
-  <figcaption>Dos si se unen tres titanes, la informática, el marketing y las artes gráficas, de manera estratégica: el comercio  cambiará de manera radical en nuestra era....</figcaption>
+  <figcaption>Si se unen tres titanes, la informática, el marketing y las artes gráficas, de manera estratégica: el comercio  cambiará de manera radical en nuestra era....</figcaption>
 </figure>
 
-# Propuesta Técnico-Comercial: Infraestructura Digital Completa
-## *Tu Ecosistema Digital Profesional al Alcance de tu Código*
+# Propuesta Técnico-Comercial: Infraestructura Digital Completa Nogal Estúdio Gráfico.
 
 ---
 
@@ -170,7 +274,7 @@ Como desarrollador, reconoces la importancia de una base sólida. Hemos identifi
 
 ### ¿Cuál es tu Siguiente Movimiento?
 
-''' python
+``` py
 
 def tomar_decision():
     if estas_listo_para_escalar():
@@ -178,7 +282,7 @@ def tomar_decision():
     else:
         return seguir_compitiendo_con_herramientas_basicas()
 
-'''
+```
 
 
 !!! success "Inicia tu Transformación Digital"
@@ -190,7 +294,7 @@ def tomar_decision():
 
 !!! warning "Hardware & Dominio - Costos Adicionales"
     - **Hardware**: No incluido, desde $100 según especificaciones elegidas
-    - **Dominio**: $0-$35 anuales según extensión (.com, .ve, .org)
+    - **Dominio**: $0 - $35 anuales según extensión (.com, .ve, .org)
     - **Setup fee**: $0 - Todo incluido en el pack
 
 !!! quote "Garantía de Escalabilidad Técnica"

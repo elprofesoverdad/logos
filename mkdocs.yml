@@ -11,6 +11,7 @@ theme:
   palette:
     scheme: default
   name: material
+  custom_dir: overrides
   language: es
   features:
     - search.suggest

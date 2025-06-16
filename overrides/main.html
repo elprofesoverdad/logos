@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+    {#- Primero se comprueba que 'page', 'page.meta' y 'page.meta.extra_head' existan antes de intentar usarlos. -#}
+    {% if page and page.meta and page.meta.extra_head %}
+        {{ page.meta.extra_head | safe }}
+    {% endif %}
+{% endblock %}
