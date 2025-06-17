@@ -1,29 +1,29 @@
 site_name: "Mundo Mejor Uk: LOGOS"
-strict: false
+strict: false # Permite que el sitio se construya incluso si hay errores
 
 
 watch:
-  - docs
-  - docs/assets
+  - docs # Carpeta a observar para cambios
+ 
 
 theme:
-  home: none
+  home: none # No mostrar la página de inicio por defecto
   palette:
-    scheme: default
-  name: material
-  custom_dir: overrides
-  language: es
+    scheme: default # Esquema de colores por defecto
+  name: material # Tema Material para MkDocs
+  custom_dir: overrides # Carpeta personalizada para anular estilos del tema
+  language: es # Idioma del tema
   features:
-    - search.suggest
-    - search.highlight
-    - search.share
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.footer
-    - toc.follow
-    - toc.integrate
+    - search.suggest 3 # Sugerencias de búsqueda
+    - search.highlight # Resaltar términos de búsqueda
+    - search.share # Compartir resultados de búsqueda
+    # - navigation.instant # Hace que mkdocs no recargue toda la página al navegar solo cambia el contenido
+    - navigation.tracking # Seguimiento de navegación
+    - navigation.tabs # Pestañas de navegación
+    - navigation.tabs.sticky # Pestañas de navegación pegajosas
+    - navigation.footer # Pie de página de navegación
+    - toc.follow # Seguir el TOC al hacer scroll
+    - toc.integrate # Integrar el TOC en la barra lateral
 
 plugins:
   # - mermaid2:
@@ -37,56 +37,59 @@ plugins:
    #   video_controls: true
   - search:
       lang:
-        - es
+        - es # Idioma del plugin de búsqueda
         - en
 
 markdown_extensions:
-  - meta
-  - tables
+  - meta # Permite metadatos como title, description, keywords, author, etc.
+  - tables # Permite tablas con sintaxis Markdown
   - attr_list            # Permite atributos como { width="500" }
   - md_in_html           # Permite Markdown dentro de bloques HTML como <figure>
   - pymdownx.blocks.caption # Permite la sintaxis '/// caption' para los pies de foto
 
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
+        - name: mermaid # Permite bloques de código Mermaid
+          class: mermaid # Clase CSS para Mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format # Formato de código para Mermaid
+  - abbr # Permite abreviaturas con sintaxis como [HTML](/html "HyperText Markup Language")
+  - admonition # Permite bloques de advertencia, nota, etc.
+  - attr_list # Permite atributos como { width="500" }
+  - def_list # Permite listas de definiciones
+  - footnotes # Permite notas al pie
+  - md_in_html # Permite Markdown dentro de bloques HTML como <figure>
   - toc:
-      permalink: true
-      toc_depth: 60
-      baselevel: 1
+      permalink: true # Añade enlaces permanentes a los encabezados
+      toc_depth: 60 # Profundidad máxima del TOC
+      baselevel: 1 #
   - pymdownx.arithmatex:
-      generic: true
+      generic: true # Permite usar sintaxis genérica de LaTeX para matemáticas
   - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
+      smart_enable: all # Habilita mejor manejo de énfasis y subrayado
+  - pymdownx.caret # Permite usar el símbolo ^ para superíndices
+  - pymdownx.details # Permite bloques desplegables con <details>
+  - pymdownx.emoji: #  Extensión para emojis
+      emoji_index: !!python/name:material.extensions.emoji.twemoji # Usa Twemoji como fuente de emojis
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # Genera emojis como SVG
+  - pymdownx.highlight # Resaltado de sintaxis
+  - pymdownx.inlinehilite # Resaltado de sintaxis en línea
+  - pymdownx.keys # Permite atajos de teclado con sintaxis como `Ctrl+S`
+  - pymdownx.mark # Permite resaltar texto con el símbolo ==
+  - pymdownx.smartsymbols # Permite usar símbolos inteligentes como `--` para guiones largos
   - pymdownx.tabbed:
-      alternate_style: true
+      alternate_style: true # Permite pestañas con estilo alternativo
   - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.critic
-  - pymdownx.tilde
+      custom_checkbox: true # Permite listas de tareas con casillas de verificación personalizadas
+  - pymdownx.critic # Permite anotaciones de crítica como `++texto++` para añadir texto, `--texto--` para eliminar, etc.
+  - pymdownx.tilde # Permite usar el símbolo ~ para subíndices
 
 copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung. +584125623825 gerente@mundomejor.uk 
 
 extra:
-  generator: false
+  generator: false # Desactiva el generador de metadatos para evitar duplicados
 
 extra_css:
-  - assets/css/custom.css
+  - assets/css/custom.css # CSS personalizado para el sitio
+
+extra_javascript:
+  - assets/js/landing-page.js # JavaScript personalizado para la página de inicio

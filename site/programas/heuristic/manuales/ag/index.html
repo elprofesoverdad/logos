@@ -55,9 +55,9 @@
     
     
     
-    
-    
-    
+  
+  
+  
 
   </head>
   
@@ -153,8 +153,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -331,10 +329,6 @@
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
-  
-  
-  <body class="" data-md-scrollfix>
-    
             
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
@@ -8267,7 +8261,7 @@
   
   
   <span class="md-ellipsis">
-    Informe Estratégico: DotEcomerce como Motor de Crecimiento Industrial
+    Hoja de datos
     
   </span>
   
@@ -23089,8 +23083,6 @@
             
             
           
-  </body>
-
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
@@ -23278,21 +23270,37 @@ se<span class="w"> </span>puede<span class="w"> </span>encontrar<span class="w">
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest 3", "search.highlight", "search.share", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
   
       <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
+        <script src="../../../../assets/js/landing-page.js"></script>
+      
     
   <script>
-    // Depuración: Verificar clases en body
-    document.addEventListener("DOMContentLoaded", function() {
-      console.log("Clases del body:", document.body.className);
-      console.log("Tabs visibles?", 
-        document.querySelector('.md-tabs')?.offsetParent !== null
-      );
-    });
+    function updateBodyClass() {
+      const body = document.body;
+      const isLandingPage = false;
+      body.classList.remove('landing-page');
+      if (isLandingPage) {
+        body.classList.add('landing-page');
+      }
+      // --- Cirugía para el footer ---
+      // Forzar reflow del footer para que el CSS se aplique correctamente
+      const footer = document.querySelector('.md-footer');
+      if (footer) {
+        // Oculta y muestra para forzar repaint solo si cambia la clase
+        footer.style.display = 'none';
+        // Usa requestAnimationFrame para asegurar el reflow
+        requestAnimationFrame(() => {
+          footer.style.display = '';
+        });
+      }
+    }
+    document.addEventListener("DOMContentLoaded", updateBodyClass);
+    document.addEventListener("mkdocs-ready", updateBodyClass);
   </script>
 
   </body>

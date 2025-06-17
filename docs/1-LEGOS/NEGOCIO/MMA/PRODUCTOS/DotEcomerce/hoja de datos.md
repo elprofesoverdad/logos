@@ -6,10 +6,10 @@ hide:
   - toc      # También puedes ocultar la tabla de contenidos si quieres
   #- tabs       # <-- ¡Añade esta línea! Oculta las pestañas de navegación superior
   # - footer   # También puedes ocultar el pie de página si quieres
-classes: landing-page
+classes: landing-page # <--  Oculta las pestañas de navegación superior a través del CSS
 
 ---
-
+<div data-landing-page style="display:none"></div>
 # Informe Estratégico: DotEcomerce como Motor de Crecimiento Industrial
 
 <figure markdown="span">

@@ -1,30 +1,12 @@
 {% extends "base.html" %}
 
 {# ========================================================================= #}
-{# BLOQUE PERSONALIZADO PARA CLASES EN EL BODY                               #}
-{# ========================================================================= #}
-{% block site_nav %}
-  {#
-    Añade clases al body basadas en los metadatos de la página
-  #}
-  {% if page and page.meta and page.meta.classes %}
-    {% set body_class = page.meta.classes %}
-  {% endif %}
-  <body class="{% if body_class %}{{ body_class }}{% endif %}" data-md-scrollfix>
-    {{ super() }}
-  </body>
-{% endblock %}
-
-{# ========================================================================= #}
 {# ANULACIÓN PARA LAS PESTAÑAS DE NAVEGACIÓN SUPERIOR                        #}
 {# ========================================================================= #}
 {% block tabs %}
   {#
-    Esta es la lógica principal:
-    1. Comprueba que la variable `page` y sus metadatos (`page.meta`) existen.
-    2. Si existen, comprueba si la palabra 'tabs' está en la lista `hide`.
-    3. Si 'tabs' está en la lista 'hide', no se dibuja NADA en este bloque.
-    4. Si no, se llama a `super()` para que se dibujen las pestañas normalmente.
+    Si 'tabs' está en la lista 'hide' de los metadatos, no se dibuja este bloque.
+    De lo contrario, se muestran las pestañas normalmente.
   #}
   {% if not (page and page.meta and page.meta.hide and 'tabs' in page.meta.hide) %}
     {{ super() }}
@@ -35,28 +17,42 @@
 {# ANULACIÓN PARA METADATOS EXTRA EN EL HEAD (VERSIÓN SEGURA)                #}
 {# ========================================================================= #}
 {% block extrahead %}
-    {{ super() }}
-    {#
-      Esta es la corrección para el error "'None' has no attribute 'meta'".
-      Comprobamos que `page` y `page.meta` existen ANTES de intentar usarlos.
-      Esto hace que la plantilla sea segura para todas las páginas,
-      incluyendo la de error 404.
-    #}
-    {% if page and page.meta and page.meta.extra_head %}
-        {{ page.meta.extra_head | safe }}
-    {% endif %}
+  {{ super() }}
+  {#
+    Comprobamos que `page` y `page.meta` existen ANTES de intentar usarlos.
+    Esto evita errores en páginas especiales como la de 404.
+  #}
+  {% if page and page.meta and page.meta.extra_head %}
+    {{ page.meta.extra_head | safe }}
+  {% endif %}
 {% endblock %}
 
+{# ========================================================================= #}
+{# SCRIPTS PERSONALIZADOS (BLOQUE ÚNICO Y CORREGIDO)                         #}
+{# ========================================================================= #}
 {% block scripts %}
   {{ super() }}
   <script>
-    // Depuración: Verificar clases en body
-    document.addEventListener("DOMContentLoaded", function() {
-      console.log("Clases del body:", document.body.className);
-      console.log("Tabs visibles?", 
-        document.querySelector('.md-tabs')?.offsetParent !== null
-      );
-    });
+    function updateBodyClass() {
+      const body = document.body;
+      const isLandingPage = {{ 'true' if page and page.meta and page.meta.classes and 'landing-page' in page.meta.classes else 'false' }};
+      body.classList.remove('landing-page');
+      if (isLandingPage) {
+        body.classList.add('landing-page');
+      }
+      // --- Cirugía para el footer ---
+      // Forzar reflow del footer para que el CSS se aplique correctamente
+      const footer = document.querySelector('.md-footer');
+      if (footer) {
+        // Oculta y muestra para forzar repaint solo si cambia la clase
+        footer.style.display = 'none';
+        // Usa requestAnimationFrame para asegurar el reflow
+        requestAnimationFrame(() => {
+          footer.style.display = '';
+        });
+      }
+    }
+    document.addEventListener("DOMContentLoaded", updateBodyClass);
+    document.addEventListener("mkdocs-ready", updateBodyClass);
   </script>
 {% endblock %}
-

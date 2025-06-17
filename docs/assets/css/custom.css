@@ -8,25 +8,12 @@
     max-width: 100%;
   } */
   
-  /* FORMA MÁS ESPECÍFICA DE OCULTAR TABS */
-  & .md-header + .md-main .md-tabs {
-    display: none !important;
-  }
-  
-  /* ALTERNATIVA: OCULTAR MEDIANTE POSICIONAMIENTO */
-  & .md-tabs {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: none !important;
-  }
-}
+  /*
+ * Reglas para OCULTAR ELEMENTOS SÓLO EN PÁGINAS DE ATERRIZAJE (LANDING PAGES)
+ * Se aplican cuando el 'body' de la página tiene la clase 'landing-page'.
+ */
 
+/* OCULTAR TABS SOLO EN LANDING PAGE */
 body.landing-page .md-tabs {
   display: none !important;
   visibility: hidden !important;
@@ -39,10 +26,12 @@ body.landing-page .md-tabs {
   z-index: -1000 !important;
 }
 
-/* Si necesitas mantener el pie de página pero sin las flechas */
+/* NO pongas reglas globales para .md-tabs fuera de este selector */
+
+/* Ocultar FLECHAS de navegación del pie de página en Landing Pages */
 body.landing-page .md-footer__inner {
-  grid-template-columns: 1fr !important;
+  grid-template-columns: 1fr !important; /* Ajusta el layout del footer para que solo haya una columna */
 }
 body.landing-page .md-footer__inner > .md-footer__link {
-  display: none !important;
+  display: none !important; /* Elimina las flechas de navegación específicas */
 }
