@@ -25,7 +25,11 @@ theme:
     - toc.follow # Seguir el TOC al hacer scroll
     - toc.integrate # Integrar el TOC en la barra lateral
 
+
 plugins:
+
+
+
   # - mermaid2:
   #     arguments:
   #       theme: forest
@@ -39,6 +43,7 @@ plugins:
       lang:
         - es # Idioma del plugin de búsqueda
         - en
+
 
 markdown_extensions:
   - meta # Permite metadatos como title, description, keywords, author, etc.
@@ -93,3 +98,18 @@ extra_css:
 
 extra_javascript:
   - assets/js/landing-page.js # JavaScript personalizado para la página de inicio
+
+
+docs_dir: './docs'
+
+exclude_docs: |
+  # Patrones implícitos (se añaden por defecto)
+  .*
+  /templates/
+
+  # Excluir directorios específicos
+  plugins/bash/bash-ui-master/**
+  programas/ejecutaPythonDesdeHtml/node_modules/**
+  programas/scrcpy/scrcpy/**
+  plugins/rubi/entornos/rubi-jekyll/gems/gems/**
+  programas/heuristic/manuales/**
