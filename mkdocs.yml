@@ -1,4 +1,4 @@
-site_name: Mundo Mejor Uk LEGOS
+site_name: "Mundo Mejor Uk: LOGOS"
 strict: false
 
 
@@ -41,6 +41,7 @@ plugins:
         - en
 
 markdown_extensions:
+  - meta
   - tables
   - attr_list            # Permite atributos como { width="500" }
   - md_in_html           # Permite Markdown dentro de bloques HTML como <figure>
@@ -86,3 +87,6 @@ copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung. +58412
 
 extra:
   generator: false
+
+extra_css:
+  - assets/css/custom.css

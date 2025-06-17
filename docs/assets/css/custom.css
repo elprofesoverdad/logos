@@ -1,0 +1,40 @@
+/* ESTILOS PARA PÁGINAS DE ATERRIZAJE */
+body.landing-page {
+  & .md-main__inner {
+    margin: 0;
+  }
+  
+  & .md-grid {
+    max-width: 100%;
+  }
+  
+  /* FORMA MÁS ESPECÍFICA DE OCULTAR TABS */
+  & .md-header + .md-main .md-tabs {
+    display: none !important;
+  }
+  
+  /* ALTERNATIVA: OCULTAR MEDIANTE POSICIONAMIENTO */
+  & .md-tabs {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: none !important;
+  }
+}
+
+body.landing-page .md-tabs {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  position: absolute !important;
+  z-index: -1000 !important;
+}

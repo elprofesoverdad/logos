@@ -1,5 +1,16 @@
 ---
-title: Propuesta Técnico-Comercial | DotEcomerce (Título para la navegación y H1)
+
+
+hide_nav: true
+hide:
+  - navigation # Oculta la navegación izquierda
+  - header     # Oculta la barra superior
+  - toc      # También puedes ocultar la tabla de contenidos si quieres
+  #- tabs       # <-- ¡Añade esta línea! Oculta las pestañas de navegación superior
+  # - footer   # También puedes ocultar el pie de página si quieres
+classes: landing-page
+
+
 extra_head: |
     <title>Propuesta Técnico-Comercial: Infraestructura Digital y Estrategia de Crecimiento | DotEcomerce</title>
     <meta name="description" content="Propuesta integral para empresas y programadores: DotEcomerce, Dream University, Smart SEO Router y sitios web corporativos con SEO avanzado, autohospedaje Linux y soporte experto. Optimiza tu presencia digital y escala tu negocio con tecnología de punta.">
@@ -150,11 +161,14 @@ Como desarrollador, reconoces la importancia de una base sólida. Hemos identifi
 
 ## 2. Hardware para Autohospedaje - Especificaciones Técnicas
 
+
 !!! tip "Ventaja del Desarrollador"
     Linux maximiza cada recurso de hardware. Puedes comenzar con un setup mínimo y escalar según demanda real, no proyecciones de marketing.
 
 **Especificaciones mínimas recomendadas**: 4GB RAM, 500GB SSD  
 **Configuración de arranque**: 120GB + escalabilidad incremental
+
+Puede ser cualquier computadora con la especificaciones mínimas, nueva o usada, pero cuyo unico fin sea el de servidor.
 
 !!! note "Metodología de Implementación"
     97% de mis deployments son remotos - instalo todo el stack en Barquisimeto, optimizo la configuración y envío el equipo listo para producción. También disponible instalación on-site.
