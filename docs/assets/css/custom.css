@@ -1,12 +1,12 @@
 /* ESTILOS PARA PÁGINAS DE ATERRIZAJE */
-body.landing-page {
+/* body.landing-page {
   & .md-main__inner {
     margin: 0;
-  }
+  } */
   
-  & .md-grid {
+/*   & .md-grid {
     max-width: 100%;
-  }
+  } */
   
   /* FORMA MÁS ESPECÍFICA DE OCULTAR TABS */
   & .md-header + .md-main .md-tabs {
@@ -37,4 +37,12 @@ body.landing-page .md-tabs {
   border: none !important;
   position: absolute !important;
   z-index: -1000 !important;
+}
+
+/* Si necesitas mantener el pie de página pero sin las flechas */
+body.landing-page .md-footer__inner {
+  grid-template-columns: 1fr !important;
+}
+body.landing-page .md-footer__inner > .md-footer__link {
+  display: none !important;
 }

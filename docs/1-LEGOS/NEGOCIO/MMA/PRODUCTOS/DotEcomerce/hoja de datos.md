@@ -1,3 +1,15 @@
+---
+hide_nav: true
+hide:
+  - navigation # Oculta la navegación izquierda
+  - header     # Oculta la barra superior
+  - toc      # También puedes ocultar la tabla de contenidos si quieres
+  #- tabs       # <-- ¡Añade esta línea! Oculta las pestañas de navegación superior
+  # - footer   # También puedes ocultar el pie de página si quieres
+classes: landing-page
+
+---
+
 # Informe Estratégico: DotEcomerce como Motor de Crecimiento Industrial
 
 <figure markdown="span">
