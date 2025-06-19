@@ -29,9 +29,7 @@ theme:
 
 
 plugins:
-
-
-
+  - macros
   # - mermaid2:
   #     arguments:
   #       theme: forest
