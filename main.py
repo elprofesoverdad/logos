@@ -9,6 +9,7 @@ def define_env(env):
     # env.variables['base_url'] = ''
 
     # Ejemplo para producción (descomenta cuando hagas deploy)
+    # OJO NO MOVER DE ACA PORQUE ASI FUNCIONA BIEN EN DEPLOY Y EN PRODUCCION
     env.variables['base_url'] = '/logos/'
 
     # También puedes definir macros o funciones Python aquí si quieres

@@ -11,7 +11,7 @@ classes: landing-page # <--  Oculta las pestañas de navegación superior a trav
 
 ---
 <figure markdown="span">
-  ![DotEcomerce Solucion Ecomerce para venezuela](/logos/assets/gomainca.jpeg){ width="700" }
+  ![DotEcomerce Solucion Ecomerce para venezuela]({{ base_url }}assets/gomainca.jpeg){ width="700" }
   <figcaption>GOMAINCA ... Prevalecerá, "flexibles, pero fuertes como la goma..."</figcaption>
 </figure>
 
