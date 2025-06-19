@@ -1,6 +1,8 @@
 site_name: "Mundo Mejor Uk: LOGOS"
 strict: false # Permite que el sitio se construya incluso si hay errores
 
+site_url: https://elprofesoverdad.github.io/logos/  # La URL del sitio, debe coincidir con la URL de GitHub Pages y se debe colocar la barra final
+use_directory_urls: true  # Mantener habilitado
 
 watch:
   - docs # Carpeta a observar para cambios

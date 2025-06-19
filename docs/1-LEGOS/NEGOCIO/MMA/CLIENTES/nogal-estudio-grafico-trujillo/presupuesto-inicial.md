@@ -115,7 +115,7 @@ extra_head: |
 
 
 <figure markdown="span">
-  ![Propuesta - Nogal estudio gráfico trujillo venezuela](/logos/assets/trabajo-grafico-marketing-optimizado.png){ width="800" }
+  ![Propuesta - Nogal estudio gráfico trujillo venezuela](assets/trabajo-grafico-marketing-optimizado.png){ width="800" }
   <figcaption>Si se unen tres titanes, la informática, el marketing y las artes gráficas, de manera estratégica: el comercio  cambiará de manera radical en nuestra era....</figcaption>
 </figure>
 
