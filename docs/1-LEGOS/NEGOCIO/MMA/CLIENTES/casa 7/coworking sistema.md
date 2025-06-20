@@ -92,6 +92,12 @@ extra_head: |
 
 # Sistema de Coworking Blueprint.
 
+    <figure markdown="span">
+        ![Coworking Solutions](/assets/coworking/blueprint-coworking.jpg){ width="700" }
+        <figcaption>Coworking Solutions</figcaption>
+    </figure>
+    <figure markdown="span">
+
 ## Objetivos del Sistema de Coworking Blueprint
 
 - [x] **Lenguaje visual unificado**  
