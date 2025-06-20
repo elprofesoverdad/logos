@@ -123,7 +123,7 @@ extra_head: |
 
 ## Servicios de Coworking (Benchmarking y Blueprint)
 
-1. **Espacio de Trabajo Privado**
+## **1.  Espacio de Trabajo Privado**
 ??? info "🏢 Oficinas Amuebladas para Trabajadores Individuales y Equipos"
     La privacidad y la adaptabilidad son clave en estos espacios dedicados.
 
@@ -199,7 +199,7 @@ extra_head: |
         
         :   Nuestro equipo de comunidad a menudo organiza actividades como reuniones para establecer contactos, eventos Almuerza y aprende, más otras actividades divertidas para sumar entretenimiento al día.
 
-3. **Soluciones Adicionales**
+## **2. Soluciones Adicionales**
 ??? tip "🌟 Espacios y Servicios que Llevan tu Trabajo a Otro Nivel"
     Servicios complementarios diseñados para potenciar tu presencia profesional y colaboración.
 
@@ -275,7 +275,7 @@ extra_head: |
         - [x] Catering y servicios adicionales disponibles
 
 
-4. **Programas de Formación y Capacitación**
+## **3. Programas de Formación y Capacitación**
 ??? info "🎓 Bootcamp de Publicidad Digital y Visibilidad de Negocios"
     ¡ATENCIÓN emprendedores y emprendedoras, equipos de marketing que quieran mejorar la visibilidad de sus negocios y crecer en redes sociales! Descubre cómo posicionar tu negocio y aumentar tus ventas a través de publicidad digital en plataformas clave.
     <figure markdown="span">
@@ -343,7 +343,7 @@ extra_head: |
         - Curso sobre Fotografía Digital (Modalidad mixta)
 
 
-5. **Apoyo al Desarrollo Emprendedor**
+## **4. Apoyo al Desarrollo Emprendedor**
 ??? success "🚀 ¡Apoyamos el Desarrollo de tu Emprendimiento!"
     En el coworking nos preocupamos por la formación, guía y acompañamiento de todo aquel que tenga un emprendimiento, proyecto o idea y no sepa cómo materializarlo o que tal vez tenga alguna debilidad en alguno de los procesos.
     <figure markdown="span">
@@ -401,7 +401,7 @@ extra_head: |
             :   Reuniones periódicas para evaluar progreso y ajustar estrategias.
 
 
-6. **Colaboración con Eventos Estratégicos**
+## **5. Colaboración con Eventos Estratégicos**
 ??? warning "🤝 Alianzas con GrowPartners Corporativos"
     <figure markdown="span">
     ![Mentorías](/assets/coworking/expos-fest-eventos-ferias.webp){ width="700" }
