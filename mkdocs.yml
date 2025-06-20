@@ -1,71 +1,56 @@
 site_name: "Mundo Mejor Uk: LOGOS"
-strict: false # Permite que el sitio se construya incluso si hay errores
-
-site_url: https://elprofesoverdad.github.io/logos/  # La URL del sitio, debe coincidir con la URL de GitHub Pages y se debe colocar la barra final
-use_directory_urls: true  # Mantener habilitado
-
-watch:
-  - docs # Carpeta a observar para cambios
- 
+strict: false
+site_url: https://elprofesoverdad.github.io/logos/  # Siempre la URL de producción :cite[1]:cite[5]:cite[10]
+use_directory_urls: true
+dev_addr: "127.0.0.1:8000"
+validation:  # Configuración completa para ignorar advertencias :cite[7]:cite[9]
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+    absolute_links: ignore
+  links:
+    not_found: ignore
+    anchors: ignore
+    absolute_links: relative_to_docs  # Rutas absolutas desde docs_dir :cite[7]:cite[9]
+    unrecognized_links: ignore
 
 theme:
-  home: none # No mostrar la página de inicio por defecto
-  palette:
-    scheme: default # Esquema de colores por defecto
-  name: material # Tema Material para MkDocs
-  custom_dir: overrides # Carpeta personalizada para anular estilos del tema
-  language: es # Idioma del tema
+  name: material
+  custom_dir: overrides
+  language: es
   features:
-    - search.suggest 3 # Sugerencias de búsqueda
-    - search.highlight # Resaltar términos de búsqueda
-    - search.share # Compartir resultados de búsqueda
-    # - navigation.instant # Hace que mkdocs no recargue toda la página al navegar solo cambia el contenido
-    - navigation.tracking # Seguimiento de navegación
-    - navigation.tabs # Pestañas de navegación
-    - navigation.tabs.sticky # Pestañas de navegación pegajosas
-    - navigation.footer # Pie de página de navegación
-    - toc.follow # Seguir el TOC al hacer scroll
-    - toc.integrate # Integrar el TOC en la barra lateral
-
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
 
 plugins:
-  - macros
-  # - mermaid2:
-  #     arguments:
-  #       theme: forest
-  #       flowchart:
-  #         curve: basis
-  #- mkdocs-video:
-   #   is_video: true
-   #   video_muted: true
-   #   video_controls: true
   - search:
-      lang:
-        - es # Idioma del plugin de búsqueda
-        - en
-
+      lang: [es, en]
 
 markdown_extensions:
-  - meta # Permite metadatos como title, description, keywords, author, etc.
-  - tables # Permite tablas con sintaxis Markdown
-  - attr_list            # Permite atributos como { width="500" }
-  - md_in_html           # Permite Markdown dentro de bloques HTML como <figure>
-  - pymdownx.blocks.caption # Permite la sintaxis '/// caption' para los pies de foto
-
+  - meta
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid # Permite bloques de código Mermaid
-          class: mermaid # Clase CSS para Mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format # Formato de código para Mermaid
-  - abbr # Permite abreviaturas con sintaxis como [HTML](/html "HyperText Markup Language")
-  - admonition # Permite bloques de advertencia, nota, etc.
-  - attr_list # Permite atributos como { width="500" }
-  - def_list # Permite listas de definiciones
-  - footnotes # Permite notas al pie
-  - md_in_html # Permite Markdown dentro de bloques HTML como <figure>
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - abbr
+  - admonition
+  - def_list
+  - footnotes
   - toc:
-      permalink: true # Añade enlaces permanentes a los encabezados
-      toc_depth: 60 # Profundidad máxima del TOC
+      permalink: true
+      toc_depth: 6
       baselevel: 1 #
   - pymdownx.arithmatex:
       generic: true # Permite usar sintaxis genérica de LaTeX para matemáticas
@@ -88,28 +73,27 @@ markdown_extensions:
   - pymdownx.critic # Permite anotaciones de crítica como `++texto++` para añadir texto, `--texto--` para eliminar, etc.
   - pymdownx.tilde # Permite usar el símbolo ~ para subíndices
 
+
 copyright: Copyright &copy; 2018 - 2025 Mundo Mejor Asesores Daniel Hung. +584125623825 gerente@mundomejor.uk 
 
 extra:
-  generator: false # Desactiva el generador de metadatos para evitar duplicados
+  generator: false
 
 extra_css:
-  - assets/css/custom.css # CSS personalizado para el sitio
+  - assets/css/custom.css
 
 extra_javascript:
-  - assets/js/landing-page.js # JavaScript personalizado para la página de inicio
-
+  - assets/js/landing-page.js
+  - assets/js/path-corrector.js  # Script crucial para rutas [solución práctica]
 
 docs_dir: './docs'
 
 exclude_docs: |
-  # Patrones implícitos (se añaden por defecto)
   .*
   /templates/
-
-  # Excluir directorios específicos
   plugins/bash/bash-ui-master/**
   programas/ejecutaPythonDesdeHtml/node_modules/**
   programas/scrcpy/scrcpy/**
   plugins/rubi/entornos/rubi-jekyll/gems/gems/**
   programas/heuristic/manuales/**
+

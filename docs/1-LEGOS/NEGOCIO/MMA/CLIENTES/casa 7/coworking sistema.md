@@ -6,13 +6,24 @@ Obtén la privacidad y la personalización que esperas de tu propio espacio, con
     La privacidad y la adaptabilidad son clave en estos espacios dedicados.
 
     === "Escritorio Dedicado"
-        Tu propio escritorio en una oficina compartida.
-        * **Capacidad/Rango**: 1-100 personas.
+        <figure markdown="span">
+        ![escritorio dedicado](/assets/coworking/MeetingRooms.png){ width="400" }
+        <figcaption>Conduce Inteligentemente y con Seo tu audiencia a tu Web .</figcaption>
+        </figure>
+        Membresía mensualPlazos de compromiso flexibles
+        * Detalles del producto
+        * Ideal para personas que trabajan solas o equipos pequeños
+        * Ingreso 24/7 con la tarjeta de acceso a tu propio escritorio en una oficina compartida
+        * El espacio llave en mano incluye wifi, café, ayuda del personal en el lugar y más. 
 
         !!! note "OFERTA PARA MIEMBROS NUEVOS"
             Beneficio especial para nuevas incorporaciones.
 
     === "Oficina Privada"
+                <figure markdown="span">
+        ![escritorio dedicado]({{ base_url }}assets/MeetingRooms.png){ width="400" }
+        <figcaption>Conduce Inteligentemente y con Seo tu audiencia a tu Web .</figcaption>
+        </figure>
         Oficina lista para mudarse con amenidades compartidas o privadas.
         * **Capacidad/Rango**: 50+ personas.
 

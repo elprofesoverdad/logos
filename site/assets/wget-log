@@ -1,0 +1,11 @@
+--2025-06-19 18:29:53--  https://ctfassets.imgix.net/vh7r69kgcki3/DuRWQrrpRHVloysRqkSS3/5cc5f7b9fc4f9ad2a6920058b285582e/DedicatedDesk.png?auto=format%20compress
+Resolviendo ctfassets.imgix.net (ctfassets.imgix.net)... 151.101.130.208, 151.101.66.208, 151.101.2.208, ...
+Conectando con ctfassets.imgix.net (ctfassets.imgix.net)[151.101.130.208]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 22243 (22K) [image/png]
+Guardando como: ‘DedicatedDesk.png?auto=format compress’
+
+DedicatedDesk.png?auto=format compress    0%[                                                                             ]       0  --.-KB/s               DedicatedDesk.png?auto=format compress  100%[============================================================================>]  21,72K  --.-KB/s    en 0,002s  
+
+2025-06-19 18:29:54 (11,5 MB/s) - ‘DedicatedDesk.png?auto=format compress’ guardado [22243/22243]
+

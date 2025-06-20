@@ -13,7 +13,7 @@ classes: landing-page # <--  Oculta las pestañas de navegación superior a trav
 # Informe Estratégico: DotEcomerce como Motor de Crecimiento Industrial
 
 <figure markdown="span">
-  ![DotEcomerce Solucion Ecomerce para venezuela]({{ base_url }}assets/DotEcomerce.jpg){ width="700" }
+  ![DotEcomerce Solucion Ecomerce para venezuela](/assets/DotEcomerce.jpg){ width="700" }
   <figcaption>Un botón para dominar todo el Comercio Global.</figcaption>
 </figure>
 

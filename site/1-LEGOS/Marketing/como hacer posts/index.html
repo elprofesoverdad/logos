@@ -28,9 +28,6 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
-      
       
 
 
@@ -64,12 +61,7 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -121,8 +113,8 @@
       </div>
     </div>
     
-      
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -155,6 +147,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -2046,7 +2040,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    Bash Matrices Vectores Array Arrays asociativas asociativa menu y menús
     
   </span>
   
@@ -2069,7 +2063,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    EasyBashGUI
     
   </span>
   
@@ -2092,7 +2086,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    Interfaces:
     
   </span>
   
@@ -2293,7 +2287,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    EasyBashGUI
     
   </span>
   
@@ -2339,7 +2333,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    Interfaces:
     
   </span>
   
@@ -11435,7 +11429,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    División de Cadenas en el Primer Separador en Jekyll
     
   </span>
   
@@ -11792,7 +11786,7 @@
   
   
   <span class="md-ellipsis">
-    Macro Syntax Error
+    Snipets
     
   </span>
   
@@ -15334,16 +15328,16 @@
 </ul>
 <h3 id="ejemplo-de-migas-de-pan-en-liquid"><strong>Ejemplo de Migas de Pan en Liquid</strong><a class="headerlink" href="#ejemplo-de-migas-de-pan-en-liquid" title="Permanent link">&para;</a></h3>
 <p>Code snippet</p>
-<div class="highlight"><pre><span></span><code>  &lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+<div class="highlight"><pre><span></span><code>{% if page.parent %}
+  &lt;nav aria-label=&quot;breadcrumb&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
-
-        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;{{ no such element: mkdocs.structure.nav.Section object[&#39;url&#39;] }}&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;
-
-        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;{{ no such element: mkdocs.structure.nav.Section object[&#39;url&#39;] }}&quot;&gt;1 LEGOS&lt;/a&gt;&lt;/li&gt;
-
-      &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Cómo hacer posts&lt;/li&gt;
+      {% for ancestor in page.ancestors %}
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;{{ ancestor.url }}&quot;&gt;{{ ancestor.title }}&lt;/a&gt;&lt;/li&gt;
+      {% endfor %}
+      &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;{{ page.title }}&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/nav&gt;
+{% endif %}
 </code></pre></div>
 <h2 id="sistema-de-navegacion-y-contenido">Sistema de Navegación y contenido<a class="headerlink" href="#sistema-de-navegacion-y-contenido" title="Permanent link">&para;</a></h2>
 <p>A continuación, te presento una revisión de la estructura que incluye ejemplos y tácticas específicas, junto con una visión más clara de cómo se sentirá el cliente en cada fase, sin hacer explícita la estructura del túnel. </p>
@@ -15538,13 +15532,15 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest 3", "search.highlight", "search.share", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
   
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
         <script src="../../../assets/js/landing-page.js"></script>
+      
+        <script src="../../../assets/js/path-corrector.js"></script>
       
     
   <script>
