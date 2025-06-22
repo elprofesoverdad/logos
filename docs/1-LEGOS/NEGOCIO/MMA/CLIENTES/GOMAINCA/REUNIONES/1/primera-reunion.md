@@ -373,7 +373,7 @@ classes: landing-page
 
             ---
 
-            ### Referencias
+            
 
             [^1]: Es la primera zona franca dedicada 100 % al comercio electrónico en la región MENA. [Fuente: Dubai CommerCity](https://dubaicommercity.ae/about)
             [^2]: Disparó la Inversión Extranjera Directa (IED) de Dubái, manteniendo su posición global. [Fuente: Dubai CommerCity launches regional e-commerce landscape report](https://www.dafz.ae/en/dubai-commercity-launches-regional-e-commerce-landscape-report/)
@@ -405,3 +405,53 @@ classes: landing-page
         <br>
         <span style="font-size:1.1em">Además, abre la puerta a la negociación de stands y conferencias en eventos sobre GOMAINCA a cambio de la plataforma tecnológica, y a la promoción conjunta de productos y servicios venezolanos en mercados internacionales.</span>
         <br>
+
+
+
+## Todas las Fuentes consultadas
+
+- [High-tech spaces are attracting the industrial tenants of tomorrow - PERE](https://www.perenews.com/high-tech-spaces-are-attracting-the-industrial-tenants-of-tomorrow/), acceso: junio 21, 2025  
+- [VHB Viewpoints | E-commerce Growth and the Industrial Real Estate Boom](https://www.vhb.com/viewpoints/whitepapers/ecommerce-growth-and-industrial-space-demand/), acceso: junio 21, 2025  
+- [5 Digital Transformation in Manufacturing Case Studies [2025] - DigitalDefynd](https://digitaldefynd.com/IQ/digital-transformation-in-manufacturing/), acceso: junio 21, 2025  
+- [Digital Transformation Case Studies - IIoT World](https://www.iiot-world.com/industrial-iot/connected-industry/digital-transformation-case-studies/), acceso: junio 21, 2025  
+- [9 Benefits of Locating Your Business in a High-Tech Park](https://theheath.com/benefits-high-tech-park/), acceso: junio 21, 2025  
+- [The Anatomy of a Successful Industrial Park Investment](https://phoenixindustrialredevelopment.com/the-anatomy-of-a-successful-industrial-park-investment/), acceso: junio 21, 2025  
+- [Industrial Real Estate Investments for Maximum Returns | OpenPath](https://www.openpathinvestments.com/industrial-real-estate), acceso: junio 21, 2025  
+- [E-Commerce License in Dubai: Complete 2025 Success Guide](https://thevistacorp.com/e-commerce-license-in-dubai-complete-guide-to-success/), acceso: junio 21, 2025  
+- [Strategic Location with Advanced Logistics and Global Access - Dubai Commercity](https://dubaicommercity.ae/about), acceso: junio 21, 2025  
+- [Dubai's Free Zones: Unlocking Potential for Foreign Investors - Anika Property](https://anika-property.com/dubais-free-zones-unlocking-potential-for-foreign-investors/), acceso: junio 21, 2025  
+- [How did Dubai become a leading e-commerce hub in the Middle East? - Quora](https://www.quora.com/How-did-Dubai-become-a-leading-e-commerce-hub-in-the-Middle-East), acceso: junio 21, 2025  
+- [The Future of Retail Is Here: How Dubai is Leading the E-Commerce Charge](https://focus.hidubai.com/how-dubai-is-leading-the-e-commerce-charge/), acceso: junio 21, 2025  
+- [Dubai CommerCity Collaborates with eBay](https://dubaicommercity.ae/w/id-magna-nunc-sed-nulla_convallis-sagittis-1-1), acceso: junio 21, 2025  
+- [Dubai CommerCity launches regional e-commerce landscape report](https://www.dafz.ae/en/dubai-commercity-launches-regional-e-commerce-landscape-report/), acceso: junio 21, 2025  
+- [Free Zones in the UAE - PKF](https://www.pkf.com/media/nzko5ybh/uae-free-zones-guide.pdf), acceso: junio 21, 2025  
+- [Dubai Commercial Property Market 2024: Key Insights and Trends Revealed](https://www.crcproperty.com/en/blog/commercial-sales/dubai-commercial-property-market-fy-2024-insights), acceso: junio 21, 2025  
+- [Free Zones 4.0: Trends Driving the Future of Global Trade and ...](https://coyolfz.com/free-zones-4-0-trends-driving-the-future-of-global-trade-and-industrial-parks/), acceso: junio 21, 2025  
+- [The home of life sciences in Latin America - The European Magazine](https://the-european.eu/story-29037/the-home-of-life-sciences-in-latin-america.html), acceso: junio 21, 2025  
+- [A smart park for global innovation - The European Magazine](https://the-european.eu/story-21262/a-smart-park-for-global-innovation.html), acceso: junio 21, 2025  
+- [Free Trade Zones: Coyol Free Zone - CINDE | Costa Rica](https://www.cinde.org/en/free-zones/coyol-free-zone), acceso: junio 21, 2025  
+- [The golden track record of Coyol Free Zone](https://coyolfz.com/the-golden-track-record-of-coyol-free-zone/), acceso: junio 21, 2025  
+- [Juan Carlos Hidalgo Proposes Making All of Costa Rica a Free Trade Zone](https://www.thecentralamericangroup.com/costa-rica-a-free-trade-zone/), acceso: junio 21, 2025  
+- [How Free Trade Zones are Revolutionizing International Warehousing and Manufacturing](https://www.globaltrademag.com/how-free-trade-zones-are-revolutionizing-international-warehousing-and-manufacturing/), acceso: junio 21, 2025  
+- [Top 5 Reasons Indianapolis is the Clear Choice for Your E-commerce Fulfillment Needs](https://www.ballstatedaily.com/article/2025/06/top-5-reasons-indianapolis-is-the-clear-choice-for-your-e-commerce-fulfillment-needs?ct=content_open&cv=cbox_latest), acceso: junio 21, 2025  
+- [Investing in Shenzhen: Industry, Economics, and Policy Trends - China Guide](https://www.china-briefing.com/doing-business-guide/china/where-to-invest/shenzhen-industry-economics-and-policy-trends), acceso: junio 21, 2025  
+- [Analysis on the Export Competitiveness of Shenzhen High-tech Products - E3S Web of Conferences](https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/74/e3sconf_ebldm2020_02048.pdf), acceso: junio 21, 2025  
+- [Exploring the Advantages of Jebel Ali Free Zone: A Strategic Business Hub - GloBridge](https://globridge.co/exploring-the-advantages-of-jebel-ali-free-zone-a-strategic-business-hub/), acceso: junio 21, 2025  
+- [How Foreign-Trade Zones (FTZs) Help U.S. Supply Chains Navigate Tariff Changes](https://www.inboundlogistics.com/articles/navigating-tariff-shifts-how-u-s-foreign-trade-zones-help-supply-chains-stay-resilient/), acceso: junio 21, 2025  
+- [Stories Archive | Jebel Ali Free Zone (Jafza)](https://www.jafza.ae/community/stories/), acceso: junio 21, 2025  
+- [Geneo - Singapore Science Park](https://geneo.sciencepark.com.sg/), acceso: junio 21, 2025  
+- [Innovation and Technology Park: Marketing Strategies for Startups in Innovation and Technology Parks - FasterCapital](https://fastercapital.com/content/Innovation-and-Technology-Park--Marketing-Strategies-for-Startups-in-Innovation-and-Technology-Parks.html), acceso: junio 21, 2025  
+- [Scaling Your Startup: How Innovation Districts Provide the Tools for Growth](https://www.innovationquarter.com/articles/scaling-your-startup-how-innovation-districts-provide-the-tools-for-growth/), acceso: junio 21, 2025  
+- [The Benefits of Science Parks for Start-Ups: Insights from Sci-Tech Daresbury](https://sci-techdaresbury.com/benefits-of-science-parks-for-start-ups/), acceso: junio 21, 2025  
+- [How we can unlock the potential of innovation districts - The World Economic Forum](https://www.weforum.org/stories/2025/02/how-we-can-unlock-the-potential-of-innovation-districts/), acceso: junio 21, 2025  
+- [The World's Most Important Free Trade Zones: Powering Global Commerce - FreightAmigo](https://www.freightamigo.com/blog/the-worlds-most-important-free-trade-zones-powering-global-commerce/), acceso: junio 21, 2025  
+- [The Best Free Zones for Startups in the UAE: Unlocking Opportunities for Entrepreneurs and Growing Businesses | Finanshels Resources](https://www.finanshels.com/blog/the-best-free-zones-for-startups-in-the-uae), acceso: junio 21, 2025  
+- [Why Your Industrial Company Needs an Effective Digital Marketing Strategy - ITVibes](https://www.itvibes.com/blog/digital-marketing/industrial-strategy/), acceso: junio 21, 2025  
+- [Top Industrial Manufacturing Marketing Challenges (& How to Overcome Them in 2025)](https://www.workshopdigital.com/blog/top-industrial-marketing-challenges/), acceso: junio 21, 2025  
+- [Finding Tenants Industrial Properties For Your Commercial Real Estate](https://toljcommercial.com/finding-tenants-industrial-properties/), acceso: junio 21, 2025  
+- [Retail space: Retail Space Investing: How to Attract and Retain Quality Tenants - FasterCapital](https://fastercapital.com/content/Retail-space--Retail-Space-Investing--How-to-Attract-and-Retain-Quality-Tenants.html), acceso: junio 21, 2025  
+- [Eco-industrial park's first brownfield site in Kragujevac, Serbia](https://wbif.eu/news-details/eco-industrial-parks-first-brownfield-site-kragujevac-serbia), acceso: junio 21, 2025  
+- [Industrial Parks Make a Key Contribution to the United Nations Sustainable Development Goals: The Case of the Malagueño Industrial Park | Industrial Analytics Platform](https://iap.unido.org/articles/industrial-parks-make-key-contribution-united-nations-sustainable-development-goals-case), acceso: junio 21, 2025  
+- [Mayor Adams, NYCEDC Announce Consortium to Design and Operate Cutting-Edge Climate Innovation Hub at Brooklyn Army Terminal](https://edc.nyc/press-release/mayor-adams-nycedc-announce-batworks-climate-innovation-hub-sunset-park), acceso: junio 21, 2025 
+
+### Citas al pié
