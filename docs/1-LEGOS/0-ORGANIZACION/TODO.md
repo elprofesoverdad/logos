@@ -1,6 +1,10 @@
 # TODO DONDE QUEDE:
 
 ---
+## Pendiente:
+
+- [ ] Corregir pie de imagen en Colaboración con Eventos Estratégicos en coworking.
+
 
 ## Pendiente de El articulo Primario:
 
@@ -149,6 +153,8 @@ Si el que te ofrece el servicio de SEO <strong class="highlight">no sabe program
 ---
 
 ## Todo Algun día
+
+Manejador de archivos mhtml
 
 ```python
   >>> import os
