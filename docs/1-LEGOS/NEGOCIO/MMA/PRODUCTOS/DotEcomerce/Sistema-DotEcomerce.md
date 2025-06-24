@@ -1,13 +1,12 @@
 ---
-
 hide_nav: true
 hide:
-  - navigation # Oculta la navegación izquierda
-  - header     # Oculta la barra superior
-  - toc      # También puedes ocultar la tabla de contenidos si quieres
-  #- tabs       # <-- ¡Añade esta línea! Oculta las pestañas de navegación superior
-  # - footer   # También puedes ocultar el pie de página si quieres
-classes: landing-page # <--  Oculta las pestañas de navegación superior a través del CSS
+  - navigation
+  - header
+  - toc
+  # - tabs
+  # - footer
+classes: landing-page
 
 extra_head: |
   <!-- Canonical URL -->
@@ -18,27 +17,22 @@ extra_head: |
   <link rel="alternate" hreflang="zh-Hans" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/?lang=zh-Hans" />
   <link rel="alternate" hreflang="x-default" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
 
-
   <!-- Meta Open Graph -->
-
- <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="DotEcomerce - Tienda virtual profesional para Latinoamérica y China" />
-
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Sistema DotEcomerce – Tienda Virtual Barquisimeto" />
   <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国)" />
   <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
   <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DotEcomerce - Tienda virtual profesional para Latinoamérica y China" />
 
   <!-- Meta Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
   <meta name="twitter:description" content="Ecommerce y Tienda Online para Latinoamérica | Barquisimeto, Venezuela, 全球, 中国" />
   <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
-
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -110,8 +104,8 @@ extra_head: |
     }
   }
   </script>
-
 ---
+
 
 # Sistema DotEcomerce
 
