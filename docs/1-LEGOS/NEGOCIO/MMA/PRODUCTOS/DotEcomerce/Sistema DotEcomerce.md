@@ -17,17 +17,24 @@ extra_head: |
   <link rel="alternate" hreflang="en" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/?lang=en" />
   <link rel="alternate" hreflang="zh-Hans" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/?lang=zh-Hans" />
   <link rel="alternate" hreflang="x-default" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
+
+
   <!-- Meta Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Sistema DotEcomerce – Tienda Virtual Barquisimeto" />
-  <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国):contentReference[oaicite:20]{index=20}:contentReference[oaicite:21]{index=21}" />
+  <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国)" />
   <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
-  <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual.jpg" />
+  <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
   <!-- Meta Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
   <meta name="twitter:description" content="Ecommerce y Tienda Online para Latinoamérica | Barquisimeto, Venezuela, 全球, 中国" />
-  <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual.jpg" />
+  <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg" />
+
+
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
   {
