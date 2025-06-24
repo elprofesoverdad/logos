@@ -103,7 +103,13 @@ extra_head: |
 
 # Sistema DotEcomerce
 
-<figure markdown="span"> ![DotEcomerce: Tienda Virtual Profesional](/assets/dot-ecommerce-tienda-virtual.jpg) <figcaption>DotEcomerce: Sistema de e-commerce profesional, ampliable a escala nacional e internacional.</figcaption> </figure>
+<figure markdown="span">
+ ![DotEcomerce: Tienda Virtual Profesional](/assets/dot-ecommerce-tienda-virtual.jpg)
+ { width="800" }
+  <figcaption>DotEcomerce: Sistema de e-commerce profesional, ampliable a escala nacional e internacional.</figcaption>
+</figure>
+
+
 
 ## 📦 ¿Qué es **DotEcomerce**?
 
