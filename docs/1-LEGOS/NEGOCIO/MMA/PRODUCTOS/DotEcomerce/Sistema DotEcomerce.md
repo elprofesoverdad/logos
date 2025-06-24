@@ -99,7 +99,7 @@ extra_head: |
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual.jpg",
+      "url": "https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg",
       "width": 1200,
       "height": 630
     }
@@ -110,10 +110,10 @@ extra_head: |
 
 # Sistema DotEcomerce
 
+
 <figure markdown="span">
- ![DotEcomerce: Tienda Virtual Profesional](/assets/dot-ecommerce-tienda-virtual.jpg)
- { width="800" }
-  <figcaption>DotEcomerce: Sistema de e-commerce profesional, ampliable a escala nacional e internacional.</figcaption>
+  ![DotEcomerce - Tienda Virtual Profesional](/assets/dot-ecommerce-tienda-virtual-fixed.jpg){ width="800" }
+  <figcaption>DotEcomerce - Sistema de e-commerce profesional, ampliable a escala nacional e internacional.</figcaption>
 </figure>
 
 
