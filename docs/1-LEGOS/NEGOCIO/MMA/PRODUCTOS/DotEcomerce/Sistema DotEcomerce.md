@@ -24,7 +24,7 @@ extra_head: |
   <meta property="og:title" content="Sistema DotEcomerce – Tienda Virtual Barquisimeto" />
   <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国)" />
   <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
-  <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg" />
+  <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/assets/dot-ecommerce-tienda-virtual-og.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
@@ -32,7 +32,7 @@ extra_head: |
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
   <meta name="twitter:description" content="Ecommerce y Tienda Online para Latinoamérica | Barquisimeto, Venezuela, 全球, 中国" />
-  <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg" />
+  <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/assets/dot-ecommerce-tienda-virtual-og.jpg" />
 
 
   <!-- Structured Data JSON-LD -->
@@ -99,7 +99,7 @@ extra_head: |
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-fixed.jpg",
+      "url": "https://elprofesoverdad.github.io/logos/assets/assets/dot-ecommerce-tienda-virtual-og.jpg",
       "width": 1200,
       "height": 630
     }
@@ -112,7 +112,7 @@ extra_head: |
 
 
 <figure markdown="span">
-  ![DotEcomerce - Tienda Virtual Profesional](/assets/dot-ecommerce-tienda-virtual-fixed.jpg){ width="800" }
+  ![DotEcomerce - Tienda Virtual Profesional](/assets/assets/dot-ecommerce-tienda-virtual-og.jpg){ width="800" }
   <figcaption>DotEcomerce - Sistema de e-commerce profesional, ampliable a escala nacional e internacional.</figcaption>
 </figure>
 
