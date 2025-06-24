@@ -1,4 +1,6 @@
-# 📦 ¿Qué es **DotEcomerce**?
+# Sistema DotEcomerce
+
+## 📦 ¿Qué es **DotEcomerce**?
 
 > **DotEcomerce** es tu tienda, tu asistente, tu vendedora, tu aliada digital… todo en uno. Y tú tienes el control.
 
