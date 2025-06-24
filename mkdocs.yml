@@ -96,4 +96,5 @@ exclude_docs: |
   programas/scrcpy/scrcpy/**
   plugins/rubi/entornos/rubi-jekyll/gems/gems/**
   programas/heuristic/manuales/**
+  programas/cloudflared/logos-worker/**
 

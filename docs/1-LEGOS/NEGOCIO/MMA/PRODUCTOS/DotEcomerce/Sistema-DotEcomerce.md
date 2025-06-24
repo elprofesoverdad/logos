@@ -20,14 +20,19 @@ extra_head: |
 
 
   <!-- Meta Open Graph -->
+
+ <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DotEcomerce - Tienda virtual profesional para Latinoamérica y China" />
+
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Sistema DotEcomerce – Tienda Virtual Barquisimeto" />
   <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国)" />
   <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
   <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1024" />
-  <meta property="og:image:height" content="1024" />
+
   <!-- Meta Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
