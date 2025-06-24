@@ -1,7 +1,7 @@
 site_name: "Mundo Mejor Uk: LOGOS"
 strict: false
 site_url: https://elprofesoverdad.github.io/logos/  # Siempre la URL de producción :cite[1]:cite[5]:cite[10]
-use_directory_urls: true
+use_directory_urls: false
 dev_addr: "127.0.0.1:8000"
 validation:  # Configuración completa para ignorar advertencias :cite[7]:cite[9]
   nav:

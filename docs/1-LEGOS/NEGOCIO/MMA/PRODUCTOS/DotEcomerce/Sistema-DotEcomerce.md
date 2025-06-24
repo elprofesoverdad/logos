@@ -1,47 +1,46 @@
 ---
 
+
 hide_nav: true
 hide:
-  - navigation # Oculta la navegación izquierda
-  - header     # Oculta la barra superior
-  - toc      # También puedes ocultar la tabla de contenidos si quieres
-  #- tabs       # <-- ¡Añade esta línea! Oculta las pestañas de navegación superior
-  # - footer   # También puedes ocultar el pie de página si quieres
-classes: landing-page # <--  Oculta las pestañas de navegación superior a través del CSS
+  - navigation
+  - header
+  - toc
+classes: landing-page
 
 extra_head: |
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
+  <link rel="canonical" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html" />
+  
   <!-- Hreflang para español, inglés y chino -->
-  <link rel="alternate" hreflang="es" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
-  <link rel="alternate" hreflang="en" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/?lang=en" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/?lang=zh-Hans" />
-  <link rel="alternate" hreflang="x-default" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
-
+  <link rel="alternate" hreflang="es" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html" />
+  <link rel="alternate" hreflang="en" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html?lang=en" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html?lang=zh-Hans" />
+  <link rel="alternate" hreflang="x-default" href="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html" />
 
   <!-- Meta Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Sistema DotEcomerce – Tienda Virtual Barquisimeto" />
   <meta property="og:description" content="Sistema DotEcomerce: Solución de ecommerce y tienda virtual en Barquisimeto (Latinoamérica, 全球, 中国)" />
-  <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/" />
+  <meta property="og:url" content="https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html" />
   <meta property="og:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
+
   <!-- Meta Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
   <meta name="twitter:description" content="Ecommerce y Tienda Online para Latinoamérica | Barquisimeto, Venezuela, 全球, 中国" />
   <meta name="twitter:image" content="https://elprofesoverdad.github.io/logos/assets/dot-ecommerce-tienda-virtual-og.jpg" />
 
-
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/#webpage",
-    "url": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/",
+    "@id": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html#webpage",
+    "url": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html",
     "name": "Sistema DotEcomerce – Tienda Virtual Barquisimeto",
     "description": "Sistema DotEcomerce: Solución ecommerce en Barquisimeto, Venezuela y mercado global (中国在线商店)",
     "breadcrumb": {
@@ -75,7 +74,7 @@ extra_head: |
           "@type": "ListItem",
           "position": 4,
           "item": {
-            "@id": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema%20DotEcomerce/",
+            "@id": "https://elprofesoverdad.github.io/logos/1-LEGOS/NEGOCIO/MMA/PRODUCTOS/DotEcomerce/Sistema-DotEcomerce.html",
             "name": "Sistema DotEcomerce"
           }
         }
@@ -105,6 +104,7 @@ extra_head: |
     }
   }
   </script>
+
 
 ---
 
