@@ -35,3 +35,8 @@ body.landing-page .md-footer__inner {
 body.landing-page .md-footer__inner > .md-footer__link {
   display: none !important; /* Elimina las flechas de navegación específicas */
 }
+
+.md-header {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
