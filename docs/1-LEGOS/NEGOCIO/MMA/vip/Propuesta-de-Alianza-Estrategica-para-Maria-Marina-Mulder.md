@@ -1,31 +1,46 @@
 ---
-date: 2024-05-23
-url: "https://mundomejor.uk/proyectos/Propuesta%20de%20Alianza%20Estrat%C3%A9gica%20para%20Mar%C3%ADa%20Marina%20Mulder%20/"
-description: "Propuesta de alianza estratégica entre María Marina Mulder y Mundo Mejor Asesores para crear un ecosistema de monetización para comunicadores e influencers."
-image: "https://mundomejor.uk/proyectos/assets/images/mariamarina.png"
-jsonld: |
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "Monetización Garantizada para Comunicadores e Influencers",
-    "description": "Curso práctico para generar ingresos mediante ventas directas, afiliados y eventos. Garantía de resultados económicos reales.",
-    "educationalLevel": "Beginner",
-    "provider": {
-      "@type": "Organization",
-      "name": "Mundo Mejor Asesores & María Marina Mulder",
-      "sameAs": "https://mundomejor.uk/proyectos/"
-    },
-    "image": "https://mundomejor.uk/proyectos/assets/images/mariamarina.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "199",
-      "priceCurrency": "USD"
-    }
-  }
+hide_nav: true
+hide:
+  - navigation
+  - header
+  - toc
+classes: landing-page
+
+extra_head: |
+  <!-- Codificación -->
+  <meta charset="UTF-8" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/" />
+  <link rel="alternate" hreflang="en" href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Propuesta de Alianza Estratégica – María Marina Mulder" />
+  <meta property="og:description" content="Explora nuestra propuesta de alianza estratégica con María Marina Mulder para potenciar el impacto empresarial y social." />
+  <meta property="og:url" content="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/" />
+  <meta property="og:image" content="https://mundomejor.uk/proyectos/assets/images/mariamarina.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="María Marina Mulder – Alianza Estratégica para un Mundo Mejor" />
+  <meta property="fb:app_id" content="1234567890" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Propuesta de Alianza – María Marina Mulder" />
+  <meta name="twitter:description" content="Alianza estratégica con impacto social y empresarial junto a María Marina Mulder." />
+  <meta name="twitter:image" content="https://mundomejor.uk/proyectos/assets/images/mariamarina.png" />
 ---
 
 
-# Propuesta de Alianza Estratégica para María Marina Mulder
+
+
+# Propuesta de Alianza Estrategica para María Marina Mulder
 ![Maria Marina Mulder Promar y Mundo Mejor Asesores](https://mundomejor.uk/proyectos/assets/images/mariamarina.png){ width=1080 } 
 ## Introducción Personalizada
 
