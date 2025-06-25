@@ -16,6 +16,8 @@ validation:  # Configuración completa para ignorar advertencias :cite[7]:cite[9
 
 theme:
   name: material
+  logo: assets/images/logo-mundo-mejor-asesores-solo-cabeza-leon.png
+  favicon: assets/images/favicon1.png
   custom_dir: overrides
   language: es
   features:
