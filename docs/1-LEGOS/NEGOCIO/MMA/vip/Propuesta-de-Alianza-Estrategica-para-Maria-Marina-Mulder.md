@@ -96,9 +96,9 @@ Tu papel es fundamental: **Socia Fundadora clave en el Desarrollo y Expansión d
 
 1. - [x] Canal de formación en tu página personalizada. (==esta página==).  (Terminado) (Daniel)
 
-2. - [ ] Creación de usuario y prueba de la plataforma. (En proceso) (Daniel)
+2. - [x] Creación de usuario y prueba de la plataforma. (En proceso) (Daniel)
 
-3. - [ ] Manual corto y didáctico para facilitar tu experiencia. (En proceso) (Daniel)
+3. - [x] Manual corto y didáctico para facilitar tu experiencia. (En proceso) (Daniel)
 
 4. - [ ] Organización de tácticas y estrategias de expansión, aprovechando tu red de contactos y tu experiencia en comunicación (En espera) (**==Propuesta a Maria Marina, próxima reunión==**. )
 
