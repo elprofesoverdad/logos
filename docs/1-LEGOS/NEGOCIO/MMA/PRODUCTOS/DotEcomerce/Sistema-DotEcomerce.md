@@ -31,7 +31,9 @@ extra_head: |
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="DotEcomerce - Tienda virtual profesional para Latinoamérica" />
   <!-- Open Graph: Facebook App ID -->
-  <meta property="fb:app_id" content="1224036058926299" />
+  <meta property="fb:app_id" content="1224036058926299">
+  <meta name="fb:app_id" content="1224036058926299">
+
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema DotEcomerce – Tienda Virtual en Venezuela" />
