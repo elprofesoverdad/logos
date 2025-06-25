@@ -20,15 +20,14 @@ extra_head: |
 
   <!-- Open Graph Meta -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Propuesta de Alianza Estratégica – María Marina Mulder" />
-  <meta property="og:description" content="Explora nuestra propuesta de alianza estratégica con María Marina Mulder para potenciar el impacto empresarial y social." />
+  <meta property="og:title" content="Propuesta de Alianza Estrategica  Maria Marina Mulder" />
+  <meta property="og:description" content="Explora nuestra propuesta de alianza estrategica con Maria Marina Mulder para potenciar el impacto empresarial y social." />
   <meta property="og:url" content="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/vip/Propuesta-de-Alianza-Estrategica-para-Maria-Marina-Mulder/" />
   <meta property="og:image" content="https://mundomejor.uk/proyectos/assets/images/mariamarina.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="María Marina Mulder – Alianza Estratégica para un Mundo Mejor" />
-  <meta property="fb:app_id" content="1234567891" />
+  <meta property="og:image:alt" content="Maria Marina Mulder Alianza Estratégica para un Mundo Mejor" />
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image" />
