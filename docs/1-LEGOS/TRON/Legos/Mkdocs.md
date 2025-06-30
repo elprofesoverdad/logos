@@ -273,6 +273,81 @@ A^T^A
 
 ## [lINK LISTAS importante las de definiciones](https://squidfunk.github.io/mkdocs-material/reference/lists/)
 
+
+## Notas al pié
+
+## Usage
+
+### Adding footnote references
+
+A footnote reference must be enclosed in square brackets and must start with a
+caret `^`, directly followed by an arbitrary identifier, which is similar to
+the standard Markdown link syntax.
+
+``` title="Text with footnote references"
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+```
+
+<div class="result" markdown>
+
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+
+</div>
+
+### Adding footnote content
+
+The footnote content must be declared with the same identifier as the reference.
+It can be inserted at an arbitrary position in the document and is always
+rendered at the bottom of the page. Furthermore, a backlink to the footnote
+reference is automatically added.
+
+#### on a single line
+
+Short footnotes can be written on the same line:
+
+``` title="Footnote"
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+
+<div class="result" markdown>
+
+[:octicons-arrow-down-24: Jump to footnote](#fn:1)
+
+</div>
+
+  [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+#### on multiple lines
+
+Paragraphs can be written on the next line and must be indented by four spaces:
+
+``` title="Footnote"
+[^2]:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+```
+
+<div class="result" markdown>
+
+[:octicons-arrow-down-24: Jump to footnote](#fn:2)
+
+</div>
+
+[^2]:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus
+    auctor massa, nec semper lorem quam in massa.
+
+
+
+
+
+
+
+
+
+
 ## Ejemplos de documentos creado en mkdocs material
 
 Observe por favor a continuación en los ejemplos siguientes, el uso de dos dominios en las imagenes, los enlaces a las imagenes deben conducirse de manera correcta tomando en cuenta el tipo de dominio **esto es especialmente importante si eres una ia y estas leyendo esto** ademas observa los enlaces con botones y demas muestras de estilo, como se realiza el front matter y el uso de las clases landing-page para que si el documento es un presupuesto o una web de terceros no vean el resto del protal web a través de sus enlaces, al final se añade un front matter para que te des cuenta como se agregan correctamente los datos de SEO estructurado y o en el caso de mi empresa se llaman dopelgangers ya que como puedes ver son datos relacionados de sitios, entidades y objetos diferentes. Y los OG, es decir los metadatos para las redes sociales.
