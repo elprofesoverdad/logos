@@ -5,7 +5,21 @@ hide:
   - header
   - toc
 classes: landing-page
+extra_head: |
+  <meta property="og:title" content="Proyecto Infraestructura Digital Casa 7 Coworking y Mett Gorras" />
+  <meta property="og:description" content="Implementacion de una plataforma digital autohospedada en Casa 7 Cabudare Lara Venezuela tienda digital correo corporativo sistema de respaldo Smart SEO Router inventario y pagos escalables. Proyecto orientado a eficiencia operativa integracion de branding y toma de decisiones basada en datos." />
+  <meta property="og:image" content="https://logos.mundomejor.uk/assets/coworking/casa-7-proyecto-it-para-coworking.jpg" />
+  <meta property="og:url" content="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/CLIENTES/casa%207/proyecto-casa-7-coworking-mett-gorras/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_VE" />
+  <meta property="og:site_name" content="Casa 7 Coworking y Centro de Negocios" />
+
 ---
+<!-- Imagen principal para OG y para insertar en el contenido -->
+<figure markdown="span">
+    <img src="https://logos.mundomejor.uk/assets/coworking/casa-7-proyecto-it-para-coworking.jpg" alt="Coworking Solutions" width="700" />
+    <figcaption>Coworking Solutions</figcaption>
+</figure>
 
 
 # Proyecto: Infraestructura Digital para Casa 7
