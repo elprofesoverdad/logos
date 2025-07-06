@@ -1,4 +1,6 @@
 site_name: "Mundo Mejor Uk: LOGOS"
+
+
 strict: false
 watch:
   - docs
@@ -40,6 +42,8 @@ plugins:
       lang: [es, en]
 
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - meta
   - tables
   - attr_list
@@ -87,10 +91,14 @@ extra:
 
 extra_css:
   - assets/css/custom.css
+ 
+
 
 extra_javascript:
   - assets/js/landing-page.js
   - assets/js/path-corrector.js  # Script crucial para rutas [solución práctica]
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 docs_dir: './docs'
 
