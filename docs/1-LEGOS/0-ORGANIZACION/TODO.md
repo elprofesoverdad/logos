@@ -2,6 +2,34 @@
 
 ---
 ## Pendiente:
+- [ ] REunion a casa 7 Un motor es algo común le menten mano, las personas del barrio y demás... pero a la vez no es algo común... construir un motor, o adeptarlo a necesidades específicas es altamente desafiante, requiere de habilidades puntuales, años de experiencia y conocimientos académicos-prácticos en los que dada la oportunidad, vale la pena invertir.
+- [ ] que personal tiene para introducir los datos, para entrenarlo... ademas que personal de marketing para cuadrar estrategias.
+- [ ] fotos de los ambientes del coworking
+- [ ] estrategia de precios y descuentos basada en precio de producto base=precio base para que se hagan los descuentos o recargos por opciones que afectan al stock y dejar un solo descuento de mayoreo basado en porcentaje para toda configuracion de producto posible, de esa manera no se multiplicaran los productos.
+- [ ] Darle a franklin 1 tarjetas, cada 5 clientes, $50, $100, ó $300 dólares de comisión, para los mismos consumos respectivamente.
+- [ ]  camisa arrugada en confeccion
+- [ ] CAMUFLADAS Y UNOCOLOR NACIONAL AAA en gorras nacional. y otros errores ortograficos
+Estrategia y Cuestionario para la Entrevista con el Cliente
+
+Objetivo: Recopilar toda la información necesaria para estructurar el catálogo de productos en OpenCart 4.x de manera precisa, escalable y fácil de gestionar, utilizando el sistema de Variantes de Producto.
+
+Parte 1: La Estrategia (Conceptos a Validar con tu Cliente)
+
+Antes de preguntar, es útil alinear la visión. Explícale a tu cliente estos conceptos para que entienda por qué le haces estas preguntas.
+
+El Producto como "Contenedor": Explícale que crearemos un producto principal (ej. "Gorras Nacionales") que actuará como un contenedor. Este producto no tendrá precio ni stock propio. Su única función es agrupar todas las versiones posibles de sí mismo.
+
+La Magia de las "Variantes": Aclárale que cada combinación única (ej: Gorra Acolchada, Con Laureles, Color Rojo) será una "Variante". El sistema la tratará como un artículo individual con su propio inventario, SKU (código único) y precio. Esto es crucial para un control de stock exacto. Si se vende una, solo se descuenta esa variante específica.
+
+La Importancia del SKU: Hazle entender que un buen sistema de SKU (Stock Keeping Unit) es vital. Le propondremos un esquema lógico (ej: GNA-CL-ROJO para Gorra Nacional Acolchada, Con Laureles, Roja) que permitirá identificar cualquier producto de forma inequívoca, tanto en el sistema como en el almacén físico.
+
+Parte 2: El Cuestionario Detallado
+
+Usa estas preguntas para guiar la conversación.
+
+
+
+- [ ] corregir gorras camufladas en el json le faltan las descripciones y titulos en ingles...ademas las gorras de niño, ademas en esa hay que añadir la cat gorras... en frontal free tambien en ingles
 
 - [ ] Corregir pie de imagen en Colaboración con Eventos Estratégicos en coworking.
 

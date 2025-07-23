@@ -1,0 +1,47 @@
+/* ESTILOS PARA PÁGINAS DE ATERRIZAJE */
+/* body.landing-page {
+  & .md-main__inner {
+    margin: 0;
+  } */
+  
+/*   & .md-grid {
+    max-width: 100%;
+  } */
+  
+  /*
+ * Reglas para OCULTAR ELEMENTOS SÓLO EN PÁGINAS DE ATERRIZAJE (LANDING PAGES)
+ * Se aplican cuando el 'body' de la página tiene la clase 'landing-page'.
+ */
+
+/* OCULTAR TABS SOLO EN LANDING PAGE */
+body.landing-page .md-tabs {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  position: absolute !important;
+  z-index: -1000 !important;
+}
+
+/* NO pongas reglas globales para .md-tabs fuera de este selector */
+
+/* Ocultar FLECHAS de navegación del pie de página en Landing Pages */
+body.landing-page .md-footer__inner {
+  grid-template-columns: 1fr !important; /* Ajusta el layout del footer para que solo haya una columna */
+}
+body.landing-page .md-footer__inner > .md-footer__link {
+  display: none !important; /* Elimina las flechas de navegación específicas */
+}
+
+.md-header {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.md-tabs {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
