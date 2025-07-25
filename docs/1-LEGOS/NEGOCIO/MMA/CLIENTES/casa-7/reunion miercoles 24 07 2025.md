@@ -24,6 +24,25 @@
 
 -----
 
+## El columpio...
+
+> **La escritura y lo escrito es la base** del negocio automatizado y de toda innovacion, constituyen las normas y procedimientos, que forman las franquicias mas productivas y famosas del planeta, además de permitir el consenso eficaz y eficiente en los diversos escalones de delegación que permiten el ingreso cada vez mas "pasivo" es decir un ingreso que no depende directamente de nuestro trabajo manual o de nuestra supervisión directa.
+
+!!! note
+    Las ideas más valiosas, aquellas que realmente impulsan el crecimiento, a menudo provienen de quienes interactúan directamente con el cliente, la operación diaria o se encuentran en la base de la organización. Sin un canal formal, estas propuestas mueren antes de ser escuchadas por la alta gerencia, sofocadas por la burocracia y las pugnas de poder internas.
+
+    La implementación de un sistema que garantice la entrega y revisión de propuestas escritas rompe este ciclo. Permite a los directivos visualizar rápidamente ideas innovadoras que, de otro modo, se perderían. Esto fomenta una verdadera meritocracia y mejora el clima interno, generando una sinergia que impulsa a la empresa hacia el éxito.
+
+    Este principio se extiende a todos: clientes, proveedores y, de manera crucial, al personal de sistemas. Estos últimos, al interactuar con el núcleo de los procesos, poseen una visión única para optimizar la productividad y convertir a la compañía en un lugar donde los profesionales más capaces anhelan trabajar.
+
+
+
+
+* **Una empresa que toma apuntes**, y los organiza de manera inteligente es una empresa que escala, perdura en el tiempo y aumenta en rentabilidad.
+
+* **Leer de manera comporensiva** informes y avances, objetivos estratégicos e indicadores de gestión, es tomar el timón del destino de nuestra empresa, la empresa ya no reacciona al mercado, anticipa sus tendencias.
+
+
 ### Plan de Exposición: Desvelando el Potencial de DotEcomerce
 
 ??? info "1. Visión General del Dashboard: El Centro de Mando"
@@ -57,10 +76,11 @@
     * **Ecosistema Modular:** Añade pasarelas de pago, sistemas de facturación, billeteras digitales y más, ==a medida que tu negocio crece==.
 
 
-??? danger "Anzuelo / Cebo de Valor (Para generar la próxima reunión)"
-    * *"En la próxima reunión, te mostraré en vivo funcionalidades ocultas y ==automatizaciones que la competencia ni sabe que existen==."*
-    * *"Tenemos varias integraciones ya pensadas específicamente para el ==mercado venezolano== que elevan la productividad y el control a otro nivel."*
-    * *"DotEcomerce está preparado para {++anticipar tendencias++}, no solo para reaccionar. Te mostraré cómo."*
+
+* Abrir la gestión de productos un producto nuevo y enseñar las características de los productos.
+* Explicar las opciones de producto y como se gestiona el inventario de acuerdo a la opción específica.
+
+
 
 -----
 [Enlace al grafico de precios de gorras](https://logos.mundomejor.uk/infografia/catalogo.html){:target="_blank" .md-button .md-button--primary}
@@ -72,5 +92,5 @@
     - [ ] Sondear sobre el **personal disponible**: ¿Quién se encargará de la ==carga de datos==? ¿Quién ejecutará las ==estrategias de marketing==? Es clave para el entrenamiento.
     - [ ] Discutir la estrategia de ==precios y descuentos== basada en un **precio de producto base** para simplificar la gestión de opciones y evitar la multiplicación de productos. El único descuento de mayoreo se aplicaría como un porcentaje sobre cualquier configuración.
     - [ ] Presentar la idea del proyecto de referidos: **"Nexus Net 1"**. Por cada 5 clientes referidos, una comisión de $50, $100 o $300 según el consumo.
-    - [ ] Señalar detalles a mejorar en el catálogo actual: la foto de la `{--camisa arrugada--}` y corregir errores ortográficos como `CAMUFLADAS Y UNOCOLOR NACIONAL AAA`. Demuestra ==atención al detalle==.
+    - [ ] Señalar detalles a mejorar en el catálogo actual: la foto de la `{--camisa arrugada--}` mostrar los modelos de franelas de la competencia. y corregir errores ortográficos como `CAMUFLADAS Y UNOCOLOR NACIONAL AAA`. Demuestra ==atención al detalle==.
     - [ ] {--Recordatorio Personal--}: No olvidar tomar fotos de los ambientes del coworking.
