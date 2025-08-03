@@ -126,6 +126,6 @@ Una relación dentro del Nexus evoluciona. Comienza como una simple transacción
 * [**Perspectiva Académica y Científica**](./perspectiva_academica.md)
     * Analiza los fundamentos del Nexus desde la psicología, la sociología y la economía, incluyendo la Teoría de la Autodeterminación y los efectos de red.
 
-## Página siguiente: 
-[**Fundamentos Doctrinales y Sociales**](./Nexus-Doctrina.md){ .md-button }
+<!-- ## Página siguiente: 
+[**Fundamentos Doctrinales y Sociales**](./Nexus-Doctrina.md){ .md-button } -->
 
