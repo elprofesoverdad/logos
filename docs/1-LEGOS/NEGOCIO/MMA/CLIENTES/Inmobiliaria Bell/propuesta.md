@@ -9,6 +9,27 @@ hide:
 classes: landing-page
 
 extra_head: |
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Coworking Bell — Ecosistema para Innovación y Negocios | Barquisimeto" />
+  <meta property="og:description" content="Transformamos espacios en ecosistemas físico-digitales: coworking premium, certificaciones Harvard, e-learning y e-commerce integrado. ¡Revolucionamos el modelo de negocios inmobiliarios!" />
+  <meta property="og:url" content="https://coworkingbell.com/propuesta-ecosistema" />
+  <meta property="og:image" content="https://logos.mundomejor.uk/assets/torre-bell.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1080" />  x 
+  <meta property="og:image:height" content="1350" />
+  <meta property="og:image:alt" content="Torre Bell: Centro de innovación y coworking en Barquisimeto" />
+  <meta property="og:site_name" content="Coworking Bell" />
+
+  <!-- Facebook App ID -->
+  <meta property="fb:app_id" content="1224036058926299">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="🚀 Coworking Bell: 1er Ecosistema Físico-Digital de Venezuela" />
+  <meta name="twitter:description" content="Espacios + Tecnología + Educación: Certificaciones Harvard, e-commerce integrado y soluciones Linux de bajo costo. ¡Convierte tu oficina en centro de innovación!" />
+  <meta name="twitter:image" content="https://logos.mundomejor.uk/assets/torre-bell.jpg" />
+  <meta name="twitter:site" content="@coworkingbell" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* Espaciado y legibilidad mejorados */
@@ -24,21 +45,28 @@ extra_head: |
 ---
 
 <figure markdown="span">
-  <img src="/logos/assets/torre-bell.jpg" alt="Vista panorámica del espacio de Coworking Bell en el Edificio Bell, Barquisimeto" style="width:100%; max-width:500px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+  <img src="/assets/torre-bell.jpg" alt="Vista panorámica del espacio de Coworking Bell en el Edificio Bell, Barquisimeto" style="width:100%; max-width:1000px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
   <figcaption>Coworking Bell — Un ecosistema para la innovación y los negocios en el corazón de Barquisimeto.</figcaption>
 </figure>
 
-# **Propuesta Comercial para Inmobiliaria Bell / Coworking Bell**
+# **Propuesta de Alianza Estratégica para la Evolución Digital de Inmobiliaria Bell**
 
 <div class="spacer"></div>
 
-### **Propuesta de Alianza Estratégica para la Evolución Digital de Inmobiliaria Bell**
+
 
 Esta propuesta presenta una visión estratégica para la evolución de Inmobiliaria Bell, una iniciativa que va más allá de la consultoría tradicional para conceptualizar y construir una unidad tecnológica interna, autosuficiente y rentable. El objetivo es transformar la infraestructura digital actual en un ecosistema de productos y servicios que posicione a la empresa como un referente de innovación y genere nuevas y significativas líneas de ingreso.
 
-El pilar de esta estrategia es una ventaja competitiva decisiva: el desarrollo de toda la infraestructura sobre una base tecnológica propia, eficiente y de muy bajo costo, fundamentada en el entorno Linux. Este enfoque nos independiza por completo de las costosas mensualidades de servicios en la nube (como AWS, Google Cloud, etc.), permitiendo convertir lo que sería un gasto operativo masivo en un **activo productivo y un motor de rentabilidad que pertenece 100% a la empresa.**
+El pilar de esta estrategia es una ventaja competitiva decisiva: el desarrollo de toda la infraestructura sobre una base tecnológica propia, eficiente y de muy bajo costo, fundamentada en el **entorno Linux**. Este enfoque nos **independiza por completo de las costosas mensualidades de servicios en la nube (como AWS, Google Cloud, etc.**), permitiendo convertir lo que sería un gasto operativo masivo en un **activo productivo y un motor de rentabilidad que pertenece 100% a la empresa.**
 
 Este control total sobre una infraestructura económica nos da la capacidad única de desarrollar y ofrecer, de forma rentable, una gama de soluciones de alto valor que hoy son inviables o demasiado costosas: desde la plataforma de conocimiento *Logos* y tiendas digitales para miembros, hasta un centro presencial para certificaciones internacionales y aplicaciones a medida. A continuación se desglosa cómo, a través de fases claras, podemos materializar esta visión y el inmenso valor que esta alianza representa para el futuro de Inmobiliaria Bell.
+
+
+## **Resumen Ejecutivo**
+
+Propongo asumir el **diseño y la puesta en marcha** del **departamento de TI y la oferta digital** de Inmobiliaria Bell / Coworking Bell. Mi rol abarcará desde la asesoría y dirección hasta la ejecución de tareas clave para **resolver problemas urgentes**, construir **productos propios** (apps, e-commerce, plataforma *Logos*, Nexus) y posicionar el espacio como un **hub tecnológico y educativo** de referencia.
+
+A cambio de una compensación acorde a su política salarial, solicito **facilidades puntuales para el uso de salones y escritorios** en horarios de baja ocupación, lo cual es fundamental para desarrollar los proyectos, junto con la **posibilidad de participar en los ingresos** generados por las nuevas iniciativas del club cuando sea aplicable.
 
 <div class="spacer"></div>
 
@@ -87,7 +115,7 @@ Este control total sobre una infraestructura económica nos da la capacidad úni
 
 <div class="spacer"></div>
 <figure markdown="span">
-  <img src="/logos/assets/bell-curso.jpg" alt="Participantes en un taller de formación en Coworking Bell" style="width:100%; max-width:500px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+  <img src="/assets/bell-curso.jpg" alt="Participantes en un taller de formación en Coworking Bell" style="width:100%; max-width:700px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
   <figcaption>Fomentando el conocimiento y las conexiones a través de actividades formativas presenciales.</figcaption>
 </figure>
 <div class="spacer"></div>
@@ -120,16 +148,18 @@ Este control total sobre una infraestructura económica nos da la capacidad úni
 
 ## **Propuesta Práctica de Compensación y Facilidades (Negociable)**
 
-### **Opción 1: Modelo Híbrido de Colaboración**
-Propongo un **sueldo reducido** + **participación en los ingresos** del club (**por afiliaciones/tiendas**) hasta equilibrar la diferencia, junto con **acceso flexible a salas y salones por horas** en **tiempos muertos** de ocupación, según un **estudio previo de uso y probabilidad de alquiler**.
-- **Uso de oficina de reuniones:** 2 veces por semana, **2 horas cada vez** (con posibilidad de ajustar a **4 horas en sábado** si el proyecto lo requiere y **Bell lo autoriza**).
-- **Uso de sala de conferencias:** 1 vez al mes de ser necesario, **previo sistema de reservas**.
-- Los eventos **Nexus** se programarán **en horarios de baja ocupación** y con la **posibilidad de ser aplazados una sola vez**, con **aviso previo a todos los participantes**, para **minimizar riesgos de pérdidas por posible alquiler**.
-- El diseño del proyecto prioriza el **uso mínimo de salas**: primero **reuniones de negociación, convencimiento o inscripción**; luego la **clase magistral inicial**; posteriormente la **fase e-learning a distancia**; y, por último, la **clase magistral de cierre** con una **personalidad VIP, influencer, famoso o experto**.
-
+### **Modelo Híbrido de Colaboración**
+| Propuesta | Detalles |
+| :--- | :--- |
+| **Compensación** | Sueldo reducido + participación en los ingresos del club (por afiliaciones/tiendas) hasta equilibrar la diferencia. |
+| **Acceso a Espacios** | Acceso flexible a salas y salones por horas en tiempos muertos de ocupación, basado en un estudio de uso y probabilidad de alquiler. |
+| **Oficina de Reuniones** | - Uso de 2 horas, 2 veces por semana. <br> - Opción de ajustar a 4 horas en sábado, sujeto a la aprobación de Bell. |
+| **Sala de Conferencias** | 1 vez al mes si es necesario, con un sistema de reservas previo. |
+| **Eventos Nexus** | - Se programarán en horarios de baja ocupación. <br> - Posibilidad de ser aplazados una única vez con previo aviso a los participantes, para evitar pérdidas de alquiler. |
+| **Diseño del Proyecto** | Prioriza el uso mínimo de salas: <br> - 1. Reuniones de negociación e inscripción. <br> - 2. Clase magistral inicial. <br> - 3. Fase de e-learning a distancia. <br> - 4. Clase magistral de cierre con una personalidad VIP. |
 <div class="spacer"></div>
 
-### **Opción 2: Presupuesto Comparativo de Mercado**
+### ** Presupuesto Comparativo de Mercado**
 
 !!! info "Análisis de Costos: Contratación Externa"
     A continuación, se presentan cuadros detallados con el **costo mensual aproximado** que implicaría contratar externamente cada uno de los servicios y roles propuestos. La intención es demostrar el ahorro y el valor de desarrollar estas capacidades internamente.
@@ -206,18 +236,8 @@ Propongo un **sueldo reducido** + **participación en los ingresos** del club (*
 
     Mi propuesta transforma este enorme gasto operativo en una **inversión inteligente**. Al desarrollar estas capacidades internamente, no solo se genera un ahorro sustancial, sino que se construyen **activos digitales y conocimiento que pertenecen a la empresa**, garantizando un crecimiento sostenible y una ventaja competitiva real y duradera.
 
-<div class="spacer"></div>
-
-
-<div class="spacer"></div>
-
-
-
-
-
 
 [⬅️ Anterior](carta.md){ .md-button .md-button--primary }
-
 ---
 ## **Notas / Referencias**
 [^1]: AWS EC2 — Precios On-Demand. https://aws.amazon.com/ec2/pricing/on-demand/

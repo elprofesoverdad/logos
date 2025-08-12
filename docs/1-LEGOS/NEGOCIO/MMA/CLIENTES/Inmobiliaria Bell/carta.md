@@ -7,11 +7,39 @@ hide:
   # - tabs
   # - footer
 classes: landing-page
+
+
+extra_head: |
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Coworking Bell: Transformamos espacios en ecosistemas físico-digitales | Barquisimeto" />
+    <meta property="og:description" content="Propuesta estratégica: coworking premium + certificaciones Harvard + e-commerce integrado. ¡Revolucionamos el modelo de negocios inmobiliarios con márgenes de hasta 90%!" />
+    <meta property="og:url" content="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/MMA/CLIENTES/Inmobiliaria%20Bell/carta/" />
+    <meta property="og:image" content="https://logos.mundomejor.uk/assets/mundo-mejor-uk-cintillo.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="918" />
+    <meta property="og:image:height" content="389" />
+    <meta property="og:image:alt" content="Participantes en taller formativo de Coworking Bell - Ecosistema de innovación" />
+    <meta property="og:site_name" content="Coworking Bell" />
+
+    <!-- Facebook App ID -->
+    <meta property="fb:app_id" content="1224036058926299">
+    <meta name="fb:app_id" content="1224036058926299">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🚀 Coworking Bell: 1er Ecosistema Físico-Digital de Venezuela" />
+    <meta name="twitter:description" content="Espacios + Tecnología + Educación: Certificaciones Harvard, e-commerce integrado y soluciones Linux. ¡Convierte tu oficina en centro de innovación con nuestro modelo autofinanciado!" />
+    <meta name="twitter:image" content="https://logos.mundomejor.uk/assets/mundo-mejor-uk-cintillo.jpg" />
+    <meta name="twitter:site" content="@coworkingbell" />
 ---
+
+
+
 <div class="spacer"></div>
 <figure markdown="span">
-  <img src="/logos/assets/mundo-mejor-uk-cintillo.jpg" alt="Cintillo de mundo mejor uk en barquisimeto" style="width:100%; max-width:700px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
-  <figcaption>Mundo mejor Uk, elevando tus metas hacia nuevos horizontes...</figcaption>
+  <img src="/assets/mundo-mejor-uk-cintillo.jpg" alt="Participantes en un taller de formación en Coworking Bell" style="width:100%; max-width:700px; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+  <figcaption>Fomentando el conocimiento y las conexiones a través de actividades formativas presenciales.</figcaption>
 </figure>
 <div class="spacer"></div>
 
@@ -19,7 +47,7 @@ classes: landing-page
 
 **Asunto:** Oportunidad Única: Construyamos Juntos el Ecosistema Inmobiliario del Futuro  
 
-**Estimado equipo de liderazgo de Inmobiliaria Bell**  
+Estimado equipo de liderazgo de Inmobiliaria Bell,  
 
 Imaginen un escenario donde su marca no solo es sinónimo de espacios físicos de excelencia, sino el **corazón palpitante de un ecosistema digital que multiplica su rentabilidad, atrae talento global y posiciona a Barquisimeto en el mapa de la innovación mundial**. Hoy les presento una propuesta diseñada meticulosamente para convertir esa visión en realidad, utilizando sus fortalezas actuales como trampolín hacia un futuro imparable.  
 
@@ -111,6 +139,3 @@ Arquitecto de Ecosistemas Rentables
 
 
 [➡️ Siguiente](propuesta.md){ .md-button .md-button--primary }
-
-
-
