@@ -42,6 +42,10 @@ theme:
 plugins:
   - search:
       lang: [es, en]
+  - mkdocs-simple-hooks:
+      hooks:
+        on_pre_build: "docs.sincro:run_sync"
+
 
 markdown_extensions:
   - pymdownx.arithmatex:

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida al Nexus Empresarial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+            padding-left: 2.5rem; 
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 2px;
+            height: 100%;
+            background-color: #cbd5e1;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: -0.75rem;
+            top: 0.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background-color: #ffffff;
+            border: 2px solid #cbd5e1;
+            z-index: 10;
+        }
+        .step-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .card-asset {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        .card-asset-header {
+            padding: 0.75rem 1.25rem;
+            background-color: #f7fafc;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .card-asset-body {
+            padding: 1.25rem;
+        }
+        .card-asset-footer {
+            padding: 1rem 1.25rem;
+            background-color: #edf2f7;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        .copy-text {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-700">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Encabezado -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-3">Tu Viaje en el <span class="text-indigo-600">Nexus</span> Comienza Ahora</h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto">Hemos diseñado un camino claro y poderoso para que construyas tu independencia financiera. Completa cada paso para desbloquear tu potencial.</p>
+        </header>
+
+        <!-- Línea de Tiempo -->
+        <div class="timeline">
+
+            <!-- Paso 1: La Visión -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 pt-2">Paso 1: La Visión - ¿Por qué esto es diferente?</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Video 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md step-card">
+                        <h3 class="font-bold text-lg mb-2">🎥 El Rey del Agua Embotellada</h3>
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/i07qz_6Mk7g?si=POoPErklpeQC78fu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-slate-600">Este video te cambiará la perspectiva. No se trata de vender un producto, se trata de construir un **sistema** que genera ingresos mientras duermes. Esta es la mentalidad que cultivamos en el Nexus.</p>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md step-card">
+                        <h3 class="font-bold text-lg mb-2">🎥 El Poder del Sistema MLM</h3>
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BSGcs1rk3d8?si=bfbgf06n0HKMUZQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-slate-600">El producto es el vehículo, pero el **sistema** es el motor. Aquí entenderás por qué el modelo de redes es la forma más poderosa de apalancamiento para crear riqueza exponencial. Es pura matemática.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 2: El Modelo -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 pt-2">Paso 2: El Mapa - ¿Cómo estamos construidos?</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Modelo Empresarial -->
+                    <div class="bg-white p-6 rounded-xl shadow-md step-card">
+                        <h3 class="font-bold text-lg mb-2">📄 Modelo Empresarial</h3>
+                        <p class="text-sm text-slate-600 mb-4">Esta es nuestra constitución. Define las reglas de un crecimiento justo y sostenible. Aquí descubrirás los dos conceptos que nos hacen únicos:</p>
+                        <details class="mb-2">
+                            <summary class="cursor-pointer font-semibold text-indigo-700 flex items-center">
+                                ¿Qué son los "Hooks"?
+                                <svg class="w-5 h-5 ml-2 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </summary>
+                            <p class="text-sm text-slate-500 mt-2 pl-2 border-l-2 border-indigo-200">Son los "nudos" que nos unen. No es solo un contrato; es una mezcla de propósito, lazos afectivos, normas y un plan de compensación justo. Es lo que hace que nuestra red sea fuerte.</p>
+                        </details>
+                        <details>
+                            <summary class="cursor-pointer font-semibold text-indigo-700 flex items-center">
+                                ¿Qué es la "Malla Triangular"?
+                                <svg class="w-5 h-5 ml-2 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </summary>
+                            <p class="text-sm text-slate-500 mt-2 pl-2 border-l-2 border-indigo-200">Es nuestra estructura de crecimiento. Cuando alguien asciende, no deja a los demás atrás, sino que "tira" de toda la red hacia arriba, asegurando que el éxito sea siempre colectivo.</p>
+                        </details>
+                        <a href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/Hook-Nexus-Empresarial/modelo_empresarial/" class="text-indigo-600 font-semibold text-sm mt-4 inline-block hover:underline" target="_blank">Explorar el modelo completo &rarr;</a>
+                    </div>
+                    <!-- Arquitectura Operativa -->
+                    <div class="bg-white p-6 rounded-xl shadow-md step-card">
+                        <h3 class="font-bold text-lg mb-2">📄 Arquitectura Operativa</h3>
+                        <p class="text-sm text-slate-600 mb-4">Si el modelo es el "qué", la arquitectura es el "cómo". Aquí verás las piezas en movimiento: los formadores, los proveedores, los influencers y cómo todos encajan en un ecosistema que se retroalimenta y genera valor constantemente.</p>
+                        <a href="https://logos.mundomejor.uk/1-LEGOS/NEGOCIO/Hook-Nexus-Empresarial/arquitectura_operativa/" class="text-indigo-600 font-semibold text-sm mt-4 inline-block hover:underline" target="_blank">Ver cómo funciona &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 3: La Acción -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                   <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.834 9.168-4.432l.256-.512a1.76 1.76 0 013.417.592l-2.147 6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.834 9.168-4.432l.256-.512a1.76 1.76 0 013.417.592l-2.147 6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.834 9.168-4.432l.256-.512a1.76 1.76 0 013.417.592l-2.147 6.15"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 pt-2">Paso 3: La Acción - Tus Primeras Herramientas</h2>
+                <p class="mb-6 text-slate-600">El conocimiento sin acción no sirve de nada. Estos son tus primeros activos de marketing. Úsalos para iniciar conversaciones y empezar a construir tu red hoy mismo.</p>
+                <div class="space-y-8">
+                    <!-- Asset 1 -->
+                    <div class="card-asset">
+                        <div class="card-asset-header">Activo de Marketing 1: Conectar con la Frustración</div>
+                        <div class="grid md:grid-cols-3 gap-6 card-asset-body">
+                            <img src="/assets/mujer-celebra-su-negocio-desde-casa.jpeg" alt="Mujer celebrando el éxito en su negocio desde casa" class="rounded-lg col-span-1" >
+                                <p class="text-sm text-slate-600 mb-3">Este mensaje es para iniciar la conversación. Apela a un sentimiento universal de estar estancado y presenta al Nexus como la solución comunitaria.</p>
+                                <div class="copy-text text-sm">
+                                    Espero que hayas podido ver y analizar los videos sobre el Nexus Empresarial. Mira, no es un secreto que la situación para todos está difícil. A veces uno siente que se esfuerza, que tiene talento, pero las oportunidades reales son pocas o se las llevan otros. Los años pasan volando y de repente nos damos cuenta de que seguimos en el mismo sitio, corriendo para resolver el día a día y perdiéndonos lo importante, como ver crecer a los chamos. Pero no estás sola en esto. El Nexus se diseñó precisamente para cambiar esa realidad. Es una red donde el éxito es colectivo, como una malla que nos eleva a todos juntos. Cuando alguien asciende, no deja a los demás atrás, sino que tira de toda la red hacia arriba. Imagina ser parte de una comunidad donde el crecimiento de tu compañero es también tu propio crecimiento. Eso es lo que estamos construyendo. 🤝
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-asset-footer">
+                            <strong>Instrucción:</strong> 1. Guarda la imagen en tu teléfono. 2. Mantén presionado el texto de arriba para copiarlo. 3. Envía primero la imagen y luego el texto a tus contactos de WhatsApp.
+                        </div>
+                    </div>
+                    <!-- Asset 2 -->
+                    <div class="card-asset">
+                        <div class="card-asset-header">Activo de Marketing 2: Presentar la Solución</div>
+                        <div class="grid md:grid-cols-3 gap-6 card-asset-body">
+                             <img src="/assets/el-modelo-de-afiliacion.jpeg" alt="Diagrama del modelo de afiliación y MLM" class="rounded-lg col-span-1">
+                            <div class="col-span-2">
+                                <p class="text-sm text-slate-600 mb-3">Este mensaje explica el "cómo" de una forma simple y directa. Muestra un camino claro y de bajo riesgo para empezar.</p>
+                                <div class="copy-text text-sm">
+                                    Ahora, ¿cómo empezamos a materializar esto? 🤔 El camino inicia con un modelo probado: el sistema de afiliación, que es el primer escalón para construir tu propio negocio de redes (MLM).
+                                    <br><br>
+                                    * **Afiliación:** Recomiendas productos/servicios y ganas una comisión por cada venta. Simple y directo. 💻
+                                    * **MLM:** Enseñas a otros a hacer lo mismo que tú, construyes un equipo y ganas un porcentaje del éxito de todos. Es la evolución natural. 📈
+                                    <br><br>
+                                    Para empezar, te damos el camino inteligente: trabajar con nuestros productos ya validados. Te enfocas en una sola cosa: aprender a vender y persuadir. Este sistema es la puerta de salida a la carrera de la rata.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-asset-footer">
+                           <strong>Instrucción:</strong> Envía este mensaje como seguimiento al anterior para explicar el modelo de negocio de forma sencilla.
+                        </div>
+                    </div>
+                    <!-- Asset 3 -->
+                    <div class="card-asset">
+                        <div class="card-asset-header">Activo de Marketing 3: La Invitación a la Acción</div>
+                        <div class="grid md:grid-cols-3 gap-6 card-asset-body">
+                             <img src="/assets/mujer-enseña-en-coworking.jpeg" alt="Mujer presentando un modelo de negocio de afiliación" class="rounded-lg col-span-1">
+                            <div class="col-span-2">
+                                <p class="text-sm text-slate-600 mb-3">Este es el cierre, la llamada a la acción. Crea un sentido de urgencia y ofrece un siguiente paso claro y sin compromiso, llevando al prospecto del interés a la decisión.</p>
+                                <div class="copy-text text-sm">
+                                    ¿Te hizo sentido lo que viste? 🤔 Sé que puedes tener preguntas. Por eso, este [DÍA DE LA SEMANA] a las [HORA] haré una presentación exclusiva por Zoom para explicar todos los detalles y el plan de acción exacto para generar tus primeros ingresos. Será una sesión práctica y sin compromiso. ¿Te guardo un lugar? ¡Los cupos son limitados para poder responder a todos! Avísame para enviarte el enlace. 🚀
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-asset-footer">
+                           <strong>Instrucción:</strong> Usa este mensaje para invitar a los prospectos más interesados a una presentación en vivo. Es el paso final para convertirlos en miembros de tu equipo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

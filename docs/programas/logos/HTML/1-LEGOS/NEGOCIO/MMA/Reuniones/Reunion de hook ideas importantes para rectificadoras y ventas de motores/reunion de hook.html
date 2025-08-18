@@ -1,0 +1,802 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Reunión de Hook</title><style>
+    /* cspell:desactivar-archivo */
+    /* Magia de impresión de webkit: imprime todos los colores de fondo */
+    html {
+    -webkit-print-color-adjust: exacto;
+    }
+    * {
+    tamaño de caja: cuadro de borde;
+    -webkit-print-color-adjust: exacto;
+    }
+    
+    
+    HTML,
+    cuerpo {
+    margen: 0;
+    relleno: 0;
+    }
+    Pantalla solo @media {
+    cuerpo {
+    margen: 2em automático;
+    ancho máximo: 900px;
+    color: rgb(55, 53, 47);
+    }
+    }
+    
+    
+    cuerpo {
+    altura de línea: 1,5;
+    espacio en blanco: preenvoltura;
+    }
+    
+    
+    a,
+    a.visitado {
+    color: heredar;
+    decoración de texto: subrayado;
+    }
+    
+    
+    .pdf-ruta-enlace-relativa {
+    tamaño de fuente: 80%;
+    color: #444;
+    }
+    
+    
+    h1,
+    h2,
+    h3 {
+    espacio entre letras: -0,01 em;
+    altura de línea: 1,2;
+    peso de fuente: 600;
+    margen inferior: 0;
+    }
+    
+    
+    .Título de la página {
+    tamaño de fuente: 2,5rem;
+    peso de fuente: 700;
+    margen superior: 0;
+    margen inferior: 0,75 em;
+    }
+    
+    
+    h1 {
+    tamaño de fuente: 1.875rem;
+    margen superior: 1,875 rem;
+    }
+    
+    
+    h2 {
+    tamaño de fuente: 1,5rem;
+    margen superior: 1,5 rem;
+    }
+    
+    
+    h3 {
+    tamaño de fuente: 1,25rem;
+    margen superior: 1,25 rem;
+    }
+    
+    
+    .fuente {
+    borde: 1px sólido #ddd;
+    radio del borde: 3px;
+    relleno: 1,5 em;
+    salto de palabra: romper todo;
+    }
+    
+    
+    .gritar {
+    radio del borde: 3px;
+    relleno: 1rem;
+    }
+    
+    
+    cifra {
+    margen: 1,25 em 0;
+    salto de página dentro: evitar;
+    }
+    
+    
+    leyenda de figura {
+    opacidad: 0,5;
+    tamaño de fuente: 85%;
+    margen superior: 0,5 em;
+    }
+    
+    
+    marca {
+    color de fondo: transparente;
+    }
+    
+    
+    .sangrado {
+    relleno izquierdo: 1,5 em;
+    }
+    
+    
+    hora {
+    fondo: transparente;
+    bloqueo de pantalla;
+    ancho: 100%;
+    altura: 1px;
+    visibilidad: visible;
+    borde: ninguno;
+    borde inferior: 1px rgba sólido (55, 53, 47, 0,09);
+    }
+    
+    
+    imagen {
+    ancho máximo: 100%;
+    }
+    
+    
+    @media solo imprime {
+    imagen {
+    altura máxima: 100vh;
+    ajuste de objeto: contener;
+    }
+    }
+    
+    
+    @página {
+    margen: 1 pulgada;
+    }
+    
+    
+    .contenido-colección {
+    tamaño de fuente: 0,875rem;
+    }
+    
+    
+    .lista de columnas {
+    pantalla: flexible;
+    justificar contenido: espacio entre;
+    }
+    
+    
+    .columna {
+    relleno: 0 1em;
+    }
+    
+    
+    .columna:primer hijo {
+    relleno-izquierda: 0;
+    }
+    
+    
+    .columna: último hijo {
+    relleno-derecha: 0;
+    }
+    
+    
+    .table_of_contents-item {
+    bloqueo de pantalla;
+    tamaño de fuente: 0,875rem;
+    altura de línea: 1,3;
+    relleno: 0,125rem;
+    }
+    
+    
+    .table_of_contents-indent-1 {
+    margen izquierdo: 1,5rem;
+    }
+    
+    
+    .table_of_contents-indent-2 {
+    margen izquierdo: 3rem;
+    }
+    
+    
+    .table_of_contents-indent-3 {
+    margen izquierdo: 4,5rem;
+    }
+    
+    
+    .table_of_contents-enlace {
+    decoración de texto: ninguna;
+    opacidad: 0,7;
+    borde inferior: 1px rgba sólido (55, 53, 47, 0,18);
+    }
+    
+    
+    mesa,
+    th,
+    td {
+    borde: 1px rgba sólido (55, 53, 47, 0,09);
+    colapso de fronteras: colapso;
+    }
+    
+    
+    mesa {
+    borde izquierdo: ninguno;
+    frontera-derecha: ninguna;
+    }
+    
+    
+    th,
+    td {
+    peso de fuente: normal;
+    relleno: 0,25em 0,5em;
+    altura de línea: 1,5;
+    altura mínima: 1,5 em;
+    alineación de texto: izquierda;
+    }
+    
+    
+    th {
+    color: rgba(55, 53, 47, 0,6);
+    }
+    
+    
+    viejo,
+    ul {
+    margen: 0;
+    inicio de bloque de margen: 0,6 em;
+    extremo del bloque de margen: 0,6 em;
+    }
+    
+    
+    li > ol:primer hijo,
+    li > ul:primer hijo {
+    inicio de bloque de margen: 0,6 em;
+    }
+    
+    
+    ul > li {
+    estilo de lista: disco;
+    }
+    
+    
+    ul.lista de tareas pendientes {
+    relleno-inicio-en línea: 0;
+    }
+    
+    
+    ul.lista de tareas pendientes > li {
+    estilo de lista: ninguno;
+    }
+    
+    
+    .to-do-children-checked {
+    decoración de texto: línea recta;
+    opacidad: 0,375;
+    }
+    
+    
+    ul.alternar > li {
+    estilo de lista: ninguno;
+    }
+    
+    
+    ul {
+    relleno-inicio-en línea: 1,7 em;
+    }
+    
+    
+    ul > li {
+    relleno izquierdo: 0,1 em;
+    }
+    
+    
+    viejo {
+    relleno-inicio-en línea: 1,6 em;
+    }
+    
+    
+    ol > li {
+    relleno izquierdo: 0,2 em;
+    }
+    
+    
+    .mono ol {
+    relleno-inicio-en línea: 2em;
+    }
+    
+    
+    .mono ol > li {
+    sangría de texto: -0,4 em;
+    }
+    
+    
+    .alternar {
+    relleno-inicio-en línea: 0em;
+    tipo de estilo de lista: ninguno;
+    }
+    
+    
+    /* Cambiar sangría a niños */
+    .toggle > li > detalles {
+    relleno izquierdo: 1,7 em;
+    }
+    
+    
+    .toggle > li > detalles > resumen {
+    margen izquierdo: -1,1 em;
+    }
+    
+    
+    .valor seleccionado {
+    pantalla: bloque en línea;
+    relleno: 0 0,5 em;
+    fondo: rgba(206, 205, 202, 0,5);
+    radio del borde: 3px;
+    margen derecho: 0,5 em;
+    margen superior: 0,3 em;
+    margen inferior: 0,3 em;
+    white-space: nowrap;
+    }
+    
+    
+    .collection-title {
+    display: inline-block;
+    margin-right: 1em;
+    }
+    
+    
+    .page-description {
+        margin-bottom: 2em;
+    }
+    
+    
+    .simple-table {
+    margin-top: 1em;
+    font-size: 0.875rem;
+    empty-cells: show;
+    }
+    .simple-table td {
+    height: 29px;
+    min-width: 120px;
+    }
+    
+    
+    .simple-table th {
+    height: 29px;
+    min-width: 120px;
+    }
+    
+    
+    .simple-table-header-color {
+    background: rgb(247, 246, 243);
+    color: black;
+    }
+    .simple-table-header {
+    font-weight: 500;
+    }
+    
+    
+    time {
+    opacity: 0.5;
+    }
+    
+    
+    .icon {
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
+    }
+    
+    
+    img.icon {
+    border-radius: 3px;
+    }
+    
+    
+    .user-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+    }
+    
+    
+    .user-icon-inner {
+    font-size: 0.8em;
+    }
+    
+    
+    .text-icon {
+    border: 1px solid #000;
+    text-align: center;
+    }
+    
+    
+    .page-cover-image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 30vh;
+    }
+    
+    
+    .page-header-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    }
+    
+    
+    .page-header-icon-with-cover {
+    margin-top: -0.72em;
+    margin-left: 0.07em;
+    }
+    
+    
+    .page-header-icon img {
+    border-radius: 3px;
+    }
+    
+    
+    .link-to-page {
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+    font-weight: 500;
+    }
+    
+    
+    p > .user {
+    opacity: 0.5;
+    }
+    
+    
+    td > .user,
+    td > time {
+    white-space: nowrap;
+    }
+    
+    
+    input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 0.6em;
+    vertical-align: middle;
+    }
+    
+    
+    p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    }
+    
+    
+    .image {
+    border: none;
+    margin: 1.5em 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    }
+    
+    
+    .code,
+    code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+    tab-size: 2;
+    }
+    
+    
+    code {
+    color: #eb5757;
+    }
+    
+    
+    .code {
+    padding: 1.5em 1em;
+    }
+    
+    
+    .code-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+    }
+    
+    
+    .code > code {
+    background: none;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    }
+    
+    
+    blockquote {
+    font-size: 1.25em;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    
+    .bookmark {
+    text-decoration: none;
+    max-height: 8em;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    }
+    
+    
+    .bookmark-title {
+    font-size: 0.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1.75em;
+    white-space: nowrap;
+    }
+    
+    
+    .bookmark-text {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    .bookmark-info {
+    flex: 4 1 180px;
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    
+    .bookmark-image {
+    width: 33%;
+    flex: 1 1 180px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    border-radius: 1px;
+    }
+    
+    
+    .bookmark-description {
+    color: rgba(55, 53, 47, 0.6);
+    font-size: 0.75em;
+    overflow: hidden;
+    max-height: 4.5em;
+    word-break: break-word;
+    }
+    
+    
+    .bookmark-href {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+    }
+    
+    
+    .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+    .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+    .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+    .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+    .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+    .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+    .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .highlight-default {
+    color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+    }
+    .highlight-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+    }
+    .highlight-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+    }
+    .highlight-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+    }
+    .highlight-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+    }
+    .highlight-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+    }
+    .highlight-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+    }
+    .highlight-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+    }
+    .highlight-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+    }
+    .highlight-gray_background {
+    background: rgba(241, 241, 239, 1);
+    }
+    .highlight-brown_background {
+    background: rgba(244, 238, 238, 1);
+    }
+    .highlight-orange_background {
+    background: rgba(251, 236, 221, 1);
+    }
+    .highlight-yellow_background {
+    background: rgba(251, 243, 219, 1);
+    }
+    .highlight-teal_background {
+    background: rgba(237, 243, 236, 1);
+    }
+    .highlight-blue_background {
+    background: rgba(231, 243, 248, 1);
+    }
+    .highlight-purple_background {
+    background: rgba(244, 240, 247, 0.8);
+    }
+    .highlight-pink_background {
+    background: rgba(249, 238, 243, 0.8);
+    }
+    .highlight-red_background {
+    background: rgba(253, 235, 236, 1);
+    }
+    .block-color-default {
+    color: inherit;
+    fill: inherit;
+    }
+    .block-color-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+    }
+    .block-color-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+    }
+    .block-color-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+    }
+    .block-color-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+    }
+    .block-color-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+    }
+    .block-color-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+    }
+    .block-color-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+    }
+    .block-color-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+    }
+    .block-color-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+    }
+    .block-color-gray_background {
+    background: rgba(241, 241, 239, 1);
+    }
+    .block-color-brown_background {
+    background: rgba(244, 238, 238, 1);
+    }
+    .block-color-orange_background {
+    background: rgba(251, 236, 221, 1);
+    }
+    .block-color-yellow_background {
+    background: rgba(251, 243, 219, 1);
+    }
+    .block-color-teal_background {
+    background: rgba(237, 243, 236, 1);
+    }
+    .block-color-blue_background {
+    background: rgba(231, 243, 248, 1);
+    }
+    .block-color-purple_background {
+    background: rgba(244, 240, 247, 0.8);
+    }
+    .block-color-pink_background {
+    background: rgba(249, 238, 243, 0.8);
+    }
+    .block-color-red_background {
+    background: rgba(253, 235, 236, 1);
+    }
+    .select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+    .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+    .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+    .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+    .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+    .select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+    .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+    .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+    .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+    .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+    .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+    .select-value-color-pageGlass { background-color: undefined; }
+    .select-value-color-washGlass { background-color: undefined; }
+    
+    
+    .checkbox {
+    display: inline-flex;
+    vertical-align: text-bottom;
+    width: 16;
+    height: 16;
+    background-size: 16px;
+    margin-left: 2px;
+    margin-right: 5px;
+    }
+    
+    
+    .checkbox-on {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    
+    .checkbox-off {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    
+    </style></head><body><article id="0ad2878d-2b4d-4911-89c4-0db17d40aa8f" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/conversation_lightgray.svg"/></div><h1 class="page-title">Reunión de Hook</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-date"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>Hora</th><td><time>@12 de agosto de 2023</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Tipo</th><td><span class="selected-value select-value-color-yellow">Standup</span></td></tr></tbody></table></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">0. Temas de Urgentes </summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">0.1 Hook Empresas Henao - Hung</summary><div class="indented"><ul id="d9107d5b-51a0-4843-afae-4c181f7e3d45" class="bulleted-list"><li style="list-style-type:disc">Creación de la cuenta Paypal Henao.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2739b237-f300-4eb6-a772-469261d84e72"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Asesorar a Henao sobre Seguridad.</strong></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="80bef102-9548-427d-a071-6b36998f9eaf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Asesorar Henao sobre las pasarelas de pago. (paypal pagomovil venezuela.)</div></figure><blockquote id="8943c18f-3d62-4658-a52c-b22549cf6b27" class="block-color-red_background"><strong>Resolver problema de seguridad de  Henao.</strong></blockquote><ul id="26ee9676-7b4d-4206-891d-69495ce1edf0" class="bulleted-list"><li style="list-style-type:disc">Ataque en el bios: <a href="https://www.ccn-cert.cni.es/informes/informes-ccn-cert-publicos/789-ccn-cert-ia-08-15-amenaza-en-bios/file.html">https://www.ccn-cert.cni.es/informes/informes-ccn-cert-publicos/789-ccn-cert-ia-08-15-amenaza-en-bios/file.html</a></li></ul><ul id="05452e52-6972-4597-892f-a9eb662e0744" class="bulleted-list"><li style="list-style-type:disc">Ataque con keylogger: <a href="https://www.flexispy.com/es/mobile-spy-app.htm">https://www.flexispy.com/es/mobile-spy-app.htm</a></li></ul><ul id="42264d0c-5f06-424a-9709-595c9494988e" class="bulleted-list"><li style="list-style-type:disc">Explicarle que es un<strong> objetivo de ataque?</strong> Cómo? escaneo de puertos? por que?</li></ul><ul id="7da25f7a-69a6-4f39-b5fe-de30ca164602" class="bulleted-list"><li style="list-style-type:disc">Conversas medidas de seguridad.</li></ul><ul id="a58110af-b773-464f-a787-b5de94910cea" class="bulleted-list"><li style="list-style-type:disc">Comenzar la implementación de las medidas de seguridad.</li></ul><p id="79091cc1-7272-46ad-8868-4ccdc280ce28" class="">
+    </p></div></details></div></details><ul id="ac09098f-fcf0-4679-9c37-a88fa867f8ae" class="toggle"><li><details open=""><summary><strong>0.2 Pendientes</strong></summary><ul id="00ddff36-31a1-44fc-837a-c47d1824cac4" class="toggle"><li><details open=""><summary>Desarrollo de Contenido para redes sociales. Administración de Cuentas de Google</summary></details></li></ul><ul id="ee8eb6f8-9613-4b1e-bbb0-19be268c5180" class="toggle"><li><details open=""><summary>Página de eventos para aumentar la audiencia del portal web.</summary></details></li></ul></details></li></ul><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Primera iteración (Sprint) Empresas Henao (Plantilla)</summary><div class="indented"><p id="c05b1a78-5aee-4e89-9c5b-213d470c8ae7" class="">
+    </p><p id="94473425-ef58-4ab1-a1c0-d1d36387ae42" class="">
+    </p><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">1. Área Marketing</summary><div class="indented"><ul id="3d556236-8976-460d-81c2-86aa4d1bbee3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Culminar Estratégia de Marketing / Segmentación de Mercado</span><div class="indented"></div></li></ul><ul id="88a1a381-b976-4b71-a25b-b8af5a9ff7c4" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Realizar Listado de productos y servicios. de Henao.</span><div class="indented"></div></li></ul><ul id="0373b12a-c21a-4068-9290-a6437d2ab656" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Preparar los primeros guiones de venta.</span><div class="indented"></div></li></ul><ul id="4fbc9843-98c9-451b-841a-c6aa3b7c3606" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Realizar las filmaciones y Recibir las fotos, recolectar material POP.</span><div class="indented"></div></li></ul><ul id="11bfbe62-27f2-46a9-ba92-f82a9518ee4d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Hablar con Novia de Isaías para el Diseño gráfico.</span><div class="indented"></div></li></ul><ul id="b72a7432-aeeb-4f5f-85f8-f498a9b01d65" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">No colocar pancartas en instagram, describir los servicios a través de historias reales y fotos reales, colocar letras y publicar.</span><div class="indented"></div></li></ul><ul id="c9c1b9fe-ea89-4c07-9519-dd81d6058fc7" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Precio de app de subtítulo captions?</span><div class="indented"></div></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">2. Área Proyectos</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">2.1 Proyecto Coworking Club como Club casa 7</summary><div class="indented"><ul id="16f8846c-d609-4fd9-9613-9331bc690e10" class="bulleted-list"><li style="list-style-type:disc">Ampliación y preparación de ambiente del galpón de la rectificadora en la LIbertador<ul id="2cdf31ae-3298-404e-8ed6-ee93a1deb1a8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Ver galpones en la Vzla con bracamonte detrás de la bomba Feria San Luis.</span><div class="indented"></div></li></ul><ul id="c2a6904b-8514-4261-91a7-59065f96b71d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Determinar multifuncionalidad, ruta del visitante decoración y ambiente.</span><div class="indented"></div></li></ul></li></ul><p id="4785d4bc-5f9d-42bc-9bf6-13475666b71e" class="">
+    </p><ol type="1" id="c3fd0dfb-1795-4acb-b443-3fb2f3c090c4" class="numbered-list" start="1"><li><strong>Programa de incubación de empresas: </strong>Además de los servicios de coworking, se puede implementar un programa de incubación de empresas dentro del espacio. Esto implica brindar apoyo y recursos especializados a emprendedores y startups, como asesoría empresarial, mentoría, acceso a financiamiento y conexiones con una red de empresas calificadas y de confianza.</li></ol><ol type="1" id="37483618-d12a-4068-985b-13cb9d3a9e6d" class="numbered-list" start="2"><li><strong>Eventos y talleres temáticos:</strong> Organizar eventos y talleres relacionados con el campo de la mecánica y la industria automotriz. Invitar a expertos y profesionales para impartir charlas sobre temas relevantes, ofrecer capacitaciones técnicas y organizar competencias o exhibiciones relacionadas con el sector. Esto ayudará a generar interés y atraer a profesionales y entusiastas de la industria.</li></ol><ol type="1" id="67a65a8c-7c6c-4048-8efb-10a9f696f6ce" class="numbered-list" start="3"><li><strong>Servicios de valor agregado:</strong> Considere la posibilidad de ofrecer servicios adicionales que complementen el coworking y sean atractivos para los usuarios. Por ejemplo, contar con un gimnasio en el espacio, ofrecer servicios de bienestar como clases de yoga o sesiones de masajes clases de ejercicio de fisioterapia; hacer rotaciones de estas actividades. Estos servicios pueden ayudar a fomentar un ambiente saludable y equilibrado para los emprendedores y trabajadores del coworking.</li></ol><ol type="1" id="44e7550d-bef7-4d10-b8a1-d8531f6fd96e" class="numbered-list" start="4"><li><strong>Alianzas estratégicas</strong>: Establecer alianzas con proveedores de servicios relacionados, como proveedores de materiales de construcción, talleres de reparación de vehículos o proveedores de software especializados en la industria. Estas alianzas pueden brindar beneficios adicionales a los miembros del coworking y fortalecer la propuesta integral de servicios.</li></ol><ol type="1" id="30b8a2dc-5908-43ae-b8a5-9cb039de2840" class="numbered-list" start="5"><li><strong>Centro de reuniones y motivación estratégica:</strong> Además de proporcionar espacios de oficina compartida, se puede establecer un centro de reuniones y motivación estratégica. Este espacio estará diseñado para brindar orientación y asesoría administrativa a empresarios y empresas, fomentando el crecimiento y desarrollo de sus negocios. Se pueden organizar sesiones de motivación, talleres de ventas y negociaciones, así como ofrecer servicios de coaching empresarial para apoyar a los emprendedores en sus metas de ventas y desarrollo de redes.</li></ol><ol type="1" id="67bfe409-6b45-4417-83e7-9214519c858e" class="numbered-list" start="6"><li><strong>Acceso compartido a servicios y recursos</strong>: Para fomentar la colaboración y maximizar los recursos, se puede implementar un sistema de acceso compartido a servicios y recursos. Esto incluiría el acceso compartido a servidores, software especializado y herramientas técnicas relevantes para la industria. Al proporcionar estas facilidades, se brinda a los miembros del coworking una ventaja competitiva y se promueve el intercambio de conocimientos y experiencias.</li></ol><ol type="1" id="8a24f335-e06d-4512-995c-79ce014d06a4" class="numbered-list" start="7"><li><strong>Espacios flexibles y multifuncionales:</strong> Siguiendo la técnica de la bicicleta, se pueden diseñar espacios flexibles y multifuncionales dentro del coworking. Por ejemplo, se pueden habilitar áreas que se transformen de salas de juntas a espacios de coworking, o áreas que combinen un gimnasio con una sala de conferencias. Estos espacios versátiles permitirán a los usuarios adaptarse a diferentes necesidades y promoverán la interacción entre los miembros.</li></ol><ol type="1" id="54d1c302-d8e6-4f31-b076-f516f28d0741" class="numbered-list" start="8"><li><strong>Resolución innovadora de fluctuaciones: </strong>Se fomentará la resolución innovadora de fluctuaciones desde diferentes perspectivas. Esto implica analizar los desafíos y cambios que puedan surgir en el entorno empresarial y encontrar soluciones creativas para abordarlos. Se pueden organizar sesiones de lluvia de ideas, implementar un sistema de retroalimentación constante y promover la colaboración entre los miembros para resolver problemas de manera innovadora.</li></ol><ol type="1" id="38c6a793-1232-40d4-a72f-cc54bef19c5c" class="numbered-list" start="9"><li><strong>Café de alta calidad y preparaciones especiales:</strong> Además de ofrecer café de alta calidad, podemos incluir preparaciones especiales como el latte art, donde se crean diseños en la superficie del café con la leche vaporizada. También podemos ofrecer café de origen, con diferentes variedades y métodos de preparación como el cold brew o el aeropress. Estas opciones brindarán a los miembros del coworking una experiencia única y sofisticada.</li></ol><ol type="1" id="a13cf613-e8cd-4aab-a82b-a03891a1e68e" class="numbered-list" start="10"><li><strong>Snacks y aperitivos internacionales:</strong> Para satisfacer los gustos internacionales, podemos incluir una variedad de snacks y aperitivos inspirados en diferentes culturas gastronómicas. Por ejemplo, podemos ofrecer sushi rolls, empanadas de diferentes sabores, nachos con guacamole, mini hamburguesas gourmet, y platos con camarones como camarones al ajillo o camarones tempura. Estas opciones permitirán a los miembros disfrutar de una amplia gama de sabores y opciones culinarias.</li></ol><ol type="1" id="35a22e8d-3e5d-4491-9077-5289dec7d8f2" class="numbered-list" start="11"><li><strong>Espacio de cereales y leches alternativas:</strong> Siguiendo la tendencia de los cereales y leches alternativas, podemos crear un espacio dedicado a la personalización de cereales con una variedad de opciones de leches como leche de almendras, leche de avena y leche de coco. Los miembros podrán combinar diferentes cereales, frutas y toppings para crear su propio tazón de cereal personalizado. Además, podemos ofrecer opciones de cheese cakes como postres complementarios.</li></ol><ol type="1" id="b25b649d-97bd-4b37-a193-d78a135f745f" class="numbered-list" start="12"><li><strong>Comida rápida gourmet: </strong>Para aquellos que buscan opciones rápidas pero de alta calidad, podemos ofrecer comida rápida gourmet. Esto incluiría hamburguesas gourmet con ingredientes frescos y sabrosos, pizzas artesanales con diferentes coberturas, tacos gourmet con sabores auténticos, y opciones de parrilla como cortes de carne de calidad y pollo a la parrilla. Estas opciones permitirán a los miembros disfrutar de una comida rápida, pero con un toque sofisticado y gourmet.</li></ol><ol type="1" id="96533e87-0875-4a56-bde1-69577e9d78b8" class="numbered-list" start="13"><li><strong>Bebidas alcohólicas y cocteles:</strong> Para complementar la experiencia gastronómica, podemos ofrecer una variedad de bebidas alcohólicas, centrándonos en cocteles creativos y de autor. Podemos incluir opciones como mojitos, margaritas, martinis y daiquiris, utilizando ingredientes frescos y de calidad. Además, no puede faltar la cerveza, ofreciendo una selección de cervezas artesanales tanto locales como internacionales.</li></ol><ol type="1" id="748d2566-e57a-4b24-ace0-53983003834c" class="numbered-list" start="14"><li><strong>Programa de referidos:</strong> Implementar un programa de referidos donde los miembros del coworking pueden recomendar los servicios y productos de los MLM de otros miembros a cambio de comisiones. Esto fomentará la colaboración entre los emprendedores y ayudará a expandir la red de clientes de los MLM.</li></ol><ol type="1" id="f06adee4-5623-4070-bfb9-a93ed7a97617" class="numbered-list" start="15"><li><strong>Eventos de networking:</strong> Organizar eventos de networking temáticos donde los miembros del coworking puedan presentar y promocionar sus MLM a otros emprendedores y potenciales clientes. Estos eventos permitirán establecer conexiones, intercambiar ideas y generar oportunidades de negocio.</li></ol><ol type="1" id="afac8d71-19f6-47bc-ba74-ff95b6cc76d1" class="numbered-list" start="16"><li><strong>Espacios de exhibición: </strong>Designar áreas dentro del coworking donde los miembros puedan exhibir y mostrar sus productos y servicios de los MLM. Esto brindará mayor visibilidad a los emprendedores y facilitará la interacción con otros miembros y visitantes.</li></ol><ol type="1" id="4b7c40ac-a3bc-4d20-aa50-d472177abee1" class="numbered-list" start="17"><li><strong>Sesiones de capacitación y mentoría: </strong>Ofrecer sesiones de capacitación y mentoría específicas para los miembros del coworking que estén involucrados en los MLM. Estas sesiones pueden cubrir temas como estrategias de ventas, marketing digital, desarrollo de equipos y liderazgo, para ayudar a los emprendedores a fortalecer sus habilidades y alcanzar el éxito en sus MLM.</li></ol><ol type="1" id="7904dd98-89df-4048-9856-31f71df6f7e0" class="numbered-list" start="18"><li><strong>Alianzas estratégicas: </strong>Establecer alianzas estratégicas con otras empresas y organizaciones externas que estén interesadas en apoyar el crecimiento de los MLM en el coworking. Esto puede incluir colaboraciones en eventos conjuntos, promoción cruzada y compartición de recursos.</li></ol><p id="2aea7fc4-c3ee-45f9-81c0-e6239051b9e5" class="">
+    </p></div></details><p id="f2bd7d5d-c212-4510-a18a-da447c17722e" class="">
+    </p><p id="83453b45-3a5f-4353-9af5-03881f5064a7" class="">
+    </p><p id="3adb7be7-990a-4368-8da4-6828944f3359" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">3. Área Administrativa</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"> 3.1 Rectificadora Taller Mecánico.</summary><div class="indented"><ul id="f6f4af45-a98f-4084-bede-3c5161a79531" class="bulleted-list"><li style="list-style-type:disc">Se desea aumentar la capacidad de atención y producción del taller mecánico y la rectificadora al doble de lo actual.</li></ul><ul id="6088893b-9b83-45d2-9d0b-a8b5aff1f9b4" class="bulleted-list"><li style="list-style-type:disc">Específicamente 2 autos mas semanalmente para un total de 7</li></ul><ul id="52763386-d6d8-4c6f-bde4-49b8998e470e" class="bulleted-list"><li style="list-style-type:disc">La capacidad de atención de taller mecánico y rectificadora es de 7 autos a la semana</li></ul><ul id="ebd71bdc-2947-4da9-b427-87a3a7b4ce7c" class="bulleted-list"><li style="list-style-type:disc">No se ha realizado descripción detallada de proceso, se asume un proceso lineal donde cada caso requiere igualmente atención del taller mecánico y de la rectificadora.</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Lineas de acción</summary><div class="indented"><ul id="9c1fb69c-840b-47c9-9ce9-0da04aed390b" class="bulleted-list"><li style="list-style-type:disc">Visita al taller mecánico y rectificadora,  descripción general de procesos.<ul id="08a9fa84-aaf7-4168-b04a-07c9e7c2eabb" class="bulleted-list"><li style="list-style-type:circle">Comprensión del sistema, levantar lineas de acción informadas de la productividad real del taller.</li></ul><ul id="3477fa78-97f3-4025-9541-5ebdedae64b1" class="bulleted-list"><li style="list-style-type:circle">Localizar cuellos de botella y errores de los procesos.</li></ul><ul id="56df8e58-be6e-4e38-befb-577efbd7f954" class="bulleted-list"><li style="list-style-type:circle">Determinar un plan de crecimiento Sostenido y limitaciones de crecimiento</li></ul><ul id="704605cd-9661-49d6-ad35-7be27873f8ff" class="bulleted-list"><li style="list-style-type:circle">Comunicar el plan, acordar acciones correctivas y limitaciones de crecimiento.</li></ul><ul id="0a89269d-1122-4aca-a0bf-8d771f1be501" class="bulleted-list"><li style="list-style-type:circle">Establecer parámetros de desborde.</li></ul></li></ul></div></details><ul id="46fc8a30-9df0-4965-a258-596caa6da241" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Desarrollo del Plan de compensación MLM, </span><div class="indented"><ul id="3760bfd4-c9d7-4fe9-8c72-bb86e7f2d5f7" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Completar fórmulas de cálculo.</span><div class="indented"></div></li></ul><ul id="e4b7d046-96ef-498e-87f6-91116dc9a3bd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Estimar los bonos. </span><div class="indented"></div></li></ul></div></li></ul><ul id="7568742b-5738-47b4-a77f-ff04becd3098" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Implementar tienda en línea punto ecommerce</span><div class="indented"></div></li></ul><ul id="df584064-0010-4ae3-93c7-33e2e747f5ec" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Realizar sitio web y embudos de venta</span><div class="indented"></div></li></ul><ul id="67dc7a6f-ccd1-445a-ad52-9bf4c353c2c2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Crear redes sociales relacionadas con el taller, </span><div class="indented"></div></li></ul><ul id="b621fc1a-7cb4-4023-952b-11c2b4fe4364" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Desarrollar el contenido de las redes sociales y demás plataformas: blog, podcast, correo conforme a la estratégia de marketing. </span><div class="indented"></div></li></ul><ul id="f0afcd28-40e5-4c77-a065-f3881412ef80" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Implementar MLM en el Taller y Rectificadora.</span><div class="indented"></div></li></ul><ul id="bf62c377-48ae-4fc1-bff2-cc1f99d8c247" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Realizar lista formal de productos y servicios.</span><div class="indented"></div></li></ul><ul id="b8c2a4d9-d562-4de5-8ba1-3568abaf0be7" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"></span><div class="indented"></div></li></ul><p id="5f272a96-30d2-4386-85ec-6206889b5ecd" class="">
+    </p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4bbaeb9c-5638-410b-8186-29ee3ce3fb5a"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%"><strong>Se requiere:</strong> Reunión del personal completa o por departamentos, explicación de la visita, se debe tener el nivel de acceso a los departamentos y procesos, administrativos y operacionales.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="56139264-2c55-43d6-9aec-57443d3daf09"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%"><strong>Se requiere: </strong>que el personal esté <strong>motivado</strong> de antemano a brindar la máxima cantidad de información pertinente, y coherente.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6b77ddad-ff72-4350-a5bc-7053d25b2fb8"><div style="font-size:1.5em"><span class="icon">⚠️</span></div><div style="width:100%"><strong>Advertencia</strong>: Por experiencia se sabe que las motivaciones mas importantes del personal en empresas no optimizadas básicamente son 1. Reconocimiento y recompensa, 2. Autonomía y empoderamiento, 3. Sentido de propósito y contribución, 4. Desarrollo profesional y aprendizaje, 5. Equilibrio entre vida laboral y personal, 6. Ambiente de trabajo positivo, 7. Relaciones interpersonales, 8. Retos y oportunidades de crecimiento, 9. Estabilidad laboral, 10. Impacto en la sociedad. <strong>La probabilidad de fracaso</strong> de los planes y proyectos se eleva considerablemente si el encargado/encargada del proceso/departamento respectivo no cuenta con la motivación suficiente para vencer la inercia de su <strong>zona de confort.</strong></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6e7f7c31-9139-4180-981c-08a2509a4b00"><div style="font-size:1.5em"><span class="icon">ℹ️</span></div><div style="width:100%"><strong>Información -Recomendación: </strong>Se recomienda acordar los puntos motivacionales para la  reunión de motivación con el personal, asociar la asesoría con los factores motivacionales y positivos, para que no sea vista de manera equivocada como una auditoria o cambio forzoso.</div></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"> 3.2 Repuestos</summary><div class="indented"><ol type="1" id="64071e15-a37e-4021-81d9-3310b0e34087" class="numbered-list" start="1"><li>Definir política de venta de repuestos: ¿Sólo para la reparación de motores?</li></ol><ol type="1" id="77bcaf19-44d7-4f27-837b-da10bcb9d5b8" class="numbered-list" start="2"><li>Establecer precios con la finalidad de otorgar descuentos basados en afiliación y MLM</li></ol><ol type="1" id="32f1f4fc-4efb-4827-bed5-8a84225a9ccd" class="numbered-list" start="3"><li>Recopilar información y características de repuestos de cara a la venta en línea.</li></ol><ol type="1" id="27101d4b-647b-4f81-8135-1faa0d8357b9" class="numbered-list" start="4"><li>Buscar proveedores de repuestos conforme a la línea de negocio establecida en 1</li></ol><ol type="1" id="8438819a-2b58-47a0-8b42-379b848d0df2" class="numbered-list" start="5"><li>Establecer políticas de calidad de repuestos marcas permitidas proceso de autorización de proveedores.</li></ol><ol type="1" id="281b8514-8503-43bf-9f3a-ae8d01f8e4b4" class="numbered-list" start="6"><li>Publicar Repuestos en la tienda digital.</li></ol><ol type="1" id="dff17ea5-43c5-4bff-896c-a28ca1b1898d" class="numbered-list" start="7"><li>Determinar las políticas de inventario, control y registro del inventario en línea.</li></ol><ol type="1" id="fb1ac778-2cc8-4c56-aa83-88481f306033" class="numbered-list" start="8"><li>Por ahora no se realizarán sistemas de contabilidad o facturación legal a nivel web, solo vitrina digital con inventario.</li></ol><ol type="1" id="8641d46f-9528-4699-92e9-0dd561a28d8e" class="numbered-list" start="9"><li>Los servicios citados en 8 requerirán de planificación y gestión.</li></ol><p id="617f5f74-2793-4e21-ab93-18740df65b50" class="">
+    </p><p id="4f51f5f1-c872-429d-b834-a024b56fc24b" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">3.3 Industrias MBC</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Horno:</summary><div class="indented"><ul id="c7a68eb4-9e8e-4dc1-b8e6-0174efc0d16a" class="bulleted-list"><li style="list-style-type:disc">El horno actual produciría 400 kg de metal, con medidas aprox de 1.20 *80   temperatura de 1300 ªC</li></ul><ul id="8b7691b9-29bd-43bd-88d7-63f7d4313b75" class="bulleted-list"><li style="list-style-type:disc">Se propone un replanteamiento de la estrategia de fabricación basada en <strong>prototipado.</strong></li></ul><ul id="2b80e6fe-a6a1-446c-82e2-9d7f61f45fc0" class="bulleted-list"><li style="list-style-type:disc">Se propone comenzar con pequeñas cantidades en los prototipos y desde allí escalar el horno.</li></ul><p id="73c014f3-70c4-4bd5-8ded-7d760003e835" class="">
+    </p><p id="c4610d3a-a70c-4382-be5d-a96dc73c2e46" class="">Visitar fabricante, supervisar trabajo, lineas de acción posibles:<div class="indented"><ul id="a6f0db85-ff8f-4ae5-8834-4c29312e2d2d" class="bulleted-list"><li style="list-style-type:disc">Listar los elementos a adquirir necesarios para muestra de hidrógeno.</li></ul><ul id="eda9fe3e-ddf0-411a-946e-e6e847528ae4" class="bulleted-list"><li style="list-style-type:disc">Presentar muestra de reacción de hidrógeno.</li></ul><p id="5c61bffc-ba1e-40db-9a37-c08bb6e8ea1b" class="">
+    </p></div></p><ul id="ed10f636-b442-433b-9926-47283ba75378" class="toggle"><li><details open=""><summary>Si desiste de la fabricación</summary><ol type="1" id="e5332b84-f39c-46ec-9536-da055e9100f5" class="numbered-list" start="1"><li> Coordinar traída del horno a MBC.</li></ol><ol type="1" id="83ddd56a-334b-4dee-a88e-0049950a2cd5" class="numbered-list" start="2"><li>Decidir el combustible del horno y el sistema de respaldo de combustible.</li></ol><ol type="1" id="e23efa9c-e259-41e6-92e1-5e03cdbd32fd" class="numbered-list" start="3"><li>Determinar plan de acción a seguir para la fabricación del horno.</li></ol><p id="6e7eac3f-bb01-4676-b8c5-ed38ba10ed31" class="">
+    </p></details></li></ul><ul id="bc0117d0-fb2a-463d-b9f2-ab6391a26f42" class="bulleted-list"><li style="list-style-type:disc">Si Continúa<ol type="1" id="a5fcba63-e38a-493f-8a89-53dc8b2ef934" class="numbered-list" start="4"><li>Revisar convenios (y hooks): ganar-ganar con el fabricante.</li></ol><ol type="1" id="8425fb19-4feb-4b30-93d6-708624e52378" class="numbered-list" start="5"><li>Realizar un plan de etapas de culminación por fases.</li></ol><ol type="1" id="a988ca0b-0c0e-45c3-bd7c-aa4f48009b34" class="numbered-list" start="6"><li>Determinar límites de tiempo para cada fase.</li></ol></li></ul><p id="5a75cac3-217f-4fec-abd0-db605cbc4a1a" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Procesos</summary><div class="indented"><ul id="a2cab732-0b3f-465b-922c-965808a525d1" class="bulleted-list"><li style="list-style-type:disc">Entrevistar encargado de MBC</li></ul><ul id="233c2d86-dcff-48ed-938c-8f8a54cbba66" class="bulleted-list"><li style="list-style-type:disc">Realizar un bosquejo de procesos básicos.</li></ul><ul id="4a537f01-2253-4b43-b923-155b9def4f90" class="bulleted-list"><li style="list-style-type:disc">Conocer - Documentar. El sistema de Fabricación de Camisas.</li></ul><ul id="c8c52617-29d4-4c00-9ef7-0ebadc852e66" class="bulleted-list"><li style="list-style-type:disc">Estimar Producción en unidades, rentabilidad, y escalabilidad. </li></ul><ul id="ed06c4a3-7764-4453-bf2a-4e6faed32447" class="bulleted-list"><li style="list-style-type:disc">Realizar análisis de complejidad para determinar prioridad de tiempo.</li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">3.4 Departamentos, Cargos y Funciones.</summary><div class="indented"><p id="177678f9-2a3c-4ef5-8f25-9d1efc97f19a" class="">
+    </p><p id="d85e4eb4-d439-48e8-8297-76625c18b3a4" class="">Como <strong>Consultor de Organización y Talento</strong>, se asumirá la responsabilidad de diseñar la <strong>estructura organizativa, identificar las necesidades de personal y recomendar los perfiles de empleados adecuados para ocupar los cargos en cada departamento.</strong></p><p id="30b3d103-b6ef-4c7f-82ca-514f6940210b" class="">En esta función, se utilizará la experiencia y conocimientos para<strong> analizar las necesidades de la organización y determinar la mejor manera de estructurar los departamentos y las funciones dentro de ellos</strong>. Se trabajará en estrecha colaboración con los líderes de la empresa para comprender sus objetivos y requisitos, y luego se desarrollarán planes estratégicos para la creación de departamentos y la definición de funciones.</p><p id="73fc059c-8490-4007-8d3a-6f90c6e92777" class="">Una vez que se hayan definido los departamentos y las funciones, se asumirá la responsabilidad de<strong> diseñar los perfiles de empleados ideales para cada puesto</strong>. Esto incluirá la identificación de las habilidades, competencias y experiencia necesarias para desempeñar cada función de manera exitosa. Además, se evaluarán las necesidades de personal a corto y largo plazo, teniendo en cuenta el crecimiento y los cambios futuros de la organización.</p><p id="1c2a771e-218e-47e9-ba90-0ed26be69b06" class="">Una vez que se hayan establecido los perfiles de empleados, se será responsable de <strong>recomendar a los posibles profesionales que podrían ocupar los cargos</strong>. Se utilizará la red de contactos y recursos de reclutamiento para identificar candidatos calificados y presentarlos a la empresa para su consideración. También se podrá participar en el proceso de selección, proporcionando información y evaluaciones de los candidatos recomendados.</p></div></details><p id="4f336942-1af0-4aea-be48-c23ff31a337a" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">4. Área  TI</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.1 Servicios de Dominio</summary><div class="indented"><ul id="146660cc-d178-4024-b262-63a700927fcd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Crear el dominio de la página de henao. Conforme a las tendencias de búsqueda.</span><div class="indented"></div></li></ul><ul id="618bacd6-5434-4c68-8b06-f23bb632b899" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Investigación y reserva de dominio</span><div class="indented"></div></li></ul><ul id="5ba98e4e-1c9f-4598-b207-152d56b0a659" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Redireccionar dominio</span><div class="indented"></div></li></ul><ul id="5b3a59a6-0c8c-4fcf-9ec2-3cf082e819f5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Crear y redireccionar DNS</span><div class="indented"></div></li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Descripción del Servicio</summary><div class="indented"><ul id="04ca0134-c845-4376-b119-834bcb067ca0" class="bulleted-list"><li style="list-style-type:disc"><strong>Registro de dominio: </strong>mundomejorasesores.one te permite registrar un nombre de dominio para tu sitio web. Puedes buscar y seleccionar un nombre de dominio disponible de acuerdo a tus necesidades.</li></ul><ul id="def0a151-4e0a-4c87-9c27-92014325d82d" class="bulleted-list"><li style="list-style-type:disc"><strong>Protección de privacidad de dominio: </strong>mundomejorasesores.one ofrece la opción de proteger la privacidad de tu dominio. Esto significa que tus datos personales, como tu nombre, dirección y número de teléfono, se mantendrán privados y no serán accesibles públicamente en la base de datos WHOIS.</li></ul><ul id="6e39d656-eeea-43f4-9ef8-021cd09c8aa7" class="bulleted-list"><li style="list-style-type:disc"><strong>Redirección de dominio: </strong>Puedes configurar la redirección de tu dominio a otro sitio web o URL de tu elección. Esto es útil si deseas redirigir el tráfico de un dominio a otro.</li></ul><ul id="1fdaeec8-723a-4038-ae34-cd11129320b3" class="bulleted-list"><li style="list-style-type:disc"><strong>DNS gratuito:</strong> mundomejorasesores.one proporciona servicios DNS gratuitos para tus dominios. Esto te permite administrar y personalizar la configuración de DNS, como los registros A, CNAME, MX y TXT.</li></ul><ul id="980206b5-5a9d-484f-8fae-128398f9a8f7" class="bulleted-list"><li style="list-style-type:disc"><strong>Servicio: Investigación de nombre de dominio conforme a las tendencias</strong> Descripción: Nuestro servicio de investigación de nombres de dominio te ayuda a encontrar el nombre de dominio perfecto para tu negocio o proyecto, teniendo en cuenta las últimas tendencias. Nuestro equipo de expertos en dominios analizará las tendencias actuales y te proporcionará una lista de nombres de dominio relevantes y atractivos que se alineen con tu marca y objetivos.<ul id="8d713bab-1245-4ca3-8a0a-53723c380196" class="bulleted-list"><li style="list-style-type:circle"><strong>Análisis de tendencias</strong>: Investigaremos las tendencias actuales en tu industria y nicho específico para identificar palabras clave y conceptos populares.</li></ul><ul id="3a370e8b-2a30-4811-9acd-49e03ea2b6f4" class="bulleted-list"><li style="list-style-type:circle"><strong>Generación de ideas: </strong>Basándonos en las tendencias identificadas, generamos una lista de nombres de dominio creativos y relevantes que capturen la esencia de tu negocio.</li></ul><ul id="d5c5d22a-bda2-4dd8-8aff-eace318d353b" class="bulleted-list"><li style="list-style-type:circle"><strong>Disponibilidad de dominio: </strong>Verificaremos la disponibilidad de los nombres de dominio propuestos y te informaremos sobre su disponibilidad para su registro.</li></ul></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.2 Red en CDN Internacional</summary><div class="indented"><ul id="666e6a3b-4cf7-4338-95c8-67f674bb39cb" class="bulleted-list"><li style="list-style-type:disc"><strong>Alta velocidad, baja latencia:</strong> red global CDN masiva<strong> abarca 300 ciudades</strong> y es una de las más rápidas del mundo. De hecho, podemos llegar al<strong> 95 % de la población mundial en aproximadamente 50 m/s.</strong></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.3 MarketTrendAlerts</summary><div class="indented"><blockquote id="aed10860-12f6-4ef1-a8f1-306c9c8f0abe" class="">En el contexto de una empresa rectificadora, MarketTrendAlerts puede ser beneficioso. Al conocer a los mecánicos de motores que se publicitan en Internet, puedes establecer una comunicación con ellos y atraer los casos que requieran rectificación. Esto se logra enviando notificaciones instantáneas a tus clientes cuando haya promociones o descuentos especiales en servicios como la venta de motores, cambio de aceite, mecánica de motores o rectificación de motores. De esta manera, tus clientes estarán informados y tendrán más probabilidades de aprovechar estas ofertas, lo que puede generar ventas adicionales para tu empresa rectificadora.</blockquote></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.4 Router de correo electrónico - Correo personalizado.</summary><div class="indented"><ul id="d3809cf0-bbd9-425a-adc3-db181d3c5553" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Creación de Webmail con google.</span><div class="indented"></div></li></ul><ul id="570e701f-275a-459b-b8f3-a11438e30208" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Rutear correo desde el dominio</span><div class="indented"></div></li></ul><ul id="f1c594c0-74a6-4dbf-9816-f33b265bf6da" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Creación de Direcciones de Correo conforme a los departamentos.</span><div class="indented"></div></li></ul><ul id="92141ba6-9299-409a-830e-370a108bd772" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Asignación de Correos.</span><div class="indented"></div></li></ul><p id="5c1cf6dd-88bc-466b-9186-8def8fe0cbfd" class="">
+    </p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">¿Por qué necesito un router de correo?</summary><div class="indented"><p id="2ecd3da1-eaca-4ddc-9865-c17ef09b8141" class="">El Router de Correo es una herramienta vital para optimizar la comunicación interna y externa de una empresa. Su implementación se justifica por varias razones fundamentales que impactan directamente en la eficiencia y eficiencia de la organización.</p><p id="6523c443-2942-4793-ba65-6e275fe756bb" class="">En primer lugar,<strong> la comunicación interna entre empleados y la comunicación externa con los clientes</strong> requiere un <strong>enfoque formal y estructurado</strong> para garantizar la transmisión efectiva de información. El uso del correo electrónico como medio de comunicación formal facilita la organización de los mensajes, asegura la<strong> trazabilidad de las conversaciones</strong> y permite mantener un<strong> registro histórico de las interacciones</strong>. Además, la formalidad en la comunicación refuerza la seriedad y profesionalismo de la empresa, descubriendo confianza tanto en el ámbito interno como externo.</p><p id="cb18f749-b470-4e07-a3c3-975fe0966068" class="">La estrategia y las tácticas empresariales son elementos clave para el éxito de cualquier organización. El Router de Correo juega un papel fundamental al permitir la <strong>comunicación formal de estas estrategias y tácticas a través del correo</strong> electrónico. Esto asegura que todos los miembros de<strong>l equipo estén alineados y sean conscientes de los objetivos y metas de la empresa</strong>. Además, la posibilidad de firmar digitalmente los correos electrónicos agrega un nivel de autenticidad y validez a las comunicaciones, lo cual es especialmente<strong> importante en el contexto legal venezolano.</strong></p><p id="3db4e6b3-808f-4008-a147-f58b43a14232" class="">El valor del off-paper, más allá de la consideración ecológica, radica en la eficacia y eficiencia que brinda a la empresa. Al utilizar el correo electrónico como medio de comunicación, <strong>se eliminan los tiempos y costos asociados con la impresión y distribución de documentos en papel.</strong> Esto agiliza los procesos internos y externos, permitiendo una respuesta más rápida a los clientes, una mayor cohesión en la empresa y una implementación más eficiente de manuales, métodos o procedimientos nuevos.</p><p id="5ccfb194-e0bc-4759-be74-b6b3023f951b" class="">Además, el correo electrónico es esencial para dar <strong>avisos de eventos, mantener la cohesión de la empresa, anunciar aperturas de mercados y negocios</strong>. El uso de un correo corporativo personalizado, en lugar de un correo genérico como el de Google, transmite una<strong> imagen más profesional </strong>y confiable, lo cual es crucial para generar una buena impresión<strong> en ruedas de negocios y eventos</strong>.</p><p id="67af0567-d407-40ed-9832-ef67a40b8aae" class="">En términos legales, el correo electrónico con firmas y datos tiene validez legal en Venezuela. Esto significa que las comunicaciones pueden realizarse a través del correo electrónico<strong> ser utilizado como evidencia en caso de disputas o litigios, brindando seguridad y respaldo legal a la empresa.</strong></p><p id="7dfa7347-a842-4ee1-9ff6-0beaef767932" class="">Además de la comunicación formal, el Router de Correo también facilita el <strong>seguimiento de clientes y el cierre de ventas,</strong> ya sea en línea o en interacciones presenciales. La capacidad de mantener un registro de las conversaciones y el historial de interacciones con los clientes permite un seguimiento efectivo y una atención personalizada, lo cual es clave<strong> para fidelizar clientes y maximizar las oportunidades de venta.</strong></p><p id="658e19fd-4994-4186-9868-6a2b2e1aaf33" class="">Finalmente, el correo electrónico también ofrece ventajas en términos de marketing y promoción. El email marketing permite realizar<strong> llamadas a la acción, enviar publicidad, promociones y boletines informativos.</strong> Además, el correo electrónico puede complementar y <strong>apoyar las estrategias de redes sociales</strong>, podcasts y blogs de la empresa, ampliando el alcance y la visibilidad de la marca.</p><p id="f9b778e7-bb8a-4e7b-bd0a-124d2332f57d" class="">El Router de Correo es una herramienta esencial para potenciar la comunicación interna y externa de una empresa. Su implementación brinda formalidad, eficacia, eficiencia, validez legal, seguimiento de clientes y oportunidades de marketing. Todo esto contribuye al crecimiento y éxito de la organización en un entorno empresarial cada vez más competitivo.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Características destacadas:</summary><div class="indented"><ul id="6bf86a28-e9d2-42f0-830a-82100770d0b0" class="bulleted-list"><li style="list-style-type:disc"><strong>Imagen de Marca:</strong> Con nuestro servicio de correo electrónico personalizado, puedes crear direcciones de correo electrónico que reflejan tu dominio de empresa, como &quot;tunombreoDepartamento@tudominio.com&quot;. Esto fortalece tu imagen de marca y transmite profesionalismo y confianza a tus contactos.</li></ul><ul id="ff931936-aa1f-48bb-a9d2-106075b3ed67" class="bulleted-list"><li style="list-style-type:disc"><strong>Privacidad y Confidencialidad:</strong> Valoramos tu privacidad y protegemos tus datos de manera segura. Nuestro servicio de correo electrónico personalizado garantiza la confidencialidad de tus comunicaciones y no escanea tus correos electrónicos con fines publicitarios ni comparte tu información con terceros.</li></ul><ul id="bc19a0ed-c55e-4c6d-b54f-f86104ce6d3f" class="bulleted-list"><li style="list-style-type:disc"><strong>Sin publicidad ni spam: </strong>A diferencia de los servicios de correo electrónico gratuitos, no mostramos publicidad intrusiva en tu bandeja de entrada. Esto te permite concentrarte en tus comunicaciones sin distracciones y evita que tu imagen de marca se vea comprometida por anuncios no deseados.</li></ul><ul id="29c68a5c-ca95-41c5-99f7-eeddc9b362f8" class="bulleted-list"><li style="list-style-type:disc"><strong>Personalización Avanzada: </strong>Nuestro servicio te permite personalizar la apariencia y la configuración de tu bandeja de entrada de acuerdo con tus preferencias. Puedes establecer reglas de filtrado, crear firmas personalizadas y organizar tus mensajes de manera eficiente para una experiencia de correo electrónico única y adaptada a tus necesidades.</li></ul><p id="4e3a6909-9ce8-47be-841c-86959b4ece3b" class="">
+    </p><blockquote id="4bb45cbc-629e-4b4b-9cb9-810c9f078aa9" class="block-color-yellow_background"><strong>Ruteado por espacio de trabajo:</strong> Brinda una solución eficiente y confiable para gestionar y <strong>dirigir tus mensajes de correo electrónico de manera efectiva. </strong>Te ayudamos a optimizar la entrega de tus correos electrónicos, asegurando <strong>que lleguen a los destinatarios correctos en el momento adecuado.</strong></blockquote><p id="c90e2154-5fe9-44b2-a4af-7301ed7993b9" class="">
+    </p><ul id="1ae2f25f-8eef-4b00-a654-2f6d46a97ad3" class="bulleted-list"><li style="list-style-type:disc"><strong>Enrutamiento por autoridad: </strong>Clasificamos y dirigimos tus mensajes de correo electrónico de acuerdo con la jerarquía de autoridad establecida en tu organización. Esto garantiza que los correos electrónicos sean enviados a las personas apropiadas según su nivel de responsabilidad y toma de decisiones.</li></ul><ul id="724aa981-2350-4abe-a6e9-b4cf6e2a585b" class="bulleted-list"><li style="list-style-type:disc"><strong>Enrutamiento por negocio: </strong>Organizamos y direccionamos tus mensajes de correo electrónico según las diferentes áreas de negocio en tu empresa. Esto permite que los correos electrónicos sean enviados a los equipos y departamentos correspondientes, asegurando una gestión más eficiente de la comunicación interna.</li></ul><ul id="59e93fce-8ea2-427f-82fc-2f11b1f12f3b" class="bulleted-list"><li style="list-style-type:disc"><strong>Enrutamiento por persona:</strong> Configuramos el enrutamiento de correo electrónico de acuerdo con las preferencias individuales de cada miembro de tu organización. De esta manera, cada persona recibirá los mensajes en su bandeja de entrada personal, optimizando su capacidad de respuesta y seguimiento de las comunicaciones.</li></ul><ul id="7e6b957b-1470-4920-b590-b409ca4e40ed" class="bulleted-list"><li style="list-style-type:disc"><strong>Enrutamiento por oportunidad:</strong> Implementamos un sistema de enrutamiento basado en oportunidades de negocio. Los correos electrónicos relacionados con oportunidades de ventas, proyectos o colaboraciones se dirigirán automáticamente a los equipos y contactos relevantes, asegurando una gestión ágil y efectiva de las oportunidades comerciales.</li></ul><ul id="d1201b6d-97dd-48f3-94f6-8acd34ce4352" class="bulleted-list"><li style="list-style-type:disc">E<strong>nrutamiento por departamento:</strong> Dirigimos los mensajes de correo electrónico a los departamentos específicos dentro de tu organización, garantizando una distribución eficiente y una respuesta oportuna a las solicitudes de soporte, consultas o cualquier otro tipo de comunicación interna o externa.</li></ul><ul id="e32af043-d400-4951-a873-770b7a70a96d" class="bulleted-list"><li style="list-style-type:disc"><strong>Enrutamiento por contacto:</strong> Configuramos el enrutamiento de correo electrónico de acuerdo con los contactos específicos en tu base de datos. Esto permite una comunicación personalizada y directa con clientes, proveedores u otros contactos importantes, asegurando una atención individualizada y una mejor experiencia para tus relaciones comerciales.</li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.5 Nube Informática propia</summary><div class="indented"><p id="35861ae3-fa48-4a67-824b-caabc1476532" class="">Se da acceso al servidor de la asociación o hook, para el consumo de los servicios digitales o microservicios informáticos contratados, este servicio tiene dos modalidades: compartido: el cliente comparte el servidor con otros clientes. instalado en sitio, en ambas modalidades el que administra el servidor es el cliente con excepción de los clientes en el hook de mundomejorasesores.one</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.6 Automatización de redes sociales (Programa SocialSmart).</summary><div class="indented"><ul id="27efdd04-0757-4425-a1da-747fa2a319d0" class="bulleted-list"><li style="list-style-type:disc"><strong>SocialSmart </strong>es un software en construcción trabaja con las API de las 10 redes sociales más importantes : Facebook, YouTube, Instagram, WhatsApp, WeChat, TikTok, LinkedIn, Snapchat, Twitter y Pinterest.</li></ul><ul id="f0ab96bb-35ec-430e-aa13-22904a0a6796" class="bulleted-list"><li style="list-style-type:disc">En cuanto a mi servicio de automatización de publicación en redes sociales, te ofrezco una solución eficiente y efectiva para optimizar tu presencia en estas plataformas. Con nuestra herramienta de automatización SocialSmart, podrás programar y publicar contenido de manera estratégica y constante en todas tus redes sociales. Ya no tendrás que preocuparte por publicar manualmente en cada plataforma, ahorrando tiempo y esfuerzo.</li></ul><ul id="a53d61d0-743e-4e3a-a3e7-92bbc2c0e283" class="bulleted-list"><li style="list-style-type:disc">Nuestra automatización SocialSmart, te permitirá mantener una presencia activa y consistente en las redes sociales, aumentando tu visibilidad y alcance. Podrás programar publicaciones con anticipación, aprovechar los momentos más relevantes para tu audiencia y analizar los resultados de tus acciones.</li></ul><ul id="b3ef3554-37e6-4732-ae5c-8c0a4e6fc5ac" class="bulleted-list"><li style="list-style-type:disc">Además, nuestra herramienta SocialSmart, te brinda la capacidad de personalizar tus publicaciones, adaptándolas a cada red social y optimizando su formato y contenido para obtener el mayor impacto. Con la automatización, podrás mantener una estrategia de contenido sólida y coherente en todas tus redes sociales, fortaleciendo tu marca y generando mayor engagement con tu audiencia.</li></ul><ul id="d645c936-6ddb-44ae-830c-3ed71f5844f0" class="bulleted-list"><li style="list-style-type:disc">Cálculo de retorno de Inversión Redes sociales.</li></ul><ul id="279d8a55-f314-45b7-ae0f-0a6528beb44d" class="bulleted-list"><li style="list-style-type:disc">Estadísticas de redes sociales.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.7 E-mail Marketing</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.8 Inteligencia artificial.</summary><div class="indented"><p id="8ac42bbf-6e94-473c-b86c-024c58c8a862" class="">Eficiencia 24/7: Con nuestra IA, no hay necesidad de descanso. Está disponible las 24 horas, los 7 días de la semana, los 365 días del año para atender a tus clientes, lo que significa que no se perderá ninguna oportunidad de venta.</p><p id="ef83ef91-f1c4-4678-b34e-f10c787e827f" class="">Aclaración de detalles: Nuestra IA conversa con tus clientes, aclara los detalles del producto y resuelve sus dudas, brindando información precisa y detallada para generar confianza en el proceso de compra.</p><p id="dd99decd-0ddf-4146-b69b-318ceb2f5d3e" class="">Orientación personalizada: Nuestra IA guía a tus clientes sobre cómo utilizar tu producto de manera efectiva, proporcionando consejos y recomendaciones adaptados a sus necesidades específicas, lo que mejora su experiencia y aumenta la satisfacción del cliente.</p><p id="1567e9c1-d4c2-4762-8ef3-67d7341273a5" class="">Estrategias de ventas inteligentes: Nuestra IA aplica estrategias de marketing inteligentes, como el upselling y el cross-selling, para aumentar el valor de cada venta, lo que resulta en un incremento significativo en la rentabilidad de tu negocio.</p><p id="0333dd39-7005-42d2-b4d0-74a075d36814" class="">Multicanalidad optimizada: Nuestra IA se adapta a diferentes canales de comunicación, como chat en vivo, correo electrónico y notificaciones push, para llegar a tus clientes de manera efectiva en todas las plataformas, maximizando así las oportunidades de venta.</p><p id="4b7c9371-5402-4c64-bdca-ceb52b4cfe17" class="">Rentabilidad multiplicada: Estudios como el realizado en el País Vasco demuestran que las ventas creativas impulsadas por la inteligencia artificial pueden multiplicar la rentabilidad de los negocios hasta en un 3000%. Esta es una oportunidad única para aumentar tus ingresos de manera significativa.</p><p id="43eff829-23af-4775-99c4-43aa9db635af" class="">Segmentación precisa: Nuestra IA utiliza algoritmos avanzados para analizar los datos de tus clientes y segmentarlos de manera precisa, lo que te permite dirigir tus esfuerzos de ventas a audiencias específicas y aumentar la efectividad de tus campañas.</p><p id="5343280a-a3f9-45dc-b535-b7915445bd55" class="">Personalización de ofertas: Mediante el análisis de datos y el aprendizaje automático, nuestra IA puede generar ofertas personalizadas para cada cliente, aumentando las posibilidades de conversión y generando un mayor nivel de satisfacción.</p><p id="aaeecd30-1d58-4ed7-8b52-0c6a62ea69c1" class="">Detección de patrones de compra: La inteligencia artificial es capaz de identificar patrones y tendencias en el comportamiento de compra de tus clientes, lo que te permite anticiparte a sus necesidades y ofrecerles productos o servicios relevantes en el momento adecuado.</p><p id="21a9c9f1-10fe-40d3-85df-0eccaa7439e9" class="">Mejora continua: Con el tiempo, nuestra IA aprende de las interacciones con los clientes y se vuelve más inteligente y eficiente en la generación de ventas, lo que garantiza una mejora continua en tus resultados a medida que se acumula más experiencia.</p><p id="06e4577b-7e4c-48c6-bbbd-15b0c0857a34" class="">Reducción de costos: Al automatizar tareas y optimizar procesos, la inteligencia artificial puede ayudarte a reducir costos operativos, permitiéndote destinar esos recursos a áreas estratégicas de tu negocio.</p><p id="f5097dc9-42ca-4a4b-ae1f-001404d815cc" class="">Servicios de etiqueta blanca: Cody puede ofrecer servicios de etiqueta blanca a través de su API, lo que permitiría a las empresas utilizar sus capacidades de inteligencia artificial de manera personalizada en sus propios productos o servicios.</p><p id="1b0f4f3c-7ff0-42a8-b72f-d30ac5ab05ff" class="">Herramienta de enseñanza y aprendizaje: Cody puede ser utilizado internamente en las empresas como una herramienta de enseñanza y aprendizaje de nuevas tecnologías. También puede ayudar en la redacción de nuevos artículos de blog y en la creación de campañas de marketing para promover su utilización en diversos sectores de la industria, la educación y el comercio.</p><p id="60c32007-f0c6-4722-8824-1806dcbc70ef" class="">Impulso al emprendimiento: Cody puede ser utilizado como una herramienta de IA para educar y fortalecer a los ciudadanos comunes en el emprendimiento. Esto puede ser especialmente beneficioso en países donde las circunstancias adversas han afectado la economía y el acceso a recursos.</p><p id="5c2339b4-8f0e-48ff-9fa7-4ff246c5a13c" class="">Asistencia en el sector salud: Cody puede ser utilizado como una herramienta de apoyo para profesionales de la salud, brindando información actualizada sobre enfermedades, tratamientos y recomendaciones médicas. También puede ayudar a gestionar citas médicas y recordatorios para pacientes.</p><p id="caf319d6-d3c7-4599-905b-515bc9f7bfed" class="">Personalización de experiencias de usuario: Cody puede utilizar algoritmos de aprendizaje automático para analizar el comportamiento de los usuarios y ofrecer recomendaciones personalizadas en diversos sectores, como comercio electrónico, entretenimiento o servicios de streaming.</p><p id="2251c32f-bb87-4bc4-9950-cbef4ac3e566" class="">Automatización de atención al cliente: Cody puede ser utilizado como un chatbot inteligente para brindar respuestas rápidas y precisas a consultas de clientes, reduciendo los tiempos de espera y mejorando la satisfacción del cliente en diferentes industrias.</p><p id="21666613-7a5b-4f4d-b7f7-98e0a6465439" class="">Análisis de datos financieros: Cody puede ayudar en el análisis de datos financieros, ofreciendo recomendaciones de inversión, detección de fraudes o identificación de patrones que puedan mejorar la toma de decisiones en el sector financiero.</p><p id="572d92a4-f6c8-463f-805c-608c83ef4f8d" class="">Apoyo en la educación a distancia: Cody puede proporcionar recursos educativos, responder preguntas y brindar apoyo a estudiantes y profesores en entornos de educación a distancia, ayudando a mejorar la calidad de la enseñanza y el aprendizaje.</p><p id="d16ed1d2-5ddd-4ad8-9f30-f9ca4bcf4fa6" class="">Generación de contenido creativo: Cody puede ayudar en la generación de contenido creativo, como ideas para historias, guiones, títulos de libros, nombres de productos, slogans publicitarios, entre otros.</p><p id="d9e49fdc-6daa-4f35-8d83-84e2a38c7368" class="">Asistencia en la investigación: Cody puede ser utilizado como una herramienta de apoyo en la investigación, proporcionando información relevante, resúmenes de artículos académicos o científicos, y ayudando a organizar y sintetizar datos.</p><p id="8d2949f0-7b5b-4000-adae-b4c6affe33b5" class="">Tutoría y aprendizaje personalizado: Cody puede actuar como un tutor virtual, proporcionando explicaciones y ejemplos para ayudar a los estudiantes a comprender conceptos difíciles en diversas materias.</p><p id="90257c32-1462-4ba8-99c0-f1e26caa8331" class="">Optimización de procesos empresariales: Cody puede analizar datos y ofrecer recomendaciones para mejorar la eficiencia de los procesos empresariales, como la gestión de inventario, programación de personal, optimización de rutas de entrega, entre otros.</p><p id="a0cc8c05-10cb-409c-9ef6-bc8c2c4b9e4c" class="">Apoyo en la toma de decisiones: Cody puede analizar datos, realizar análisis de riesgos y proporcionar información relevante para apoyar la toma de decisiones estratégicas en empresas o proyectos.</p><p id="d3df0c36-4003-49ff-a020-fc9584a0ae70" class="">Generación de ideas de marketing: Cody puede ofrecer ideas creativas para campañas de marketing, estrategias de redes sociales, diseños de logotipos, contenido publicitario, entre otros.</p><p id="b8ecfbb5-0cbd-4f46-bdd1-9be75ef43091" class="">Edición y corrección de textos: Cody puede ayudar a revisar y corregir errores gramaticales, de redacción, de contexto, ortográficos y de estilo en documentos o escritos.</p><p id="1ec422f6-2636-4d38-9cf6-56a244315c45" class="">Recopilación de información: Cody puede buscar y recopilar información relevante sobre temas específicos, ahorrándote tiempo en la búsqueda manual.</p><p id="929fd60d-cf96-4797-bb18-9df0b19869e2" class="">Planificación de viajes: Cody puede proporcionar recomendaciones de destinos, itinerarios de viaje, opciones de transporte y sugerencias de actividades en diferentes lugares.</p><p id="a552e337-83d3-452b-a992-26ebce440330" class="">Generación de ideas de negocio: Cody puede ofrecer ideas innovadoras para nuevos productos, servicios o modelos de negocio.</p><p id="69534e2a-6929-4cf9-b709-9f23fda7df32" class="">Soporte técnico: Cody puede brindar asistencia técnica básica para resolver problemas comunes en computadoras, dispositivos móviles u otros dispositivos electrónicos.</p><p id="d59ed10d-e05b-4ee1-806f-5102f6da68ea" class="">Asesoramiento financiero: Cody puede proporcionar información y consejos básicos sobre gestión financiera personal, como presupuestos, ahorros e inversiones.</p><p id="789bd6b3-dd33-47c8-b27a-c2d6931da822" class="">Creación de listas y recordatorios: Cody puede ayudarte a crear listas de tareas, recordatorios de eventos importantes o listas de compras.</p><p id="e034a212-aab8-4a3d-a355-160aa1fc3e88" class="">Generación de nombres: Cody puede ayudar a generar nombres para empresas, productos, personajes ficticios u otras entidades.</p><p id="25323f2b-ab53-4f8c-b09f-dded00001c1f" class="">Asistencia en la resolución de problemas: Cody puede ayudar a desglosar problemas complejos en pasos más manejables y ofrecer posibles soluciones.</p><p id="91e569ec-6a44-42d3-acc6-d91219ba18fe" class="">Planificación de eventos: Cody puede proporcionar ideas y recomendaciones para la organización de eventos, como fiestas, conferencias o reuniones.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.9 Sistema (Programa) MLM</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.10 Sistema CRM</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.11 Tienda Digital</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>Costo de Mercado Tienda Digital</strong></summary><div class="indented"><p id="f407c784-fd33-40a3-940d-68fb0c734c5a" class="">
+    </p><figure id="f570e0bb-d90f-45bb-84e7-d5c743863f5b"><a href="https://www.shopify.com/es/blog/cuanto-cuesta-montar-una-tienda-online" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">¿Cómo montar un ecommerce y cuánto cuesta crear uno en 2022?</div><div class="bookmark-description">Seguro que alguna vez te has planteado cuánto cuesta montar una tienda online en 2022. Pues entra aquí y descubre cuáles son las principales partidas de gasto.</div></div><div class="bookmark-href"><img src="https://cdn.shopify.com/static/shopify-favicon.png" class="icon bookmark-icon"/>https://www.shopify.com/es/blog/cuanto-cuesta-montar-una-tienda-online</div></div><img src="https://cdn.shopify.com/s/files/1/0229/0839/files/cuanto-cuesta-montar-una-tienda-online_1024x1024.jpg?v=1635847954" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Características</summary><div class="indented"><blockquote id="d854d24e-8cbf-4b26-98a7-0cb0f8977ce9" class="">Punto de Venta, Vitrina-catálogo on line, Gestor de Clientes, Gestor de Afiliados, Gestor de Campañas de redes Sociales, Fidelizador de clientes.</blockquote><ul id="8ba7efb4-b4a1-4015-b0d7-65c677bc6c03" class="bulleted-list"><li style="list-style-type:disc">&quot;Nuestra tienda virtual, Punto Ecommerce, ofrece una solución completa para tu rectificadora, Venta de motores y repuestos; brindándote una vitrina de exposición de productos en línea con un control eficiente del inventario. Con esta plataforma, podrás mostrar tus productos y servicios de manera atractiva, teniendo a sus clientes explorar y realizar compras de forma sencilla y segura.</li></ul><ul id="a90adfad-9867-43e8-84a6-0dc538f6087f" class="bulleted-list"><li style="list-style-type:disc">Además de ser una tienda en línea, Punto Ecommerce integra múltiples pasarelas de pago, incluyendo criptomonedas, pago móvil y PayPal. Esto significa que tus clientes podrán realizar transacciones utilizando diferentes métodos de pago, brindándoles mayor comodidad y flexibilidad.</li></ul><ul id="72f3c622-89b3-4859-a846-2c1f78017cf5" class="bulleted-list"><li style="list-style-type:disc">Una característica destacada de Punto Ecommerce es su capacidad de ser una plataforma multitienda. Esto te permitirá gestionar y administrar varias tiendas en línea desde una sola plataforma, lo que facilitará la expansión de tu negocio y la segmentación de diferentes mercados.</li></ul><ul id="b31050ed-e857-4bfd-97f3-fc7f4c8ecd72" class="bulleted-list"><li style="list-style-type:disc">Además, Punto Ecommerce ofrece una amplia gama de opciones y características para tus productos. Podrás establecer descuentos, crear cupones especiales y configurar programas de puntos de recompensa para fidelizar a tus clientes y promover ventas recurrentes.</li></ul><ul id="dd90d62b-b1fe-4672-b7ea-e9058f8c18b5" class="bulleted-list"><li style="list-style-type:disc">La plataforma también te brinda la posibilidad de rastrear tus campañas de marketing utilizando códigos de referencia. Podrás asignar un código único a cada red social o campaña publicitaria, lo que te permitirá medir el impacto de cada una de ellas y ajustar tu estrategia de marketing en consecuencia.</li></ul><ul id="a403d80e-7deb-454a-916e-4116209029c1" class="bulleted-list"><li style="list-style-type:disc">Además, Punto Ecommerce te ofrece la posibilidad de conectarte a la base de Google y al mapa del sitio de Google, lo que optimizará la visibilidad de tus productos en los resultados de búsqueda y limitar tu alcance a clientes potenciales.</li></ul><p id="e69794b6-da6e-41b9-8015-80a7066ae966" class="">Con nuestra solución Punto Ecommerce, tendrá una tienda virtual completa que combina una vitrina de <strong>exposición de productos atractivos</strong>, un <strong>control eficiente del inventario</strong>, <strong>múltiples opciones de pago</strong>, la capacidad de ser <strong>una plataforma multitienda</strong> y <strong>herramientas de marketing avanzadas</strong>. Todo esto respaldado por un equipo de soporte dedicado para asegurar el éxito de su negocio en línea.</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.12 Páginas web Individuales Túneles de ventas.</summary><div class="indented"><p id="5c58b0a0-96bd-46bf-8c46-78f9dd21c5b1" class=""><strong>Servicio: Creación de sitios web dinámicas:</strong></p><p id="0fc8061d-aee9-4bff-ac6a-31533fdcabae" class="">Nuestro servicio de creación de sitios web dinámicos ofrece una solución completa y profesional para establecer tu presencia en línea de manera efectiva. Con un enfoque en la calidad y la personalización, nos aseguramos de crear un sitio web atractivo y funcional que se adapte a tus necesidades específicas. A continuación, te detallo los elementos clave de nuestro servicio:</p><p id="6032dac8-34d6-4945-94cb-5ef392733a01" class=""><strong>Página de ventas</strong>: Diseñamos una página de ventas convincente que destaca los productos o servicios que ofreces. Utilizamos estrategias de diseño y redacción persuasivas para captar la atención de tus visitantes y convertirlos en clientes potenciales. Nos aseguramos de que la página de ventas transmita tu mensaje de manera clara y efectiva.</p><p id="3f6ccabc-c7f8-446a-8d5d-8f2ffa9e254f" class=""><strong>Landing page</strong>: Creamos una landing page efectiva para promocionar una oferta especial, un producto destacado o una campaña específica. La landing page está diseñada para captar la atención de los visitantes y motivarlos a tomar una acción específica, como suscribirse a tu boletín informativo o realizar una compra. Nos aseguramos de que la landing page tenga un diseño atractivo y un llamado a la acción claro.</p><p id="baf4c1e1-682f-4547-b9fe-948a8e06cfbe" class=""><strong>Biografía / Sobre nosotros: </strong>Incluimos una sección dedicada a contar la historia de tu empresa o a presentar al equipo detrás del negocio. Esta sección ayuda a generar confianza y credibilidad entre tus visitantes al mostrarles quiénes son y qué los hace especiales. Nos aseguramos de que la biografía o la página &quot;Sobre nosotros&quot; refleje la personalidad y los valores de tu empresa.</p><p id="5463482a-2749-4fc9-94c4-fc49c2a60580" class=""><strong>Contenido genérico: </strong>Proporcionamos contenido genérico inicial para las diferentes secciones de tu sitio web, como la página de inicio, los productos o servicios, el blog, etc. Este contenido está diseñado para brindar información relevante y atractiva a tus visitantes.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.13 <strong>Entorno de Aprendizaje Dinámico Orientado a Objetos y Modular (aula virtual)</strong></summary><div class="indented"><ul id="16506cae-dcc0-405b-be07-cada21d48dfb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Descripción del servicio de aula virtual como servicio y como plataforma de cursos concretos.</span><div class="indented"></div></li></ul><ul id="1995269b-ba8f-48a0-81d1-0196ee4f50f2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Determinación de cursos</span><div class="indented"></div></li></ul><ul id="3bc62c31-7ea2-4f76-b77a-8dbbdc2cbd4a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Contactar profesionales.</span><div class="indented"></div></li></ul><ul id="7463f087-d74e-4690-9528-564bbc41e692" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Construir contenidos, de cursos iniciales, preestablecidos de soporte de uso de la plataforma</span><div class="indented"></div></li></ul><ul id="af1e31f9-6065-4223-9b52-2203c868541b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Construir sistema MLM educativo (Plan de compensación)</span><div class="indented"></div></li></ul><ul id="a106a73d-07ca-47aa-a7a7-7c0dee748d44" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">LIstar centros educativos y Grandes empresas, contactar. (técnica del revólver) si ofreces los cursos y no están interesados les hablas de los portales, de la seguridad, vas cambiando el cilindro del revolver hasta que estén interesados.</span><div class="indented"></div></li></ul><ul id="ecfa31f4-f2a3-4917-af0a-dd9d7c8552ce" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Publicitar el Servicio</span><div class="indented"></div></li></ul><ul id="664346ad-c3e9-41c0-83b6-1ce79569325a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Crear infraestructura mínima administrativa.</span><div class="indented"></div></li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Descripción del servicio:</summary><div class="indented"><h3 id="8b1201f3-ff24-4897-be29-be1e9f88c9d3" class="block-color-red_background">Ventajas</h3><p id="d1dea2d3-1c82-4b2a-a58f-fa22cb7681b9" class="">
+    </p><p id="b596c1dc-d639-48cc-83ea-25ec1a6a02a8" class="">Nuestra aula virtual, una plataforma altamente versátil y completa, está diseñada para ofrecer un entorno educativo eficiente y efectivo tanto para escuelas, universidades como para empresas. A continuación, describiré algunas de las características y ventajas clave de nuestro aula virtual:</p><ol type="1" id="8d073cc8-7ca3-40e9-a1cb-328ed917847a" class="numbered-list" start="1"><li>Organización y estructura: Nuestra aula virtual ofrece una forma intuitiva de organizar y estructurar el contenido del curso. Los docentes pueden crear secciones, módulos y actividades para mantener todo el material de aprendizaje en un solo lugar, lo que facilita la navegación y la accesibilidad para los estudiantes.</li></ol><ol type="1" id="90c922d6-f80b-4526-bcac-817b5bd84c81" class="numbered-list" start="2"><li>Flexibilidad y personalización: Nuestra aula virtual permite a los docentes personalizar el diseño y la estructura del curso según sus necesidades. Pueden agregar recursos multimedia, como videos, presentaciones y documentos, para enriquecer el contenido y adaptarlo a diferentes estilos de aprendizaje.</li></ol><ol type="1" id="19f1557c-4e5d-490a-8fcc-761f6230cc9e" class="numbered-list" start="3"><li>Interacción y colaboración: Nuestra aula virtual fomenta la participación activa de los estudiantes a través de herramientas de comunicación, como foros de discusión, chats y mensajería interna. Esto promueve la colaboración entre los estudiantes, facilitando el intercambio de ideas y la resolución conjunta de problemas.</li></ol><ol type="1" id="6fc21fa7-b251-42c3-a7da-29a633b64c0c" class="numbered-list" start="4"><li>Evaluación y seguimiento del progreso: Una de las ventajas más destacadas de nuestro aula virtual es la posibilidad de realizar exámenes y evaluaciones en línea. La plataforma ofrece una amplia gama de herramientas de evaluación, como cuestionarios con autocorrección, tareas en línea y calificaciones automatizadas, lo que agiliza el proceso de evaluación y brinda retroalimentación inmediata a los estudiantes.</li></ol><ol type="1" id="92c07108-0323-4ed5-ac7d-7b5ea98ee339" class="numbered-list" start="5"><li>Reutilización de contenido: Con nuestra aula virtual, los docentes pueden reutilizar preguntas y actividades en diferentes cursos, lo que ahorra tiempo y esfuerzo en la creación de nuevos materiales. Además, la plataforma permite importar y exportar contenido, lo que facilita la colaboración entre docentes y la compartición de recursos educativos.</li></ol><ol type="1" id="202c7d74-61a6-4681-b633-04d608e6e170" class="numbered-list" start="6"><li>Seguimiento y análisis: Nuestra aula virtual ofrece herramientas de seguimiento y análisis del progreso de los estudiantes. Los docentes pueden acceder a informes detallados sobre la participación, el rendimiento y la interacción de los estudiantes, lo que les permite identificar áreas de mejora y brindar una educación más personalizada.</li></ol><p id="40199054-c0a6-45c6-9b26-d1e20f885d66" class="">
+    </p><h3 id="25c7e49c-ca90-41f0-a990-f63d86ade051" class="block-color-red_background">Ahorro e Ingresos:</h3><p id="a0acd362-d651-44bb-ae97-04fa4fbc3b7b" class="">
+    </p><p id="989a517d-ce93-4974-a3aa-e53226689943" class="">En términos económicos, nuestra aula virtual representa un ahorro significativo en costos de implementación y mantenimiento en comparación con otras soluciones similares. Además, su accesibilidad y facilidad de uso la utilizarán en una opción ideal para instituciones educativas y empresas que buscan una plataforma educativa eficiente y adaptable.</p><p id="3e2663e2-bf26-412f-a9ba-6d31e5ad652d" class="">Sin lugar a dudas, el uso de un aula virtual como fuente de ingresos puede generar múltiples ventajas económicas que van más allá del simple ahorro. Veamos algunas de estas ventajas desde una perspectiva más amplia:</p><ol type="1" id="d321dda2-580c-4a83-8e0c-9861c291f63e" class="numbered-list" start="1"><li><strong>Escalabilidad y alcance global:</strong> Un aula virtual bien estructurada y con contenido de calidad puede ser escalable, lo que significa que no se limita a un número específico de estudiantes o a un espacio físico determinado. Esto permite llegar a un público mucho más amplio, incluso a nivel internacional, lo que a su vez aumenta el potencial de generación de ingresos.</li></ol><ol type="1" id="93319710-14ac-4212-b7d1-28841561c2be" class="numbered-list" start="2"><li><strong>Diversificación de productos y servicios</strong>: Además de ofrecer cursos tradicionales, un aula virtual puede convertirse en una plataforma para ofrecer una variedad de productos y servicios relacionados. Esto puede incluir cursos especializados, programas de capacitación corporativa, tutorías personalizadas, material educativo adicional, entre otros. La diversificación de la oferta puede atraer a diferentes segmentos de mercado y generar fuentes adicionales de ingresos.</li></ol><ol type="1" id="06d781fb-5500-4d5d-9c7a-ccfec9dc9615" class="numbered-list" start="3"><li><strong>Modelos de suscripción y membresía: </strong>Un aula virtual puede implementar modelos de suscripción o membresía, donde los estudiantes pagan una tarifa recurrente para acceder a ciertos cursos o beneficios exclusivos. Esta estrategia no solo genera ingresos estables a largo plazo, sino que también fomenta la lealtad y el compromiso de los estudiantes, quienes pueden sentirse motivados a seguir aprendiendo y participando activamente en la plataforma.</li></ol><ol type="1" id="d22e3a60-9577-4793-802e-ac58f5c683f7" class="numbered-list" start="4"><li><strong>Colaboraciones y alianzas estratégicas: </strong>Un aula virtual exitosa puede atraer la atención de instituciones educativas, empresas u otras organizaciones interesadas en asociarse. Estas colaboraciones pueden incluir acuerdos de licencia de contenido, patrocinios, eventos conjuntos o incluso la creación de programas educativos personalizados para estas entidades. Estas alianzas estratégicas pueden generar ingresos adicionales y fortalecer la reputación y el prestigio de la plataforma.</li></ol><ol type="1" id="b06a3dad-3586-4343-a892-d87e5118e77c" class="numbered-list" start="5"><li><strong>Explotación de datos y análisis: </strong>Una aula virtual bien desarrollada y con una sólida infraestructura tecnológica puede recopilar y analizar datos de los estudiantes, como su rendimiento, preferencias de aprendizaje y comportamiento en la plataforma. Estos datos pueden ser utilizados para ofrecer servicios adicionales, como informes personalizados, recomendaciones de cursos o incluso colaboraciones con empresas que buscan perfiles específicos de estudiantes. La explotación de datos inteligente puede generar oportunidades de ingresos adicionales y proporcionar una experiencia de aprendizaje más personalizada.</li></ol><p id="8b0e8510-6ea3-4f05-b9d2-7ebc31f82736" class="">Un aula virtual no solo puede representar ahorros significativos, sino también una fuente de ingresos sustanciales a través de la escalabilidad, la diversificación, los modelos de suscripción, las colaboraciones estratégicas y la explotación de datos. Estas ventajas económicas, respaldadas por una propuesta sólida intelectual y estratégica, posicionan al aula virtual como una fuente de ingresos atractiva y rentable en el panorama educativo actual.</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.14 Portales WorldPress</summary><div class="indented"><ul id="a260ea80-876f-4bab-b792-7435cdb05b93" class="bulleted-list"><li style="list-style-type:disc">Configurar espacio de eventos. </li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.15 Sistemas Ágile (Kabán, Control de Sprints, Calidad total, Justo a Tiempo…)</summary><div class="indented"><p id="a82cc4b4-1aa9-4be1-80cd-3b19b3a3adc3" class="">Sistema Kaban para el control de fabricación push - justo a tiempo -Calidad total</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.16 Sistemas Workgrup: </summary><div class="indented"><ul id="5d394d64-f661-40a9-9e70-3033ba2a3303" class="bulleted-list"><li style="list-style-type:disc">Notion Curso en español</li></ul><figure id="79b3af7a-b1dc-4f39-9a80-7c937ad77880"><a href="https://www.youtube.com/watch?v=8AOEyOPnKpg&amp;list=PLzaYMdbJMZW3wycplgaDqLjs-lv-_-SpK" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">¿Qué es Notion?</div><div class="bookmark-description">Notion es un espacio para pensar, escribir y planificar. Anota tus ideas, gestiona proyectos o incluso lidera una empresa, todo siempre a tu manera.
+    Regístrate, es gratis: https://www.notion.so/product</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/6ca9d352/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=8AOEyOPnKpg&amp;list=PLzaYMdbJMZW3wycplgaDqLjs-lv-_-SpK</div></div><img src="https://i.ytimg.com/vi/8AOEyOPnKpg/maxresdefault.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.17 MailMaximizer</summary><div class="indented"><blockquote id="b761ee01-c701-4c41-8912-20ad9bc257d8" class=""><ul id="53903ed1-a445-45a1-b8e2-1023e91de9df" class="bulleted-list"><li style="list-style-type:disc">El servicio de MailMaximizer es una solución integral que se encarga de la estructuración y automatización del envío de correos electrónicos a los clientes como medio de comunicación para tu empresa. Este servicio ofrece una forma efectiva y opcionalmente cifrada de mantener una comunicación constante y personalizada con tus clientes.</li></ul><ul id="3124b15e-f716-47d6-b770-d41c1606b08b" class="bulleted-list"><li style="list-style-type:disc">La automatización de correo electrónico agiliza las comunicaciones tanto para los asociados como para los promotores de tu empresa. Con este servicio, podrás enviar información sobre campañas y eventos, notificar cambios en políticas o procedimientos, promocionar nuevos productos o servicios, así como publicar ofertas especiales para cerrar ventas a través de correos electrónicos o incluso ventas directas en correos.</li></ul><ul id="0f9f6e74-8ca5-45db-8dde-da3c5377f4be" class="bulleted-list"><li style="list-style-type:disc">Además, el servicio de Automatización de Correo también brinda seguimiento de clientes, enviando información relevante y actualizada como noticias y boletines directamente a sus correos electrónicos. También ofrece formación a distancia para estudiantes de cursos por correspondencia, asegurando una experiencia educativa completa y conveniente.</li></ul><ul id="0025a1fc-e5dd-463a-85b6-f5cc537b25b7" class="bulleted-list"><li style="list-style-type:disc">Este servicio también apoya las publicaciones en redes sociales, blogs y podcasts de tu empresa, garantizando una presencia consistente y coherente en todas las plataformas de comunicación.</li></ul><ul id="85821937-a7bb-4d0d-a414-97a7e524d363" class="bulleted-list"><li style="list-style-type:disc">Con la Automatización de Correo, podrás optimizar tus comunicaciones, ahorrar tiempo y recursos, y mantener una relación sólida con tus clientes.</li></ul></blockquote></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.18 🛡️Tron Shield : </summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Servicio de SSL</summary><div class="indented"><p id="8de78317-41e8-4f0c-b68b-a34ce178e830" class=""><a href="https://www.bluehost.com/blog/does-my-website-need-ssl-learn-the-benefits-of-ssl-for-website-security/?psafe_param=1&amp;utm_campaign=dsa_blog_PPC&amp;utm_source=googleads&amp;utm_medium=genericsearch&amp;utm_affiliate=bluehost_PPC&amp;irpid=101&amp;clickid=P61C101S570N0B5578A2D4499E0000V134&amp;channelid=P61C101S570N0B5578A2D4499E0000V134&amp;gclid=CjwKCAjwxOymBhAFEiwAnodBLGGwXEcXYrVwE3uvQG9r-WR6kb7-c_os2ny9UYK5U73UjkJ0dtVeFBoC1cEQAvD_BwE&amp;gclsrc=aw.ds"><strong>¿Por qué necesito SSL?</strong></a></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="edc45181-96f6-4f58-b712-34cc076b4856"><div style="font-size:1.5em"><span class="icon">🛡️</span></div><div style="width:100%"><strong>Ventajas de SSl en servidor:</strong><ul id="9efb0e76-0438-407e-8a3c-a5e7ad0bc5ae" class="bulleted-list"><li style="list-style-type:disc"><strong>Protección de datos:</strong> Al implementar SSL en tu sitio web, todos los datos confidenciales que se transmiten entre el navegador del usuario y el servidor web se cifran, lo que garantiza que la información sensible, como datos personales o información financiera, esté protegida contra posibles ataques de terceros.</li></ul><ul id="6b4c2130-64a6-483f-80c8-8502f2b1be9e" class="bulleted-list"><li style="list-style-type:disc"><strong>Aumento de la confianza del cliente:</strong> Al mostrar el candado de seguridad y el protocolo &quot;https&quot; en la barra de direcciones del navegador, los visitantes de tu sitio web tendrán la certeza de que su información está protegida y de que están navegando en un entorno seguro. Esto generará confianza y credibilidad en tu negocio, lo que puede resultar en mayores conversiones y ventas.</li></ul><ul id="de3fe39d-f302-4c5f-aec0-fbdd44938f17" class="bulleted-list"><li style="list-style-type:disc"><strong>Cumplimiento de normativas:</strong> Si tu sitio web maneja información sensible, como datos de tarjetas de crédito o contraseñas, es importante cumplir con las normativas de seguridad en línea. Al implementar SSL, estarás cumpliendo con los estándares de seguridad requeridos, como el cumplimiento del Reglamento General de Protección de Datos (GDPR) de la Unión Europea.</li></ul><ul id="920ee82a-7229-401c-8470-d5d279ff2554" class="bulleted-list"><li style="list-style-type:disc"><strong>Posicionamiento SEO</strong> en los motores de búsqueda: Los motores de búsqueda, como<strong> Google</strong>, valoran la seguridad en línea y consideran el uso de SSL como un factor de clasificación importante. Al implementar SSL en tu sitio web, <strong>mejorará notablemente tu posicionamiento en los resultados de búsqueda</strong>, lo que aumentará la visibilidad de tu negocio y atraerá a más visitantes.</li></ul><ul id="9c3bcc7b-d395-4119-bf0f-45a198fbde46" class="bulleted-list"><li style="list-style-type:disc"><strong>Protección contra el phishing</strong>: El SSL también ayuda a prevenir ataques de phishing, ya que proporciona una capa adicional de autenticación. Los certificados SSL validan la identidad de tu sitio web, lo que ayuda a los usuarios a distinguir entre un sitio legítimo y uno falso. Esto protege a tus clientes de ser engañados por sitios web fraudulentos que intentan robar su información personal.</li></ul></div></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Protección integral de RED</summary><div class="indented"><ul id="88e7067a-09dd-4344-9fff-95bd28be0c06" class="bulleted-list"><li style="list-style-type:disc">Protección de los sitios web contra bots, vulnerabilidades de día cero Ataque DDOS, Movimiento lateral de red, firewall de última generación, protección a los trabajadores remotos y visitantes del sitio web y de la tienda de malware, ransomware, phishing y otros riesgos.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Tron - Signal</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Tron- Warp</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Túneles cifrados y Comunicaciones encriptadas</summary><div class="indented"><ul id="720d850c-1c94-4790-b343-3303accddeca" class="bulleted-list"><li style="list-style-type:disc">Cifrado de comunicaciones, textos, videos bases de datos de contabilidad, o inventario, <strong>la privacidad y anonimato</strong> de las acciones y transacciones del negocio está asegurada.</li></ul><ul id="f0bed5bf-50ee-48da-9fbf-96ede69b4764" class="bulleted-list"><li style="list-style-type:disc">Nuestro servicio de protección en línea ofrece a nuestros valiosos clientes una solución avanzada para salvaguardar su privacidad y seguridad en internet. Mediante nuestra innovadora tecnología de túnel cifrado, creamos un entorno seguro y confiable para que puedas <strong>navegar por la web de forma anónima y proteger tus datos sensibles.</strong></li></ul><ul id="f9068711-3eff-4b09-b1a3-2b1c55877559" class="bulleted-list"><li style="list-style-type:disc">Con nuestra solución, tu conexión a internet se convierte en <strong>un canal privado y cifrado,</strong> lo que significa que tus actividades en línea están protegidas de miradas indiscretas y posibles ataques cibernéticos. Tu información personal, datos confidenciales y comunicaciones se mantienen seguros y fuera del alcance de terceros no autorizados.</li></ul><ul id="8a902ac2-62f9-4ab1-835e-71c885913f5b" class="bulleted-list"><li style="list-style-type:disc">Nuestro servicio de túnel cifrado te permite acceder a contenido restringido geográficamente, <strong>superando cualquier tipo de bloqueo o censura impuesta por gobiernos</strong>, empresas u otras entidades. Además, garantizamos una velocidad de conexión óptima para que puedas disfrutar de una experiencia en línea fluida y sin interrupciones.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Protección de hogar, oficina y empresa. </summary><div class="indented"><p id="4d27d83a-7b1c-4e76-b378-2a1bb86f552f" class="">
+    </p><ul id="88bb8426-6837-4bf9-851e-51c7f3224de7" class="bulleted-list"><li style="list-style-type:disc">Protección de routers</li></ul><ul id="6b707b9f-09ac-476c-8626-7ac8d59df0cd" class="bulleted-list"><li style="list-style-type:disc">Instalación de sistemas seguros.</li></ul><p id="fc0cf0dc-1763-4c92-98b6-f750dcb5ca8a" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Tron Warrior</summary><div class="indented"><ul id="409ffad6-8f2f-4243-9a5e-4d2e0c50b534" class="bulleted-list"><li style="list-style-type:disc">Tron Warrior es una poderosa herramienta de seguridad de código abierto diseñado para proteger sistemas basados en Linux contra diversas formas de malware. Como antivirus, Tron Warrior ofrece una sólida defensa contra virus y otras amenazas conocidas. Además, su funcionalidad se extiende a la detección y eliminación de rootkits, que son programas maliciosos diseñados para ocultar su presencia y controlar de manera encubierta un sistema.</li></ul><ul id="7526e4e3-5ecf-4554-8f77-79e8b16da2c5" class="bulleted-list"><li style="list-style-type:disc">Esta herramienta es altamente efectiva en la detección y eliminación de virus, que son programas maliciosos capaces de replicarse y propagarse a través de archivos y sistemas. También es capaz de identificar y neutralizar troyanos, que son programas que se hacen pasar por software legítimo para infiltrarse en un sistema y permitir el acceso no autorizado.</li></ul><ul id="ef176c27-9511-4aaa-a4f5-2d3e3f259563" class="bulleted-list"><li style="list-style-type:disc">Además de su enfoque en virus y troyanos, Tron Warrior también brinda protección contra otros tipos de malware, como gusanos y spyware. Los gusanos son programas que se propagan automáticamente a través de redes, mientras que el spyware se instala en un sistema sin el conocimiento del usuario y recopila información personal.</li></ul><ul id="000ad0a9-970a-4e6e-b599-4188259dc28c" class="bulleted-list"><li style="list-style-type:disc">Tron Warrior se destaca por su capacidad de escaneo en tiempo real, lo que significa que puede analizar archivos y sistemas en busca de amenazas mientras se accede o se ejecuta, brindando una protección activa y continua. También ofrece actualizaciones regulares de firmas de virus para consolidar al día con las últimas amenazas conocidas.</li></ul><p id="c9b44e87-747f-4f58-a5a5-62b205709bf4" class="">
+    </p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"></summary></details></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.19 Acumulación de autoridad de dominio</summary><div class="indented"><blockquote id="f18646f8-6db4-48b7-82fb-879da4c0aba0" class=""><p id="9560a36c-2e0d-4e7b-ab95-547fc3fc0be6" class="">Es un aspecto importante en<strong> SEO</strong> (<strong>Search Engine Optimization</strong>) para mejorar el posicionamiento de un sitio web en los resultados de búsqueda de Google.</p><ul id="31e8e271-7f7f-440b-9d7e-68c215159aa1" class="bulleted-list"><li style="list-style-type:disc"><strong>Creación de Contenido</strong> relevante y de calidad: Es fundamental crear sitio que ofrezca definiciones precisas y útiles para los términos relevantes de tu nicho. Asegúrate de que el contenido sea original, completo y esté bien estructurado precio. depende del tipo y extensión de contenido.</li></ul><ul id="55483da7-3c24-4632-bcac-e6d9c2ead7b1" class="bulleted-list"><li style="list-style-type:disc"><strong>Estrategia de enlaces internos</strong>Utilizamos enlaces internos dentro de tu sitio web para vincular tus páginas con otras páginas relevantes de tu sitio. Esto ayudará a distribuir la autoridad de dominio de manera más equitativa y mejorará la navegación para los usuarios.</li></ul><ul id="e35439a5-0af0-431f-99ed-5fcc3da75bac" class="bulleted-list"><li style="list-style-type:disc"><strong>Vínculos externos de calidad</strong>: Es importante obtener enlaces externos de sitios web relevantes y de calidad que apunten hacia tu web. Esto puede lograrse a través de estrategias como la creación de contenido relevante que sea digno de ser enlazado y la colaboración con otros sitios web o blogs del mismo sector.</li></ul><ul id="29b70d25-b7f4-44c4-8e3a-09dd02d8915a" class="bulleted-list"><li style="list-style-type:disc"><strong>Promoción en redes sociales y participación en comunidades</strong>: Compartimos tu web en las redes sociales y participa activamente en comunidades en línea relacionadas con tu nicho. Esto aumentará la visibilidad de tu glosario y puede generar enlaces naturales de otros usuarios interesados en el contenido. (precio incluido en la propuesta de redes sociales)</li></ul><ul id="43c66a22-628f-40fe-8486-e8c2804daeea" class="bulleted-list"><li style="list-style-type:disc"><strong>Optimización técnica</strong>Asegúrate de que el sitio esté optimizado técnicamente para SEO. Esto incluye la optimización de metaetiquetas, el uso de palabras clave relevantes en los títulos y descripciones, la optimización de la velocidad de carga del sitio y la creación de una estructura de URL amigable.</li></ul></blockquote></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.20 Hospedaje</summary><div class="indented"><p id="bda1e3cd-9b16-494d-ad64-6ea3123dc0c0" class="">Renovación de computador para la primera fase de negocios de hospedaje y servicios<div class="indented"><ul id="8897ba5a-082f-4b0a-990d-4cc67a8f2ceb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Adquisición de memorias.</span><div class="indented"></div></li></ul><ul id="ee42363e-246d-444b-b55b-44bc9d19f02c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Adquisición de discos. de usuario, contratar sistema de respaldo. para la información de los discos.</span><div class="indented"></div></li></ul><ul id="d00fdaf4-17d6-4ceb-8e04-eb4cf141719a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Contratación de los servicios de seguridad y tunelización</span><div class="indented"></div></li></ul><ul id="fbe1d447-5172-46c5-8c16-4c70cedb3449" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Contratación del internet de Respaldo</span><div class="indented"></div></li></ul><ul id="1499f4f9-7128-403b-9738-c472b8efaa2c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Adquisición o construcción de la bancada de energía.</span><div class="indented"></div></li></ul></div></p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">4.21 Servicio de Copywriter</summary><div class="indented"><ul id="e7321689-ab57-46e1-9607-6e90ba7051cd" class="bulleted-list"><li style="list-style-type:disc">Nuestros servicios de copywriter con SEO están diseñados para ayudarte a mejorar la visibilidad de tu sitio web en los motores de búsqueda y atraer a más visitantes cualificados. Con mi experiencia en redacción persuasiva y conocimientos en optimización para motores de búsqueda (SEO), puedo crear contenido de alta calidad que no sólo atraiga a tu audiencia, sino que también mejore tu clasificación en los resultados de búsqueda.</li></ul><ul id="072e1e75-22c8-4774-85fd-204a049cba18" class="bulleted-list"><li style="list-style-type:disc">Aquí están los <strong>detalles de nuestros servicios</strong>:<ul id="705a9918-0a52-457c-9fd6-581bae1cb8b6" class="bulleted-list"><li style="list-style-type:circle"><strong>Investigación de palabras clave</strong>: Realizo una exhaustiva investigación de palabras clave relevantes para tu nicho y tu público objetivo. Esto me permite identificar las palabras clave más buscadas y estratégicas para tu negocio. Utilizo herramientas profesionales para analizar la competencia y encontrar oportunidades de palabras clave de alto valor.</li></ul><ul id="fba142f6-53d3-4bec-ac88-d8e7185e44dc" class="bulleted-list"><li style="list-style-type:circle"><strong>Creación de contenido optimizado</strong>: Utilizo las palabras clave estratégicamente en el contenido para mejorar su relevancia y visibilidad en los motores de búsqueda. Mi objetivo es crear contenido atractivo y convincente que no sólo atraiga a los visitantes, sino que también cumpla con los requisitos de los motores de búsqueda. </li></ul><ul id="849df5b1-d97d-4005-a5b1-7ffaf2779b9b" class="bulleted-list"><li style="list-style-type:circle"><strong>Edición y revisión:</strong> Revisamos y editamos cuidadosamente el contenido para garantizar la coherencia, la precisión y la fluidez. Me aseguro de que el contenido esté libre de errores gramaticales y ortográficos, y que cumpla con los estándares de calidad.</li></ul><ul id="3a10ecca-f839-4bc0-a7d8-ff7df597f6d8" class="bulleted-list"><li style="list-style-type:circle"><strong>Optimización técnica:</strong> Además de la redacción de contenido, también realizamos  la optimización técnica de tu sitio web. Esto incluye la optimización de etiquetas de título, meta descripciones, encabezados y otros elementos técnicos que influyen en la clasificación en los motores de búsqueda.</li></ul><p id="14dccdaf-cb23-440f-84b5-84d43d42a090" class="">
+    </p></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">5. Innovación disruptiva</summary><div class="indented"><p id="3aa4a488-a649-48ee-912e-c7f610c6639d" class="">
+    </p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.1 Monitor</summary><div class="indented"><ul id="4662cf3c-9c56-4e24-a950-07154c46b54c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Establecer funciones</span><div class="indented"></div></li></ul><ul id="f8b78b4e-3c2c-4c43-8a05-023a525bd419" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Perfilar</span><div class="indented"></div></li></ul><ul id="12fa32e9-1000-43d3-9383-e58d71880e6c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Buscar Mecánico con el perfil</span><div class="indented"></div></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.2 MLM</summary><div class="indented"><p id="d6ff66a8-3cb1-4ae7-ab3c-62e7aac9fb37" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.3 Branding</summary><div class="indented"><p id="69df1281-4d1d-4569-9781-5b1f48e0f6fd" class="">.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.4 Hidrotec</summary><div class="indented"><p id="bf5a13b8-b7db-4768-96a3-1e0142470105" class="">Las tecnologías basadas en el la gestión de hidrógeno.</p><ul id="d9503bfc-0e69-4cb4-9817-e1923e3dd3ba" class="bulleted-list"><li style="list-style-type:disc">Pruebas de hidrógeno esta semana.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.5 Hooks</summary><div class="indented"><p id="ed2fdfbe-35a2-41d5-a989-a4f0dabcfa5c" class="">las relaciones con terceros que nos benefician como: la página de las ofertas, la vitrina gratuita de motores, la pagina de eventos</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.6 Táctica de la Bicicleta para Empresas Henao</summary><div class="indented"><p id="79c01d59-af41-472b-a614-382740c37ce4" class="">
+    </p><p id="f254e6cf-3ce2-4c8f-81c6-9ba721ec0d6d" class="">La <strong>&quot;táctica de la bicicleta&quot;</strong> de Edison Henao es un proceso en el cual los promotores se afilian al negocio y obtienen comisiones por trabajos mecánicos <strong>referidos y pagados</strong>. Los mecánicos afiliados pueden recibir trabajos recomendados por el monitor del taller de rectificación. Esto implica que <strong>los mecánicos afiliados traen clientes y reciben clientes del monitor.</strong></p><p id="d5bffc2e-adec-420a-9aa1-3fb219c8e1be" class="">Esta táctica implica una dinámica en la cual los mecánicos afiliados <strong>no solo atraen nuevos clientes, sino que también reciben clientes del monitor</strong>. El <strong>monitor, como mecánico de la rectificadora-taller, recibe todos los trabajos y los discrimina, enviando los recomendados a los mecánicos afiliados.</strong></p><p id="3c0c0547-2e8d-43c1-8120-8250c9b7be1e" class="">Esta estrategia se basa en un <strong>modelo de negocios de mercadeo multinivel (MLM)</strong> que se describe como un sistema en el que <strong>todos ganan</strong>. Los <strong>clientes, proveedores, mecánicos y rectificadores</strong>, también conocidos como &quot;promotores&quot;, tienen la oportunidad de ganar comisiones a través del <strong>network marketing</strong>.</p><p id="89a03bcd-c389-4a52-bb06-3b249d45eaa2" class="">La <strong>táctica de la bicicleta</strong> representa <strong>una fase inicial </strong>en la implementación de este modelo de negocios. Es una forma efectiva de impulsar el crecimiento empresarial y brindar beneficios tanto a los mecánicos afiliados como al monitor del taller de rectificación.</p><p id="6c3d203d-22b3-47a4-bbaf-1619e3a34c36" class="">La &quot;<strong>táctica de la bicicleta&quot; </strong>de Edison Henao es un proceso estratégico que permite a los promotores afiliados obtener comisiones por trabajos mecánicos referidos y pagados, al mismo tiempo que<strong> fomenta la colaboración entre los mecánicos aumentando la rentabilidad de la empresa</strong>.</p><h3 id="9c28252c-647b-4c25-b8f2-ab38a8ca3b71" class="">Otras tácticas de Bicicleta:</h3><p id="77ba2638-dd56-4b2e-8164-4c49cb006a4c" class="">La &quot;táctica de la bicicleta&quot; en el caso de la joyería Orex se basaba en<strong> aprovechar la fluctuación en la situación laboral de las personas para impulsar su negocio.</strong> La estrategia consistía en <strong>ubicar su establecimiento cerca de empresas que contrataban personal y les pagaban bien, pero en ciclos de tiempo específicos</strong>.</p><p id="39d6ff5a-8087-402b-be00-447036136c29" class="">Cuando las personas tienen empleo estable y dinero disponible, aprovechaban para comprar joyas de oro en Orex. La empresa se beneficiaba de estas compras y generaba ingresos. Sin embargo, cuando las personas atravesaban períodos de falta de empleo o dificultades económicas, en lugar de vender las joyas, las empeñaban en Orex.</p><p id="a7f0b530-98af-42af-ab5f-495418a5605f" class="">Esta estrategia permitía a Orex mantener un flujo constante de transacciones. Los ciclos de compra y empeño de las joyas impulsaban el negocio hacia adelante, de manera similar a cómo los pedales de una bicicleta se mueven hacia adelante con cada movimiento hacia arriba y hacia abajo.</p><p id="8e1a9ce3-6330-4e4e-9fd3-55a1b2312692" class=""><strong>De esta manera, Orex logró obtener ganancias tanto en situaciones de bonanza económica como en momentos de dificultades financieras para las personas</strong>, <strong>asegurando un flujo constante de ingresos </strong>y manteniendo el crecimiento de la empresa.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.7 Zona de desborde: áreas de crecimiento, escalabilidad.</summary></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.8 Plan de compensación</summary><div class="indented"><ul id="915a8f71-20eb-4844-bef9-5c5d5084a50d" class="bulleted-list"><li style="list-style-type:disc">El servicio de diseño de plan de compensación está diseñado específicamente para rectificadoras y su equipo de mecánicos y de clientes. Este plan de compensación utiliza una matriz 3x3, donde los mecánicos pueden inscribir a otros en su matriz y obtener beneficios adicionales por cada nivel alcanzado.</li></ul><ul id="8bb290f1-99f6-4107-b8d0-467249ff561c" class="bulleted-list"><li style="list-style-type:disc">El objetivo principal de este sistema es<strong> incentivar a los mecánicos y clientes a conseguir y llevar clientes a la rectificadora para los trabajos pertinentes de reparar motores</strong>, así como promover la venta de repuestos de motores y motores importados por terceros. Cada vez que un cliente es referido por un mecánico de una rama o pierna específica, esa rama tiene la oportunidad de ganar comisiones y premios adicionales tanto por los servicios de reparación como por la venta de repuestos y motores.</li></ul><ul id="4fb742ad-dccc-4154-8ae6-195278a0c084" class="bulleted-list"><li style="list-style-type:disc">Además de los repuestos de motores y los motores importados, nuestro sistema de plan de compensación <strong>también incluye la venta de otros productos relacionados con los hooks.</strong> Los hooks son relaciones ordenadas de negocios donde se negocian productos y servicios de terceros, generando así comisiones adicionales para las ramas del sistema.</li></ul><ul id="8c9ad316-75f2-4855-9e49-5f28a2ec3733" class="bulleted-list"><li style="list-style-type:disc">Este enfoque multinivel<strong> fomenta la colaboración y el trabajo en equipo entre los mecánicos y clientes</strong>, ya que al trabajar juntos para llevar clientes a la rectificadora y <strong>promover la venta de repuestos y motores</strong>, se crea un ambiente de apoyo mutuo y se promueve el crecimiento tanto individual como colectivo.</li></ul><ul id="c8c26809-021d-4f72-ba79-37911d3ebe4a" class="bulleted-list"><li style="list-style-type:disc">Nuestro servicio de diseño de plan de compensación se<strong> adapta a las necesidades y metas específicas </strong>de la rectificadora, asegurando que el sistema sea justo, motivador y beneficioso para todos los involucrados. Además, la inclusión de los repuestos de motores, los motores importados y otros productos relacionados con los hooks amplía las oportunidades de ingresos para los mecánicos y promueve el crecimiento sostenible del negocio.</li></ul><ul id="34ae3ca5-e975-43fe-afc4-a5624b5b5d9f" class="bulleted-list"><li style="list-style-type:disc">Nuestro servicio de diseño del sistema de plan de compensación multinivel para la rectificadora se enfoca no solo en brindar oportunidades de ingresos, sino también en <strong>proporcionar una educación especial integral a los promotores.</strong> Los promotores son los miembros del equipo de ventas que participan activamente en el multinivel, promoviendo los servicios de reparación de motores, la venta de repuestos y motores importados, y otros productos relacionados con los hooks.</li></ul><ul id="bb04f8a2-7727-4d33-9744-ad6d2edd9ffd" class="bulleted-list"><li style="list-style-type:disc">La educación especial integral se centra en capacitar a los promotores (mecánicos, clientes, etc) en áreas clave que los ayudarán a tener éxito en sus roles de ventas. Esto incluye conocimientos técnicos sobre motores y repuestos, habilidades de comunicación efectiva, estrategias de ventas y técnicas de persuasión. Además, se brinda formación en motivaciones pedagógicas, psicológicas y de marketing para impulsar la venta de manera efectiva.</li></ul><p id="76a27ef6-6e1e-4ea7-b290-4c8e8b60d37d" class="">
+    </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">5.9 Investigación de proveedores, análisis de propuestas de negocios</summary><div class="indented"><ul id="c851a80c-74d4-41f0-af29-5e11fa12d5bd" class="bulleted-list"><li style="list-style-type:disc">Detección de fraudes correción de políticas de negociación internacional.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Estratégia y transformación empresarial.</summary><div class="indented"><ul id="51a360dc-6fe0-4413-85de-8a9bbd7fd8f6" class="bulleted-list"><li style="list-style-type:disc">Visita en el Sitio</li></ul><ul id="b4ee43fa-3edb-4cb0-a64c-aa666fd20f55" class="bulleted-list"><li style="list-style-type:disc">Detección y solución de problemas administrativos</li></ul><ul id="bb92a28c-34af-4609-8e14-4da235689649" class="bulleted-list"><li style="list-style-type:disc">Optimización de métodos y procesos administrativos</li></ul><ul id="47954e81-c12f-4ee3-8427-1d5aee01ed05" class="toggle"><li><details open=""><summary>Comportamiento Organizacional</summary><p id="635976c3-0e1f-430f-b777-1244fd329f15" class="">&quot;En nuestro enfoque para el mejoramiento del ambiente organizacional y la productividad, nos dedicamos a crear un entorno laboral que promueva la satisfacción y el compromiso de los empleados. Nuestro objetivo es fomentar un ambiente en el que los colaboradores se sientan valorados, motivados y enérgicos en su trabajo diario.</p><p id="0de920f1-4366-4546-b899-f7580f0dff31" class="">Mediante estrategias efectivas de gestión del talento y promoción del bienestar, buscamos cultivar una cultura laboral positiva y estimulante. Nuestro enfoque se basa en la implementación de prácticas y políticas que fomenten el desarrollo profesional, la colaboración efectiva y la resolución de conflictos de manera constructiva.</p><p id="76adea46-ce85-4c4c-b3a9-0bc33edef970" class="">Al mejorar el ambiente organizacional, no solo incrementamos la satisfacción de los empleados, sino que también potenciamos la productividad y la eficiencia en todas las áreas de la empresa. El resultado es un equipo comprometido y motivado, capaz de trabajar con entusiasmo y lograr resultados sobresalientes.</p><p id="67903698-176c-40f6-bccc-2c0b66527b2f" class="">Nuestro enfoque se sustenta en sólidas investigaciones y mejores prácticas en psicología organizacional, asegurando que cada intervención esté respaldada por evidencia científica y tenga un impacto positivo medible en la organización.</p><p id="790f82f2-58dc-46b2-9a07-4a3bf3007529" class="">Permítenos demostrarte cómo nuestro enfoque integral para el mejoramiento del ambiente organizacional y la productividad puede transformar tu empresa, generando un entorno laboral más feliz, colaborativo y exitoso.&quot;</p></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Gestión y control de la calidad de los procesos.</summary></details><p id="35b0e929-35f8-479a-b42c-de5b78e353d8" class="">
+    </p></div></details><p id="8dee1372-c96a-480b-bac5-95b52c426602" class="">
+    </p><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">6. Roles Asumidos</summary><div class="indented"><ol type="1" id="a10c12f9-3a79-43ca-b228-ff8c73218ddf" class="numbered-list" start="1"><li><strong>Rol de Estratega Empresarial:</strong><ul id="05a8657f-5fd8-4b9f-a9ac-6eec1c63dbfe" class="bulleted-list"><li style="list-style-type:disc">Diseñar y lograr estrategias innovadoras para impulsar el crecimiento y la rentabilidad de la organización.</li></ul><ul id="9a719da5-cc43-451e-b9d5-de7026ee20f6" class="bulleted-list"><li style="list-style-type:disc">Identificar oportunidades de mercado y establecer alianzas estratégicas para expandir el alcance y la influencia de la empresa.</li></ul><ul id="0d4e9752-a1e4-4f1f-8d26-2b15e7d968bd" class="bulleted-list"><li style="list-style-type:disc">Liderar procesos de transformación organizacional, implementando cambios efectivos y fomentando la adaptabilidad en el entorno empresarial.</li></ul></li></ol><ol type="1" id="93b02c56-dd8b-476c-a5fd-1acb78c93047" class="numbered-list" start="2"><li><strong>Rol de Analista de Gestión:</strong><ul id="4bb012f0-eff9-4765-9c87-bf0676d473de" class="bulleted-list"><li style="list-style-type:disc">Desarrollar programas de capacitación y desarrollo para potenciar el talento y la eficiencia de los equipos.</li></ul><ul id="11b99c20-c67c-4720-aa93-37a49cb72634" class="bulleted-list"><li style="list-style-type:disc">Implementar políticas de retención del talento y estrategias de gestión del desempeño para promover un ambiente laboral productivo y motivador.</li></ul><ul id="a82621df-a651-463c-86e3-0fdf1a3e3edd" class="bulleted-list"><li style="list-style-type:disc">Asesorar en la planificación y ejecución de proyectos de desarrollo organizacional, mejorando la cultura empresarial y la colaboración interna.</li></ul></li></ol><ol type="1" id="f4d8c9bf-3a78-4a73-a6e4-707b1f90a3a5" class="numbered-list" start="3"><li><strong>Rol de Gerente de Relaciones Públicas:</strong><ul id="155ba961-83f8-4b9a-b508-dc3fe8848ef0" class="bulleted-list"><li style="list-style-type:disc">Gestionar la imagen y reputación de la organización a través de estrategias de relaciones públicas efectivas.</li></ul><ul id="b869cea8-6b2d-42fa-a806-b2bcf2a95400" class="bulleted-list"><li style="list-style-type:disc">Desarrollar y mantener relaciones sólidas con los diferentes stakeholders, incluyendo clientes, proveedores y socios comerciales.</li></ul><ul id="eb84c637-ae31-499b-a0bf-2cb875a8756d" class="bulleted-list"><li style="list-style-type:disc">Coordinar eventos y campañas de comunicación para promover la visibilidad y el posicionamiento de la marca en el mercado.</li></ul></li></ol><ol type="1" id="ab99df40-e60f-448c-94fd-1f3991a00e92" class="numbered-list" start="4"><li><strong>Rol de Especialista en Marketing Digital:</strong><ul id="9231f4b2-09a3-4a57-bdfe-7be678fb6b9c" class="bulleted-list"><li style="list-style-type:disc">Diseñar y ejecutar estrategias de marketing digital para aumentar la visibilidad y el alcance de la marca.</li></ul><ul id="39f0c440-26b4-48a2-904b-c925ace1fa6a" class="bulleted-list"><li style="list-style-type:disc">Gestionar campañas publicitarias en diferentes plataformas digitales, optimizando el retorno de inversión y generando leads calificados.</li></ul><ul id="443df3f9-a287-42f9-883c-83ece9560c12" class="bulleted-list"><li style="list-style-type:disc">Analizar y medir el impacto de las estrategias digitales, realizar ajustes y mejoras continuas para maximizar los resultados.</li></ul></li></ol><ol type="1" id="9b2f595a-3334-4fce-a838-24fbdf1caf11" class="numbered-list" start="5"><li><strong>Rol de Director de Proyectos:</strong><ul id="4463a87e-95be-484f-ba16-a2c229e0c268" class="bulleted-list"><li style="list-style-type:disc">Liderar proyectos estratégicos de alto impacto, asegurando su ejecución exitosa y alineada con los objetivos organizacionales.</li></ul><ul id="2441e1a1-1bb0-42a6-8081-fbcb12e6b55f" class="bulleted-list"><li style="list-style-type:disc">Gestionar los recursos y el cronograma del proyecto, supervisando la calidad y el cumplimiento de los entregables.</li></ul><ul id="4cd1fb0f-2c66-48f4-a45f-abeab4ca0ff9" class="bulleted-list"><li style="list-style-type:disc">Coordinar y comunicarse con los miembros del equipo y las partes interesadas para garantizar la colaboración y el logro de los resultados deseados.</li></ul></li></ol><ol type="1" id="a56e8a29-bdd7-4628-b429-d3d182607d37" class="numbered-list" start="6"><li><strong>Rol de Asesor  Estrategia y Transformación Empresarial:</strong><ul id="9aa3d9e8-b346-4e89-aae8-6eda346751de" class="bulleted-list"><li style="list-style-type:disc">Brindar asesoramiento estratégico a las organizaciones en áreas como planificación empresarial, gestión del cambio y transformación organizacional.</li></ul><ul id="1cc921f7-82f8-452a-b7f0-0b397941cf97" class="bulleted-list"><li style="list-style-type:disc">Identificar oportunidades de mejora y diseñar estrategias personalizadas para optimizar la eficiencia y la rentabilidad de las empresas.</li></ul><ul id="e0ffd3a2-b9cf-4506-bb34-c469e3ffa3c5" class="bulleted-list"><li style="list-style-type:disc">Ayudar a las organizaciones a adaptarse a los cambios del entorno empresarial ya fortalecerse competitivas en un mercado en constante evolución.</li></ul></li></ol><ol type="1" id="fe1ac881-4f5b-4e39-b6fb-e673cf711b48" class="numbered-list" start="7"><li><strong>Rol de Profesional en Desarrollo de Negocios y Gestión de Proyectos Innovadores:</strong><ul id="57fe29e2-4e4c-4156-bab8-cb86d395e29c" class="bulleted-list"><li style="list-style-type:disc">Identificar oportunidades de negocio y desarrollar planes estratégicos para impulsar el crecimiento y la expansión de la empresa.</li></ul><ul id="70289a34-278e-4f54-bc7d-bf08c5a521b4" class="bulleted-list"><li style="list-style-type:disc">Evaluar la viabilidad de nuevos proyectos y productos, realizando análisis de mercado y estudios de factibilidad.</li></ul><ul id="4e2ef4ce-56c8-4bf0-81b3-d6679a00b565" class="bulleted-list"><li style="list-style-type:disc">Gestionar y liderar proyectos innovadores, desde la concepción hasta la implementación, asegurando el cumplimiento de los objetivos y la entrega exitosa.</li></ul></li></ol><ol type="1" id="fae19b57-2a81-4bab-981b-39fbf4b803b4" class="numbered-list" start="8"><li><strong>Rol de &quot;Consultor de Organización y Talento&quot;:</strong><ul id="c0f9087f-1611-4f2f-bf8f-908a0ac732d7" class="bulleted-list"><li style="list-style-type:disc">Diseñar la estructura organizativa y definir las funciones de los departamentos.</li></ul><ul id="dcd899b0-95c8-4b81-bfb6-9b287f22372a" class="bulleted-list"><li style="list-style-type:disc">Identificar las necesidades de personal y recomendar perfiles de empleados adecuados.</li></ul><ul id="c25699c1-dc58-4fb5-b34b-634ced685810" class="bulleted-list"><li style="list-style-type:disc">Participar en el proceso de selección y reclutamiento de candidatos calificados.</li></ul></li></ol><ol type="1" id="e21590a7-a7ba-4a6b-ba22-a3dcbf391175" class="numbered-list" start="9"><li><strong>Rol de Consultor de Gestión</strong><p id="286e6125-031b-46da-ba4b-a4bf65e092f4" class="">El Consultor de Gestión es un profesional especializado en asesorar a las organizaciones para mejorar su rendimiento y eficiencia. Sus funciones incluyen:<div class="indented"><ol type="1" id="9ce071ec-fd36-4825-a493-1850a5a73a3d" class="numbered-list" start="1"><li>Realizar análisis y diagnósticos de la organización.</li></ol><ol type="1" id="a4e658a5-97a5-4dec-bbbe-b6191cb37944" class="numbered-list" start="2"><li>Diseñar estrategias y planes de acción.</li></ol><ol type="1" id="a2e46b3a-2352-40c6-8fca-816bab7d7f8a" class="numbered-list" start="3"><li>Mejorar los procesos empresariales.</li></ol><ol type="1" id="ffbca173-f726-41d8-a39c-decfd225ecb5" class="numbered-list" start="4"><li>Gestionar el cambio organizacional.</li></ol><ol type="1" id="925bad5e-18d7-45d9-842a-7b42946a39e9" class="numbered-list" start="5"><li>Implementar sistemas de seguimiento y control.</li></ol><ol type="1" id="b3e1fce5-ac6d-46bc-8927-06a545dfed9a" class="numbered-list" start="6"><li>Brindar asesoramiento en toma de decisiones estratégicas.</li></ol></div></p></li></ol><p id="a86c5d20-323a-44d7-8482-76980412951d" class="">
+    </p><p id="0c9084ff-a154-4ba3-bd9a-970631c6bdc9" class="">Estos roles desempeñan un papel crucial en el mundo empresarial, brindando conocimientos y habilidades especializadas para impulsar el éxito y la transformación de las organizaciones.</p><p id="3527c560-aa72-4a60-8dd4-380c9206107a" class="">
+    </p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">7. Glosario</summary><div class="indented"><h1 id="abc88fd7-ed21-491a-8e52-8373b1d950b3" class="">Phishing</h1><p id="a820f711-eff1-4660-a80b-c54d267b99b9" class="">El phishing es una forma de estafa en línea en la que los ciberdelincuentes intentan engañarte para obtener tu información personal, como contraseñas, números de tarjetas de crédito o información bancaria. Te explicaré esto usando un ejemplo sencillo:</p><p id="76a32b87-1e3f-46bf-809f-147300a1c33d" class="">Imagina que recibes un correo electrónico que aparenta ser de tu banco. El correo te informa que ha habido un problema con tu cuenta y te pide que inicies sesión en un enlace proporcionado para solucionarlo. Sin embargo, ese enlace te lleva a un sitio web falso que se parece mucho al sitio real del banco.</p><p id="a581cfbd-8dc1-486c-b60e-1907b420bffb" class="">Cuando ingresas tus datos en ese sitio falso, los estafadores los capturan y pueden utilizarlos para acceder a tu cuenta real. Una vez que tienen acceso a tu cuenta, pueden realizar transacciones no autorizadas o robar tu dinero.</p><h1 id="b600d5e8-8d99-4720-a13e-a15a228c24fc" class="">Vulnerabilidad de día cero</h1><p id="98e7a20c-4f61-4109-9ddf-5b2990bf4766" class="">También conocida como zero-day, se refiere a una vulnerabilidad de seguridad en un software o sistema que es desconocida para el proveedor o desarrollador del software. Esto significa que no se ha descubierto ni se ha proporcionado una solución o parche para corregirla.</p><p id="3d2edad1-9238-493c-83f0-907ce31ab7a7" class="">Las vulnerabilidades de día cero son peligrosas porque los ciberdelincuentes pueden aprovecharlas antes de que el proveedor tenga conocimiento de su existencia. Esto les brinda una ventaja significativa, ya que pueden lanzar ataques antes de que se implementen medidas de seguridad adecuadas.</p><p id="232aef73-7ce5-437a-a6e0-151f4ba28ca9" class="">Estas vulnerabilidades pueden afectar a una amplia gama de sistemas y software, incluyendo sistemas operativos, navegadores web, aplicaciones de software y dispositivos conectados a Internet. Los ciberdelincuentes pueden utilizar diferentes métodos para descubrir y explotar estas vulnerabilidades, lo que les permite llevar a cabo ataques cibernéticos como el robo de datos, el control remoto de sistemas o la instalación de malware.</p><p id="e00cd284-338f-454b-9164-5e5c80ec5011" class="">Cuando se descubre una vulnerabilidad de día cero, es importante que el proveedor o desarrollador del software trabaje rápidamente para desarrollar y lanzar un parche o actualización que solucione el problema. Además, los usuarios y organizaciones deben estar atentos a las actualizaciones de seguridad y parches proporcionados por los proveedores y aplicarlos tan pronto como estén disponibles para protegerse contra posibles ataques.</p><h1 id="05705c89-0544-45f7-b89b-b42cdeff70b7" class="">Innovación disruptiva</h1><p id="f3f89d45-17bd-4465-a6f8-e71cb3d69245" class="">La innovación disruptiva es un término que se utiliza para describir un tipo de innovación que crea un cambio significativo en un mercado o industria existente. Se refiere a la introducción de nuevos productos, servicios o tecnologías que transforman la forma en que se realizan las cosas y que pueden desplazar a los productos o servicios tradicionales.</p><p id="5f2b6227-def6-4bf0-915f-db9e81402afd" class="">La característica principal de la innovación disruptiva es que rompe con los modelos de negocio establecidos y cambia las reglas del juego. Por lo general, estas innovaciones comienzan en mercados de nicho o en segmentos de mercado poco atendidos, donde los productos o servicios existentes no satisfacen completamente las necesidades de los clientes.</p><p id="43395ae6-3c6a-4775-b64d-e924601fe32c" class="">Un ejemplo famoso de innovación disruptiva es el caso de Netflix, que introdujo el servicio de streaming de películas y series en línea, desafiando el modelo de negocio de las tiendas de alquiler de videos físicos. Netflix cambió la forma en que las personas consumen contenido audiovisual y tuvo un impacto significativo en la industria del entretenimiento.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">8. Por Clasificar:</summary><div class="indented"><ul id="e30b91ee-162d-474e-8e9a-74ba28273eaf" class="bulleted-list"><li style="list-style-type:disc"></li></ul><ul id="007e1f1d-cf6a-4972-ba42-22e6fb34ea82" class="bulleted-list"><li style="list-style-type:disc"></li></ul><ul id="4ae699b9-f727-4229-9af2-be555a6472ad" class="bulleted-list"><li style="list-style-type:disc"></li></ul><ul id="11b6e666-12c1-4341-a6f7-bd759ce0b351" class="bulleted-list"><li style="list-style-type:disc"></li></ul></div></details></div></article></body></html>
