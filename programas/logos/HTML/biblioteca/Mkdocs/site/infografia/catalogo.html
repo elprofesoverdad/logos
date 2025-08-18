@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía del Catálogo - Mett Gorras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chart-container {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .kpi-box {
+            background: linear-gradient(135deg, #00A0B0, #007a85);
+        }
+        .flow-step {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            line-height: 1;
+            color: #6A4A3C;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#00A0B0] mb-2">Análisis del Catálogo de Productos</h1>
+            <p class="text-xl text-gray-600">Una Mirada Visual a la Estructura de Mett Gorras</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="kpi-box text-white p-6 rounded-xl shadow-lg flex flex-col justify-center items-center">
+                <p class="text-lg font-semibold">Productos Totales</p>
+                <p id="totalProducts" class="text-5xl font-bold">0</p>
+            </div>
+            <div class="kpi-box text-white p-6 rounded-xl shadow-lg flex flex-col justify-center items-center">
+                <p class="text-lg font-semibold">Categorías Únicas</p>
+                <p id="totalCategories" class="text-5xl font-bold">0</p>
+            </div>
+            <div class="kpi-box text-white p-6 rounded-xl shadow-lg flex flex-col justify-center items-center">
+                <p class="text-lg font-semibold">Producto Más Caro (Detal)</p>
+                <p id="mostExpensive" class="text-3xl font-bold">0.00 USD</p>
+            </div>
+            <div class="kpi-box text-white p-6 rounded-xl shadow-lg flex flex-col justify-center items-center">
+                <p class="text-lg font-semibold">Producto Más Barato (Detal)</p>
+                <p id="leastExpensive" class="text-3xl font-bold">0.00 USD</p>
+            </div>
+        </section>
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <div class="bg-white p-6 rounded-xl shadow-md lg:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 text-[#6A4A3C]">Composición del Catálogo</h2>
+                <p class="text-gray-600 mb-6">El catálogo se centra principalmente en gorras, lo que representa la mayor parte de la oferta. Esto indica una alta especialización en este nicho de mercado.</p>
+                <div class="chart-container mx-auto">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md lg:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 text-[#6A4A3C]">Análisis de Precios: Detal vs. Mayor</h2>
+                 <p class="text-gray-600 mb-6">Esta gráfica compara los precios para clientes minoristas y mayoristas en productos seleccionados. Se evidencia un claro incentivo para la compra al por mayor, una estrategia clave para atraer distribuidores.</p>
+                <div class="chart-container mx-auto">
+                    <canvas id="priceComparisonChart"></canvas>
+                </div>
+            </div>
+            
+
+
+            <div class="bg-white p-6 rounded-xl shadow-md lg:col-span-2">
+                <h2 class="text-2xl font-bold mb-4 text-[#6A4A3C]">Flujo de Selección de Producto (Variantes)</h2>
+                <p class="text-gray-600 mb-6">Este diagrama ilustra el proceso que sigue un cliente para seleccionar un producto con múltiples opciones. Cada selección filtra las posibilidades hasta llegar a una única variante con su propio SKU, precio y stock, simplificando la compra y la gestión de inventario.</p>
+                <div class="flex flex-col md:flex-row items-center justify-around gap-4 w-full">
+                    <div class="flow-step bg-gray-100 p-4 rounded-lg shadow-sm w-full md:w-1/4">
+                        <span class="font-semibold">1. Elige Tipo</span><br>(Ej: Acolchada)
+                    </div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flow-step bg-gray-100 p-4 rounded-lg shadow-sm w-full md:w-1/4">
+                        <span class="font-semibold">2. Elige Atributo</span><br>(Ej: Con Laureles)
+                    </div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flow-step bg-gray-100 p-4 rounded-lg shadow-sm w-full md:w-1/4">
+                        <span class="font-semibold">3. Elige Color</span><br>(Ej: Rojo)
+                    </div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flow-step bg-[#00A0B0] text-white p-4 rounded-lg shadow-lg w-full md:w-1/4">
+                        <span class="font-bold">Variante Final</span><br>SKU: GNA-CL-ROJO<br>Stock y Precio Únicos
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>&copy; 2025 Mett Gorras. Infografía generada para análisis interno.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const productData = {
+            "productos": [{
+                "id": "METT-001", "nombre": "Gorras Acrílicas Unicolor", "categoria": ["Gorras", "Acrílicas Unicolor"], "precios": { "Detalle": { "Cierre Mágico": 4, "Broche Metálico": 5, "Broche Plástico": 5 }, "Mayor": { "Cierre Mágico": 2.6, "Broche Metálico": 2.5, "Broche Plástico": 2.5 } }
+            }, {
+                "id": "METT-002", "nombre": "Gorras Acrílicas Cerradas", "categoria": ["Gorras", "Acrílicas Cerradas"], "precios": { "Detalle": 8, "Mayor": 7 }
+            }, {
+                "id": "METT-003", "nombre": "Gorras Acrílicas Frontal Free", "categoria": ["Gorras", "Acrílicas Sin Costura"], "precios": { "Detalle": 5, "Mayor": 4.5 }
+            }, {
+                "id": "METT-004", "nombre": "Gorras Premium", "categoria": ["Gorras", "Premium"], "precios": { "Detalle": 15, "Mayor": 10 }
+            }, {
+                "id": "METT-005", "nombre": "Viseras METT", "categoria": ["Viseras"], "precios": { "Detalle": { "Tela Deportiva": 4, "Reflectiva": 5, "Completamente Reflectiva": 5 }, "Mayor": { "Tela Deportiva": 3.2, "Reflectiva": 4.5, "Completamente Reflectiva": 4.5 } }
+            }, {
+                "id": "METT-006", "nombre": "Gorras Planas METT", "categoria": ["Gorras", "Planas"], "precios": { "Detalle": 7, "Mayor": 5.6 }
+            }, {
+                "id": "METT-007", "nombre": "Gorras Malla Acolchadas", "categoria": ["Gorras", "Malla Acolchadas"], "precios": { "Detalle": 4, "Mayor": 2.95 }
+            }, {
+                "id": "METT-008", "nombre": "Camufladas Regular", "categoria": ["Gorras", "Camufladas Regular"], "precios": { "Detalle": 5, "Mayor": 3.5 }
+            }, {
+                "id": "METT-009", "nombre": "Gorras Modelo FF", "categoria": ["Gorras", "Modelo FF"], "precios": { "Detalle": 7, "Mayor": 5.3 }
+            }, {
+                "id": "METT-010", "nombre": "Gorras Prelavadas", "categoria": ["Gorras", "Prelavadas"], "precios": { "Detalle": 7, "Mayor": 5.3 }
+            }, {
+                "id": "METT-011", "nombre": "Gorras VIP", "categoria": ["Gorras", "VIP"], "precios": { "Detalle": 8, "Mayor": 7 }
+            }, {
+                "id": "METT-012", "nombre": "Gorros Cazador con Solapa", "categoria": ["Gorros", "Cazador con Solapa"], "precios": { "Detalle": 15, "Mayor": 11 }
+            }, {
+                "id": "METT-013", "nombre": "Gorras Institucional Nacional", "categoria": ["Gorras", "Institucionales"], "atributos": { "Precios Detalle": { "Camufladas/Unicolor Sin Laureles": 18, "Acolchadas Nacional Sin Laureles": 15, "Camufladas/Unicolor Con Laureles": 24, "Acolchadas Nacional Con Laureles": 18, "Acrílicas con Laureles": 10 }, "Precios Mayor": { "Camufladas/Unicolor Sin Laureles": 15, "Acolchadas Nacional Sin Laureles": 10, "Camufladas/Unicolor Con Laureles": 19, "Acolchadas Nacional Con Laureles": 15, "Acrílicas con Laureles": 7 } }
+            }, {
+                "id": "METT-014", "nombre": "Confección METT", "categoria": ["Confección"], "precios": { "Mayor": { "Franelas Unicolor": 5, "Chemise": 12.5, "Camisa Tipo Columbia": 22 } }
+            }, {
+                "id": "METT-015", "nombre": "Morrales METT", "categoria": ["Morrales"], "precios": { "Detalle": { "METT-001": 20, "Premium": 30 }, "Mayor": { "Premium": 25 } }
+            }, {
+                "id": "METT-016", "nombre": "Jeans Industriales", "categoria": ["Jeans"], "precios": { "Mayor": 18 }
+            }, {
+                "id": "METT-017", "nombre": "Gorras Platinium", "categoria": ["Gorras", "Platinium"], "precios": { "Detalle": 8, "Mayor": 7 }
+            }, {
+                "id": "METT-018", "nombre": "Gorras de Niño", "categoria": ["Gorras Infantiles"], "precios": { "Detalle": { "Acrílicas Unicolor Cierre Mágico": 4, "Gorras Acolchadas": 4, "Acrílicas Visera Plana": 1.3, "Gorras Prelavadas": 7 }, "Mayor": { "Acrílicas Unicolor Cierre Mágico": 2.6, "Gorras Acolchadas": 2.95, "Acrílicas Visera Plana": 1, "Gorras Prelavadas": 5.3 } }
+            }, {
+                "id": "METT-019", "nombre": "Catálogo METT (PDF)", "categoria": ["Catálogos"], "precios": {} }
+            ]
+        };
+
+        const palette = {
+            blue: '#00A0B0',
+            brown: '#6A4A3C',
+            red: '#CC333F',
+            orange: '#EB6841',
+            yellow: '#EDC951',
+            lightGray: '#f0f2f5'
+        };
+
+        function getSimplePrice(priceObject) {
+            if (typeof priceObject === 'number') {
+                return priceObject;
+            }
+            if (typeof priceObject === 'object' && priceObject !== null) {
+                const prices = Object.values(priceObject);
+                return prices.length > 0 ? Math.max(...prices.map(p => typeof p === 'number' ? p : 0)) : 0;
+            }
+            return 0;
+        }
+        
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 < maxWidth) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: 'Inter',
+                            size: 12
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    backgroundColor: '#000',
+                    titleFont: {
+                        size: 14,
+                        family: 'Inter'
+                    },
+                    bodyFont: {
+                        size: 12,
+                        family: 'Inter'
+                    },
+                    padding: 10,
+                    cornerRadius: 5
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        font: { family: 'Inter', size: 10 }
+                    },
+                    grid: { display: false }
+                },
+                y: {
+                    ticks: {
+                        font: { family: 'Inter', size: 10 }
+                    },
+                    grid: { color: '#e0e0e0', borderDash: [5, 5] }
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const products = productData.productos;
+
+            document.getElementById('totalProducts').textContent = products.length;
+
+            const categories = products.reduce((acc, product) => {
+                const mainCategory = product.categoria[0];
+                acc[mainCategory] = (acc[mainCategory] || 0) + 1;
+                return acc;
+            }, {});
+            document.getElementById('totalCategories').textContent = Object.keys(categories).length;
+
+            let allDetailPrices = products.map(p => getSimplePrice(p.precios?.Detalle)).filter(p => p > 0);
+            if (allDetailPrices.length > 0) {
+                document.getElementById('mostExpensive').textContent = `${Math.max(...allDetailPrices).toFixed(2)} USD`;
+                document.getElementById('leastExpensive').textContent = `${Math.min(...allDetailPrices).toFixed(2)} USD`;
+            }
+
+            new Chart(document.getElementById('categoryChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(categories),
+                    datasets: [{
+                        label: 'Nº de Productos',
+                        data: Object.values(categories),
+                        backgroundColor: [palette.blue, palette.orange, palette.yellow, palette.red, palette.brown],
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: { ...commonChartOptions, scales: {} }
+            });
+
+            const priceComparisonProducts = products.filter(p => p.precios && p.precios.Detalle && p.precios.Mayor && typeof p.precios.Detalle !== 'object' && typeof p.precios.Mayor !== 'object').slice(0, 5);
+            new Chart(document.getElementById('priceComparisonChart'), {
+                type: 'bar',
+                data: {
+                    labels: priceComparisonProducts.map(p => wrapLabel(p.nombre, 16)),
+                    datasets: [{
+                        label: 'Precio al Detal (USD)',
+                        data: priceComparisonProducts.map(p => p.precios.Detalle),
+                        backgroundColor: palette.blue,
+                        borderRadius: 4
+                    }, {
+                        label: 'Precio al Mayor (USD)',
+                        data: priceComparisonProducts.map(p => p.precios.Mayor),
+                        backgroundColor: palette.orange,
+                        borderRadius: 4
+                    }]
+                },
+                options: commonChartOptions
+            });
+
+            const complexProduct = products.find(p => p.id === 'METT-013');
+            if (complexProduct) {
+                const detailPrices = complexProduct.atributos['Precios Detalle'];
+                const mayorPrices = complexProduct.atributos['Precios Mayor'];
+                new Chart(document.getElementById('complexProductChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(detailPrices).map(l => wrapLabel(l, 16)),
+                        datasets: [{
+                            label: 'Precio al Detal (USD)',
+                            data: Object.values(detailPrices),
+                            backgroundColor: palette.red,
+                            borderRadius: 4
+                        }, {
+                            label: 'Precio al Mayor (USD)',
+                            data: Object.values(mayorPrices),
+                            backgroundColor: palette.yellow,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: { ...commonChartOptions, indexAxis: 'y' }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
