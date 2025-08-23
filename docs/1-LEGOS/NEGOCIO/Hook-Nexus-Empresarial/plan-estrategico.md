@@ -4,6 +4,9 @@ Fecha: 18 de Agosto, 2025
 Para: Daniel Hung, Dayana Sira, Milmar López  
 Asunto: Alineación estratégica, definición de roles y plan de ejecución para la fase inicial del ecosistema.
 
+
+<iframe src="https://embed.cody.bot/9fb4a138-c94b-430a-8932-5c0fce30e7d9" style="border:0px;" name="codyai" scrolling="no" frameborder="1" marginheight="0" marginwidth="0" height="800px" width="100%" allowfullscreen></iframe>
+
 ### **Introducción: De la Visión a la Acción**
 
 Este documento sirve como nuestra guía maestra interna. El "Plan de Negocios V1.3" es el mapa completo del territorio, pero este informe es el GPS que nos dará las instrucciones paso a paso para nuestro viaje inicial.
